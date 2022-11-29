@@ -100,7 +100,7 @@ p{
 	font-size: 13px;
 	line-height: 16px;
 }
-p {
+.pera {
 	font-size: 13px;
 	line-height: 16px;
 }
@@ -138,7 +138,7 @@ p {
 .text_pink{
 	color: #FF9191 !important;
 }
-a{
+.link{
 	font-family: "SF Pro Text Bold";
 	font-size: 13px;
 	line-height: 16px;
@@ -305,6 +305,10 @@ label {
 }
 .article {
 	position: relative;
+}
+.post_page .article {
+	position: relative;
+	height: 150px;
 }
 .article .card_back {
 	position: absolute;
