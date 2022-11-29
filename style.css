@@ -21,12 +21,12 @@
 }
 
 
-body{
+.body_mian{
     font-family: 'SF Pro Text';
     color: #526484;
 	background: #F5F5F5;
 }
-.container {
+.body_mian .container {
 	max-width: 100% !important;
 }
 .global_Btn {
@@ -48,7 +48,7 @@ body{
 .header_btn {
 	padding: 10px 16px;
 }
-body .border{
+.body_mian .border{
 	border-color: #DCDFE9 !important;
 }
 .border_radi_10{
@@ -69,9 +69,6 @@ body .border{
 }
 .text_global_1_hover:hover{
 	color: #526484;
-}
-p{
-	margin: 0px;
 }
 .heading_h1, 
 .heading_h2, 
@@ -103,6 +100,7 @@ p{
 .pera {
 	font-size: 13px;
 	line-height: 16px;
+	margin: 0px;
 }
 .p_12{
 	padding: 12px;
@@ -235,9 +233,6 @@ p{
 	padding: 8px 0;
 	text-align: center;
 	color: #526484;
-}
-.table_order {
-	overflow: inherit !important;
 }
 .custom_dropdown .dropdown-menu li a:hover {
 	border: 1px solid #e9ecef;
@@ -540,12 +535,14 @@ Advance setting modal
 	border: 0px !important;
 	padding-left: 0;
 	padding-right: 24px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 .tabs_mian {
 	border: 0px;
 }
 .setting_icon_1 .dropdown-toggle {
-	padding-top: 7px;
+	padding-top: 2px;
 }
 .add_blue_border .card_back {
 	opacity: 1;
@@ -743,7 +740,7 @@ Attribute page
 .setting_icon_attri .dropdown-toggle {
 	padding-top: 0;
 }
-.table {
+.body_mian .table {
 	margin-bottom: 0px !important;
 	border-bottom: transparent;
 }
@@ -1098,7 +1095,11 @@ Coupo page
 	}
 }   
 
-
+@media only screen and (min-width: 991px)  {
+	.post_grid .article {
+		height: 150px;
+	}
+}
 @media only screen and (max-width: 767px)  {
 	.col-sm-12.col-lg-4.Apply_btn {
 		display: flex;
