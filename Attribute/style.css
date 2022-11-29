@@ -1,0 +1,506 @@
+
+  @font-face {
+    font-family: "SF Pro Text";
+    src: url(assets/fonts/SF-Pro-Text-Regular.ttf);
+  }
+  @font-face {
+    font-family: "SF Pro Text Medium";
+    src: url(assets/fonts/SF-Pro-Text-Medium.ttf);
+  }
+  @font-face {
+    font-family: "SF Pro Text bold";
+    src: url(assets/fonts/SF-Pro-Text-Bold.ttf);
+  }
+  @font-face {
+    font-family: 'Noto Sans Thai Medium';
+    src: url(assets/fonts/NotoSansThai-Medium.ttf);
+  }
+  @font-face {
+    font-family: 'SukhumvitSet-Bold';
+    src: url(assets/fonts/SukhumvitSet-Bold.ttf);
+  }
+
+
+body{
+    font-family: 'SF Pro Text';
+    color: #526484;
+    background-color: #F5F5F5;
+}
+
+a {
+  font-family: "SF Pro Text bold";
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #526484;
+  text-decoration: none;
+}
+p {
+	font-family: 'SF Pro Text';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 16px;
+	margin-bottom: 0px;
+}
+.subheadig_attributr {
+  font-family: "SF Pro Text bold";
+	font-size: 18px;
+	line-height: 21px;
+	letter-spacing: -0.04em;
+	color: #344357;
+}
+.border_style_1 {
+	border: 1px solid #DCDFE9;
+}
+.bg_white{
+	background-color: #fff;
+}
+.container {
+	max-width: 100%;
+}
+.heading_attribute {
+	font-family: "SF Pro Text bold";
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: -0.04em;
+	color: #344357;
+}
+.btn_sty_1 {
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 10px;
+	border: 1px solid #1874FE;
+	display: flex;
+	border-radius: 4px !important;
+	margin-right: 15px;
+	font-family: "SF Pro Text bold";
+}
+.edit_table_btn {
+	background-color: transparent !important;
+	line-height: 1;
+	padding: 0px !important;
+	font-size: 13px;
+}
+
+.btn_sty_1:hover {
+	background-color: #1874FE;
+	color: #fff;
+}
+.btn_sty_1:hover a{
+	color: #fff;
+}
+.btn_sty_1.active {
+	background-color: #1874FE;
+	border: #1874FE;
+}
+.btn_sty_1.active a {
+	color: #fff;;
+}
+.add_task {
+	text-align: right;
+}
+.add_task i {
+	margin-right: 5px;
+}
+.add_task i {
+	margin-right: 5px;
+}
+.btn_sty_2 {
+	margin: 0;
+	font-size: 12px;
+	padding: 8px 18px;
+	background: #1874FE;
+	color: #fff;
+	font-family: "SF Pro Text bold";
+}
+.btn_sty_2:hover {
+	background: #599CFF;
+}
+.table_attribute .table {
+	margin-bottom: 0px;
+}
+.table_attribute .bold{
+	font-family: "SF Pro Text bold";
+}
+.table_attribute td {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+	color: #3A4961;
+	white-space: nowrap;
+	vertical-align: middle !important;
+	padding: 25px;
+}
+.edit_delete {
+	display: flex;
+	justify-content: flex-end;
+  opacity: 0;
+}
+.table_attribute tr:hover{
+  background-color: #DCDFE9;
+}
+.table_attribute tr:hover .edit_delete{
+  opacity: 1;
+}
+.edit_delete i {
+	margin: 0px 10px;
+	font-size: 14px;
+	color: #344357;
+}
+.cat_edit_Btn .btn_sty_1 {
+	padding: 9px 19.5px;
+}
+.heading_18 {
+    font-family: "SF Pro Text bold";
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+	letter-spacing: -0.04em;
+}
+.edit_table_btn {
+	border: 0px;
+}
+.attri_color .color_circle {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	border-radius: 50%;
+	vertical-align: bottom;
+	margin: 0px 5px;
+}
+.Black{
+  background-color: #000;
+}
+.white {
+	background-color: #fff;
+	margin-left: 25px !important;
+}
+.btn_sty_3 a {
+	color: #1874fe;
+	font-size: 13px;
+}
+.btn_sty_3 {
+	padding: 0px;
+	border: 0px;
+}
+.btn_sty_3:hover {
+  background-color: transparent;
+}
+.btn_sty_3:hover a{
+  color: #1874fe;
+}
+.hide_caret .dropdown-toggle::after {
+  display: none;
+}
+.btn.dropdown-toggle {
+	border: 0px !important;
+}
+.gear_dropdown {
+	text-align: right;
+}
+
+.add_attribute_modal .modal-header {
+	flex-direction: column;
+	align-items: baseline;
+	border: 0px;
+	padding: 24px;
+	padding-bottom: 0px;
+}
+.add_attribute_modal .modal-body {
+	padding: 24px;
+}
+.add_attribute_modal .modal-dialog {
+	max-width: 825px;
+}
+.add_attribute_modal label {
+	font-family: "SF Pro Text bold";
+	font-size: 13px;
+	line-height: 16px;
+	letter-spacing: -0.04em;
+	color: #344357;
+	margin-bottom: 8px;
+}
+.red{
+  color: red;
+}
+.form-control {
+	font-family: 'SF Pro Text';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 16px;
+	color: #A9A9A9;
+	padding: 9px 12px;
+}
+.list_color_tabs .nav-item {
+	width: 50%;
+}
+.list_color_tabs .nav-item .nav-link {
+	border: 1px solid #DCDFE9;
+	border-radius: 4px;
+	width: 100%;
+	font-size: 12px;
+	color: #526484;
+	padding: 7px 10px;
+}
+.list_color_tabs .nav-item .nav-link-new-color{
+	color: #1874FE;
+
+}
+.list_color_tabs .nav-item .nav-link i {
+	margin-right: 1px;
+}
+.list_color_tabs {
+	border: 0px;
+}
+.list_color_tabs .nav-item .active {
+	border: 1px solid #1874FE !important;
+	border-radius: 4px !important;
+}
+.label_outer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.add_attribute_modal .modal-footer {
+	border: 0px;
+	justify-content: flex-start;
+	background: #F5F6FB;
+	padding: 24px 22px;
+	margin-top: 26px;
+}
+.add_attribute_modal .input_group{
+  margin-bottom: 5px;
+}
+.add_attribute_modal .input_group .input-group-text {
+	background-color: transparent;
+	font-family: "SF Pro Text bold";
+	font-size: 12px;
+	line-height: 14px;
+  color: #1874FE;
+}
+.add_attribute_modal .input_group .form-control {
+	border-right: 0px;
+}
+.text_limit {
+	text-align: right;
+	margin-bottom: 15px;
+}
+.btn_sty_4 {
+	background: #1874FE;
+	margin: 0px;
+	color: #fff;
+	font-family: "SF Pro Text bold";
+	font-size: 12px;
+	line-height: 14px;
+	padding: 10px 16px;
+}
+.btn_sty_4 {
+	background: #1874FE;
+	margin: 0px;
+	color: #fff;
+	font-family: "SF Pro Text bold";
+	font-size: 12px;
+	line-height: 14px;
+	padding: 10px 16px;
+}
+.btn_sty_5 {
+	background: transparent;
+	margin-left: 10px;
+	border: 1px solid #DCDFE9;
+	color: #526484;
+}
+
+
+/***********
+Category page
+*************/
+.cate_header {
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 18px;
+	border-radius: 8px;
+	background-position: center center;
+}
+.cate_info {
+	min-height: 240px;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+	display: flex;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	font-family: "SF Pro Text bold";
+	font-size: 20px;
+	line-height: 24px;
+	color: #FFFFFF;
+	border-radius: 8px;
+	position: relative;
+}
+.cat-info-new a {
+	font-family: 'SukhumvitSet-Bold';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	color: #fff;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+}
+.add_new_cat .cate_info {
+	background: transparent;
+	box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05);
+}
+.add_new_cat .cate_info a {
+	font-size: 18px;
+}
+
+.category_add .modal-dialog {
+	max-width: 464px;
+}
+.category_add .modal-header {
+	flex-direction: row;
+	align-items: center;
+}
+.box_img_upload {
+	height: 141px;
+	background: #F2F7FE;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-style: normal;
+	font-size: 12px;
+	line-height: 20px;
+	color: #344357;
+}
+.searh_order th, .searh_order td {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+	color: #3A4961;
+	white-space: nowrap;
+	vertical-align: middle !important;
+}
+.searh_order tr:hover .edit_delete {
+	opacity: 1;
+}
+.searh_order th {
+	font-size: 13px;
+	font-family: "SF Pro Text bold";
+}
+.searh_order .table {
+	margin-bottom: 0px !important;
+}
+.new-modal-title {
+	font-weight: 600;
+}
+.new-btn-close.btn-close {
+	position: absolute;
+	right: 18px;
+}
+.add_attribute_modal .delete-modal {
+	max-width: 460px;
+}
+.delete-modal .modal-footer {
+	margin-top: 56px;
+}
+.delete-modal .modal-body {
+	padding: 24px 12px 0 12px;
+}
+.delete-modal p {
+	padding-left: 12px;
+}
+.add_task .btn_sty_2 {
+	margin-left: auto;
+	margin-right: 17px;
+}
+.categorysetting .add_task {
+	display: flex;
+	justify-content: flex-end;
+}
+.categorysetting .add_task button.btn_sty_1 {
+	margin-right: 4px;
+	margin-left: 13px;
+}
+.font_12{
+	font-size: 12px !important;
+}
+.line_height_20{
+	line-height: 20px;
+}
+.font_13{
+	font-size: 13px !important;
+}
+.label_13 {
+	font-size: 13px !important;
+	line-height: 16px;
+	font-family: "SF Pro Text Medium" !important;
+	color: #526484;
+	font-weight: 600;
+	margin-bottom: 6px;
+}
+.cust_search .form-control {
+	border-right: 0px !important;
+}
+.cust_search i {
+	color: #526484;
+}
+.nato {
+	font-family: 'Noto Sans Thai Medium' !important;
+	font-weight: 600 !important;
+}
+.edit_category input {
+	width: 14px;
+	height: 14px;
+	border-color: #1874FE !important;
+}
+.color_344357 {
+	color: #344357 !important;
+}
+.color_526484{
+	color: #526484 !important;
+}
+.edit_category img {
+	margin-right: 10px;
+}
+.SukhumvitSet{
+	font-family: 'SukhumvitSet-Bold';
+}
+.category_add .new-modal-title {
+	font-family: "SF Pro Text bold";
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: -0.04em;
+	color: #344357;
+}
+.add_attribute_modal .btn-close {
+	right: 24px;
+	top: 24px;
+}
+.thai{
+	font-family: 'SukhumvitSet-Bold';
+}
+@media only screen and (max-width: 991px)  {
+	.categorysetting .no_padding_mobile {
+		padding: 0px;
+		margin-bottom: 24px;
+	}
+}   
+
+
+@media only screen and (max-width: 767px)  {
+	
+}
+
+@media only screen and (max-width: 767px)  {
+	
+}
