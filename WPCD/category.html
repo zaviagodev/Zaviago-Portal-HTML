@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Category</title>
+  </head>
+  <body>
+
+    <section class="product_deatils_mian"> 
+      <div class="container">
+        
+        <div class="row pt-4 pb-0 align-items-center">
+          <div class="col-sm-12 col-lg-12">
+            <div class="">
+              <h2 class="heading_1 mb-2">Category</span></h2>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row align-items-center attribute_top_btn">
+          <div class="col-sm-12 col-lg-9">
+            <div class="btn-group white_group_btn bg_blue_btn" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-secondary active"><a href="attribute.html">Attribute</a></button>
+              <button type="button" class="btn btn-secondary"> <a href="category.html">Category</a> </button>
+              <button type="button" class="btn btn-secondary"> <a href="#">tag</a> </button>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-3">
+            <div class="text-end">
+              <button type="button" class="btn global_Btn header_btn rounded-1 text-white" data-bs-toggle="modal" data-bs-target="#category">
+                <span class="me-2"><i class="fa-solid fa-plus"></i></span> Add Category
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+
+          <div class="col-sm-12 col-lg-4">
+            <div class="cate_header" style="background-image: url(assets/images/cat_1.png);">
+              <div type="button" class="cate_info cat-info-new">
+                <a href="Category-edit.html">รองเท้า</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-4">
+            <div class="cate_header" style="background-image: url(assets/images/cat_2.png);">
+              <div type="button" class="cate_info cat-info-new">
+                <a href="Category-edit.html">เสื้อผ้า</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-4">
+            <div class="cate_header" style="background-image: url(assets/images/cat_3.png);">
+              <div type="button" class="cate_info cat-info-new">
+                <a href="Category-edit.html">กางเกง</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-4">
+            <div class="cate_header" style="background-image: url(assets/images/cat_4.png);">
+              <div type="button" class="cate_info cat-info-new">
+                <a href="Category-edit.html">กางเกงขาสั้น</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-4">
+            <div class="cate_header add_new_cat" style="background-image: url();">
+              <div class="cate_info">
+                <button type="button" class="btn btn_sty_1 btn_sty_3" data-bs-toggle="modal" data-bs-target="#category">
+                  <a href="#">+ Add Category</a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+
+      </div> 
+    </section>
+
+    
+    <!-- delete modal HTML -->
+
+    <div id="delete_modal" class="modal delete_modal fade show" tabindex="-1">
+      <div class="delete-modal modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header pb-3">
+            <h3 class="subheadig_attributr">Are you sure</h3>
+            <button type="button" class="btn-close new-btn-close" data-bs-dismiss="modal">              
+              <img src="assets/images/xmark.png" alt=""> 
+            </button>
+          </div>
+
+          <div class="modal-body p-4 pb-5 pt-4">
+            <div class="row">
+              <div class="col-sm-12 col-lg-8 mt-1">
+                <div class="label_outer m-0">
+                  <p>Are you sure you want to delete them?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer p-4">
+            <button type="button" class="btn btn-primary global_Btn m-0 me-2"> Delete</button>
+            <button type="button" class="btn btn-secondary global_Btn border m-0 bg-transparent text_global_1 ms-1 text_global_1_hover" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal HTML -->
+    <div id="category" class="modal fade advance_search category_add_popup" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content border_radi_10">
+          <div class="modal-header p-4">
+              <h3 class="modal-title">Add New Category</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"> 
+                <img src="assets/images/xmark.png" alt=""> 
+              </button>
+          </div>
+
+          <div class="modal-body p-4 pt-0 pb-5">
+            <div class="row">
+              <div class="col-sm-12 col-lg-12 mt-1">
+                <div class="label_outer m-0">
+                  <label for="">Category Name </label>
+                </div>
+                <div class="input-group common_input">
+                  <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="mb-4">
+                  <p class="font_12">The name is how it appears on your site.</p>
+                </div>
+
+                <div class="">
+                  <button type="button" class="btn btn_sty_1 btn_sty_3">
+                    <a href="#">+ Add Sub-Categories </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-sm-12 col-lg-12 mt-1">
+                <div class="label_outer m-0">
+                  <label for="">Category image</label>
+                </div>
+                <div class="box_img_upload mt-2">
+                  Add category image
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-lg-12">
+                <div class="label_outer">
+                  <label for="">Search Product</label>
+                </div>
+                <div class="input-group input_group common_input">
+                  <input type="text" class="form-control border-end-0" placeholder="Find your product by name">
+                  <span class="input-group-text bg-transparent"><i class="fa-solid fa-search"></i></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-lg-12">
+                <div class="table-responsive border border_radi_10 searh_order"> 
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="text-center">
+                          <input class="form-check-input" type="checkbox" value="" id="คุณต้องการใบกำกับภาษีหรือไม่ ?">
+                        </th>
+                        <th>Product</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                          <td class="text-center">
+                            <input class="form-check-input" type="checkbox" value="" id="คุณต้องการใบกำกับภาษีหรือไม่ ?">
+                          </td>
+                          <td> 
+                            <img class="me-2" src="assets/images/tab_1.png" alt=""> ลำโพง JBL 
+                          </td>
+                          <td>
+                            <div class="edit_delete">
+                              <i class="fa-solid fa-pencil"></i>
+                              <span class="ms-4 me-4" data-bs-toggle="modal" data-bs-target="#delete_modal">
+                                <i class="fa-solid fa-trash"></i>
+                              </span>
+                            </div>
+                          </td>
+                      </tr>
+                         
+                      <tr>
+                        <td class="text-center">
+                          <input class="form-check-input" type="checkbox" value="" id="คุณต้องการใบกำกับภาษีหรือไม่ ?">
+                        </td>
+                        <td> 
+                          <img class="me-2" src="assets/images/tab_2.png" alt=""> สบู่ล้างมือ ราคาน่ารัก
+                        </td>
+                        <td>
+                          <div class="edit_delete">
+                            <i class="fa-solid fa-pencil"></i>
+                            <span class="ms-4 me-4" data-bs-toggle="modal" data-bs-target="#delete_modal">
+                              <i class="fa-solid fa-trash"></i>
+                            </span>
+                          </div>
+                        </td>
+                        
+                      </tr>
+
+                      <tr>
+                        <td class="text-center">
+                          <input class="form-check-input" type="checkbox" value="" id="คุณต้องการใบกำกับภาษีหรือไม่ ?">
+                        </td>
+                        <td> 
+                          <img class="me-2" src="assets/images/tab_3.png" alt=""> สบู่ล้างมือ
+                        </td>
+                        <td>
+                          <div class="edit_delete">
+                            <i class="fa-solid fa-pencil"></i>
+                            <span class="ms-4 me-4" data-bs-toggle="modal" data-bs-target="#delete_modal">
+                              <i class="fa-solid fa-trash"></i>
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-sm-12 col-lg-12 mt-1">
+                <div class="label_outer m-0">
+                  <label for="">Slug</label>
+                </div>
+                <div class="input-group common_input">
+                  <input type="text" class="form-control" placeholder="Url">
+                </div>
+                <div class="mb-4">
+                  <p class="font_12" style="margin-top: 5px;line-height: 20px;">
+                    The “Slug” is the URL-friendly version of the name. 
+                    It is usually all lowercase and contains only letters, number, and hyphens.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="modal-footer p-4">
+            <button type="button" class="btn btn-primary global_Btn m-0 me-2"> Add</button>
+              <button type="button" class="btn btn-secondary global_Btn border m-0 bg-transparent text_global_1 ms-1 text_global_1_hover" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://kit.fontawesome.com/71c49ef016.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    
+  </body>
+</html>

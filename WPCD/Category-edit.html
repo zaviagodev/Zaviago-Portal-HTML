@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Category Edit</title>
+  </head>
+  <body>
+    <div class="categorysetting">
+      <div class="container">     
+        <div class="row pt-4 pb-0 mb-4 align-items-center">
+          <div class="col-sm-12 col-lg-12">
+            <div class="">
+              <h2 class="heading_1">Category / <span class="SukhumvitSet"> รองเท้า</span></h2>
+            </div>
+          </div>
+        </div>
+    
+    
+        <div class="row align-items-center pb-1 attribute_top_btn">
+          <div class="col-sm-12 col-lg-9">
+            <button type="button" class="btn global_Btn back_cate">
+              <a class="" href="category.html">Back</a>
+            </button>
+          </div>
+          <div class="col-sm-12 col-lg-3">
+            <div class="text-end cate_edit_btn_grop">
+              <div class="btn-group white_group_btn bg_blue_btn" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary "><a href="#">Cancel</a></button>
+                <button type="button" class="btn btn-secondary"> <a href="#">Delete</a> </button>
+                <button type="button" class="btn btn-secondary active"> <a href="#">Save</a> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+            <div class="row p-3 pt-2">
+                <div class="col-sm-12 col-lg-8 no_padding_mobile">
+                <div class="border_style_1 p-4 rounded-3 bg-white">
+                    <h4 class="heading_18"> Add Product</h4>
+                    <div class="label_outer mt-3">
+                      <label class="label_13" for="">Search Product</label>
+                    </div>
+                    <div class="input-group input_group cust_search">
+                      <input type="text" class="form-control" placeholder="Find your product by name">
+                      <span class="input-group-text bg-white"><i class="fa-solid fa-search"></i></span>
+                    </div>
+                    <div class="table-responsive border_style_1 rounded-2 searh_order edit_category mt-3"> 
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th class="text-center">
+                                  <input class="form-check-input" type="checkbox" value="" id="คุณต้องการใบกำกับภาษีหรือไม่ ?">
+                                </th>
+                                <th class="label_13 nato">Product</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                  <td class="text-center" width="76px">
+                                    <input class="form-check-input" type="checkbox" value="" id="คุณต้องการใบกำกับภาษีหรือไม่ ?">
+                                  </td>
+                                  <td class="thai"> 
+                                    <img src="assets/images/tab_1.png" alt=""> ลำโพง JBL 
+                                  </td>
+                                  <td>
+                                    <div class="edit_delete">
+                                      <i class="fa-solid fa-pencil"></i>
+                                      <i class="fa-solid fa-trash"></i>
+                                    </div>
+                                  </td>
+                              </tr>
+                               
+                              <tr>
+                                <td class="text-center">
+                                  <input class="form-check-input" type="checkbox" value="" id="คุณต้องการใบกำกับภาษีหรือไม่ ?">
+                                </td>
+                                <td class="thai"> <img src="assets/images/tab_2.png" alt=""> สบู่ล้างมือ ราคาน่ารัก</td>
+                                <td>
+                                  <div class="edit_delete">
+                                    <i class="fa-solid fa-pencil"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                  </div>
+                                </td>
+                                
+                              </tr>
+      
+                              <tr>
+                                <td class="text-center">
+                                  <input class="form-check-input" type="checkbox" value="" id="คุณต้องการใบกำกับภาษีหรือไม่ ?">
+                                </td>
+                                <td class="thai"> <img src="assets/images/tab_3.png" alt=""> สบู่ล้างมือ </td>
+                                <td>
+                                  <div class="edit_delete">
+                                    <i class="fa-solid fa-pencil"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                  </div>
+                                </td>
+                              </tr>
+      
+                            </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-sm-12 col-lg-4 border_style_1 p-4 rounded-3 bg-white">
+                    <div class="label_outer m-0 mb-1">
+                      <label class="label_13" for="">Category Name </label>
+                    </div>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Option name">
+                    </div>
+                    <div class="mb-4">
+                      <p class="font_12 line_height_20" style="margin-top: 5px;">The name is how it appears on your site.</p>
+                    </div>
+    
+                    <div class="">
+                      <button type="button" class="btn btn_sty_1 btn_sty_3">
+                        <a href="#">+ Add Sub-Categories </a>
+                      </button>
+      
+                    </div>
+                  <div class="label_outer mt-4 mb-2">
+                      <label class="label_13" for="">Category image</label>
+                    </div><div class="box_img_upload">
+                      Add category image
+                    </div>
+                    <div class="mt-1">
+                        <div class="label_outer m-0 mt-3 mb-1">
+                          <label class="label_13" for="">Slug</label>
+                        </div>
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Url">
+                        </div>
+                        <div class="mb-4">
+                          <p class="font_12" style="margin-top: 5px;line-height: 20px;">
+                            The “Slug” is the URL-friendly version of the name. 
+                            It is usually all lowercase and contains only letters, number, and hyphens.
+                          </p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://kit.fontawesome.com/71c49ef016.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    
+  </body>
+</html>
