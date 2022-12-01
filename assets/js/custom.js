@@ -99,5 +99,7 @@ jQuery(document).ready(function($){
             $('.listview_tr_4').removeClass('bg_gray_select');
         }
     });
+
   });
+  
   

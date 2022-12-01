@@ -11,7 +11,7 @@
 
     <title>Product Details</title>
   </head>
-  <body class="">
+  <body class="body_mian">
 
     <section class="product_deatils_mian attribute_page"> 
       <div class="container">
@@ -19,7 +19,7 @@
         <div class="row pt-4 pb-0 align-items-center">
           <div class="col-sm-12 col-lg-12">
             <div class="">
-              <h2 class="heading_1 mb-2">Attribute</h2>
+              <h2 class="heading_h2 mb-2">Attribute</h2>
             </div>
           </div>
         </div>
@@ -28,9 +28,9 @@
         <div class="row align-items-center pb-1 attribute_top_btn">
           <div class="col-sm-12 col-lg-9">
             <div class="btn-group white_group_btn bg_blue_btn" role="group" aria-label="Basic example">
-              <button type="button" class="btn btn-secondary active"><a href="attribute.html">Attribute</a></button>
-              <button type="button" class="btn btn-secondary"> <a href="category.html">Category</a> </button>
-              <button type="button" class="btn btn-secondary"> <a href="#">tag</a> </button>
+              <button type="button" class="btn btn-secondary active"><a class="link" href="attribute.html">Attribute</a></button>
+              <button type="button" class="btn btn-secondary"> <a class="link" href="category.html">Category</a> </button>
+              <button type="button" class="btn btn-secondary"> <a class="link" href="#">tag</a> </button>
             </div>
           </div>
           <div class="col-sm-12 col-lg-3">
@@ -48,8 +48,8 @@
               <div class="table_filter p-4 pb-0">
                 <div class="row mb-3">
                   <div class="col-sm-12 col-lg-6">
-                    <h3 class="mb-3">Attribute</h3>
-                    <p class="font_12">Manage the attribute comes in.</p>
+                    <h3 class="heading_h3 mb-3">Attribute</h3>
+                    <p class="font_12 pera">Manage the attribute comes in.</p>
                   </div>
                   <div class="col-sm-12 col-lg-6 align-self-center justify-content-end text-end">
                     <!----Setting----->
@@ -137,7 +137,7 @@
                       <tr data-bs-toggle="modal" data-bs-target="#add_attribute_modal">
                         <td colspan="3">
                           <button type="button" class="btn btn_sty_1 btn_sty_3">
-                            <a href="#">+ Add Another attribute </a>
+                            <a class="link" href="#">+ Add Another attribute </a>
                           </button>                         
                         </td>
                       </tr>
@@ -156,8 +156,8 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header p-4">
-          <h3 class="modal-title mb-2">Add Attribute</h3>
-          <p>Set up Attribute to add options for your product (e.g. different sizes, colors, order cycle) </p>
+          <h3 class="heading_h3 modal-title mb-2">Add Attribute</h3>
+          <p class="pera">Set up Attribute to add options for your product (e.g. different sizes, colors, order cycle) </p>
           <button type="button" class="btn-close" data-bs-dismiss="modal"> 
             <img src="assets/images/xmark.png" alt=""> 
           </button>
@@ -168,7 +168,7 @@
           <div class="col-sm-12 col-lg-8">
             <div class="label_outer m-0">
               <label for="">Options Name <span class="red">*</span></label>
-              <p>(1-25 characters)</p>
+              <p class="pera">(1-25 characters)</p>
             </div>
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Option name">
@@ -194,24 +194,24 @@
                 <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"> 
                   <div class="label_outer">
                     <label for="">Option Values<span class="red">*</span></label>
-                    <p class="font_12">Separete option value with a Enter (1-30 characters)</p>
+                    <p class="font_12 pera">Separete option value with a Enter (1-30 characters)</p>
                   </div>
                   <div class="input-group input_group">
                     <input type="text" class="form-control" placeholder="Option name">
                     <span class="input-group-text">add</span>
                   </div>
-                  <p class="text_limit">3/20</p>
+                  <p class="text_limit pera">3/20</p>
                 </div>
                 <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                   <div class="label_outer">
                     <label for="">Option Values<span class="red">*</span></label>
-                    <p class="font_12">Separete option value with a Enter (1-30 characters)</p>
+                    <p class="font_12 pera">Separete option value with a Enter (1-30 characters)</p>
                   </div>
                   <div class="input-group input_group">
                     <input type="text" class="form-control" placeholder="Option name">
                     <span class="input-group-text">add</span>
                   </div>
-                  <p class="text_limit">3/20</p>
+                  <p class="text_limit pera">3/20</p>
                 </div>
               </div>
             </div>
@@ -220,7 +220,7 @@
           <div class="row">
             <div class="col-lg-12">
               <button type="button" class="btn btn_sty_1 btn_sty_3">
-                <a href="#">+ Add Sub-variant </a>
+                <a class="link" href="#">+ Add Sub-variant </a>
               </button>
             </div>
           </div>
@@ -241,7 +241,7 @@
         <div class="delete-modal modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header pb-3">
-              <h3 class="subheadig_attributr">Are you sure</h3>
+              <h3 class="heading_h3 subheadig_attributr">Are you sure</h3>
               <button type="button" class="btn-close new-btn-close" data-bs-dismiss="modal">              
                 <img src="assets/images/xmark.png" alt=""> 
               </button>
@@ -251,7 +251,7 @@
               <div class="row">
                 <div class="col-sm-12 col-lg-8 mt-1">
                   <div class="label_outer m-0">
-                    <p>Are you sure you want to delete them?</p>
+                    <p class="pera">Are you sure you want to delete them?</p>
                   </div>
                 </div>
               </div>

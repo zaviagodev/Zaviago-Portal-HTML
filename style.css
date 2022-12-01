@@ -220,7 +220,8 @@
 	padding: 8px 10px;
 	box-shadow: none !important;
 	width: 100%;
-	color: #526484;
+	color: #526484 !important;
+	font-family: "SF Pro Text Bold";
 }
 .custom_dropdown a:hover {
 	color: #526484;
@@ -1055,6 +1056,74 @@ Coupo page
 .bg_grey_user{
 	background: #D9D9D9;
 }
+.coupon_order tr {
+	border-bottom: 1px solid #dcdfe9;
+}
+.coupon_order tr:last-child {
+	border-bottom: transparent;
+}
+.img_desc_perpuple {
+	display: flex;
+	align-items: center;
+}
+.bg_purple .img_bg {
+	background: #B0C1FF;
+	padding: 6px;
+	border-radius: 50%;
+	width: 26px;
+	height: 26px;
+}
+.bg_purple_2 {
+	display: flex;
+	align-items: center;
+}
+.bg_purple_2 {
+	border-radius: 31px;
+	padding: 1px 6px 1px 4px;
+}
+.bg_purple:hover {
+	background: #B0C1FF;
+}
+.img_desc_perpuple .form-check-input {
+	margin-top: 0px;
+}
+
+/***********
+Pages Catgories 
+*************/
+
+.check_left_cat {
+	display: inline-block;
+	width: 21px;
+}
+.list_view_pages .pages_cat_table .ps-1 {
+	padding-left: 10px !important;
+}
+.pages_cat_table .user span {
+	border-radius: 20px;
+	text-align: center;
+	padding: 6px 12px;
+	width: fit-content;
+	border-radius: 20px;
+	display: block;
+	font-family: "SF Pro Text Medium";
+	font-weight: 500;
+}
+.pages_cat_table tr {
+	border-bottom: 1px solid #dcdfe9;
+}
+.pages_cat_table tr:last-child {
+	border-bottom: transparent;
+}
+.list_view .table_order .pages_cat_table th,
+.list_view .table_order .pages_cat_table td {
+	color: #526484;
+}
+.list_view .table_order .collapse_area td {
+	padding: 10px 20px;
+}
+
+
 
 
 

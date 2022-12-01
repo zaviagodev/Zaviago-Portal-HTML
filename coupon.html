@@ -11,19 +11,19 @@
 
     <title>Coupon</title>
   </head>
-  <body>
+  <body class="body_mian">
 
     <div class="container">  
       <div class="row pt-4 pb-0 align-items-center">
         <div class="col-sm-12 col-lg-9">
           <div class="">
-            <h2 class="heading_1 m-0">Coupon</h2>
+            <h2 class="heading_h2 m-0">Coupon</h2>
           </div>
         </div>
         <div class="col-sm-12 col-lg-3">
           <div class="text-end">
             <button type="button" class="btn global_Btn header_btn rounded-1 text-white">
-              <span class="me-2"><i class="fa-solid fa-plus"></i></span> Create New
+              <span class="me-2"><i class="fa-solid fa-plus"></i></span> Add New
             </button>
           </div>
         </div>
@@ -34,12 +34,12 @@
           <div class="box_filter border_radi_10 border bg-white bg_grey p_12">
             <div class="row">
               <div class="col-lg-12">
-                <h4>All pages</h4>
+                <h4 class="heading_h4">All Coupon</h4>
               </div>
             </div>
             <div class="row mt-3 mb-3">
               <div class="col-lg-6">
-                <h1>5</h1>
+                <h1 class="heading_h1">5</h1>
               </div>
               <div class="col-lg-6 text-end">
                 <span class="color_all bg_blue"></span> 
@@ -59,12 +59,12 @@
           <div class="box_filter border_radi_10 border bg-white bg_grey p_12">
             <div class="row">
               <div class="col-lg-12">
-                <h4>Published</h4>
+                <h4 class="heading_h4">Published</h4>
               </div>
             </div>
             <div class="row mt-3 mb-3">
               <div class="col-lg-6">
-                <h1>3</h1>
+                <h1 class="heading_h1">3</h1>
               </div>
               <div class="col-lg-6 text-end">
                 <span class="color_all bg_green"></span> 
@@ -84,12 +84,12 @@
           <div class="box_filter border_radi_10 border bg-white bg_grey p_12">
             <div class="row">
               <div class="col-lg-12">
-                <h4>Draft</h4>
+                <h4 class="heading_h4">Unpublished</h4>
               </div>
             </div>
             <div class="row mt-3 mb-3">
               <div class="col-lg-6">
-                <h1>2</h1>
+                <h1 class="heading_h1">2</h1>
               </div>
               <div class="col-lg-6 text-end">
                 <span class="color_all bg_orange"></span> 
@@ -109,12 +109,12 @@
           <div class="box_filter border_radi_10 border bg-white bg_grey p_12">
             <div class="row">
               <div class="col-lg-12">
-                <h4>Trash</h4>
+                <h4 class="heading_h4">Trash</h4>
               </div>
             </div>
             <div class="row mt-3 mb-3">
               <div class="col-lg-6">
-                <h1>1</h1>
+                <h1 class="heading_h1">1</h1>
               </div>
               <div class="col-lg-6 text-end">
                 <span class="color_all bg_pink"></span> 
@@ -145,11 +145,11 @@
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
                       <li><a class="dropdown-item" href="#">Published</a></li>
-                      <li><a class="dropdown-item" href="#">Move to Draft</a></li>
+                      <li><a class="dropdown-item" href="#">Unpublished</a></li>
                     </ul>
                   </div>
                   <button type="button" class="btn btn-secondary Apply_btn_00 global_Btn border bg-transparent"> 
-                    <a class="text_global_1" href="">Apply</a> 
+                    <a class="text_global_1 link" href="">Apply</a> 
                   </button>
                   <div class="form-check m-0">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
@@ -212,9 +212,21 @@
 
                   <tbody>
 
-                    <tr>
+                    <tr class="listview_tr_1 ">
                       <td>
-                        <img class="img-fluid me-2" src="assets/images/coupon_1.png" alt=""> FREE50LP
+                        <div class="img_desc_perpuple">
+                          <div class="check_left_cat">
+                            <input class="form-check-input check_list check_list_1 me-2" type="checkbox" value="" id="">
+                          </div>
+                          <div class="bg_purple bg_purple_2">
+                            <div class="img_bg">  
+                              <img class="img-fluid me-2" src="assets/images/cart-shopping.png" alt=""> 
+                            </div>
+                            <div class="coupon_text ms-1">
+                              FREE50LP
+                            </div>
+                          </div>
+                        </div>
                       </td>
                       <td>฿ 50 </td>
                       <td>Today</td>
@@ -227,7 +239,7 @@
                         
                           <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Published</a></li>
-                            <li><a class="dropdown-item" href="#">Move to Draft</a></li>
+                            <li><a class="dropdown-item" href="#">Unpublished</a></li>
                           </ul>
                         </div>
                       </td>
@@ -239,7 +251,7 @@
                           <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Edit</a></li>
                             <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                            <li><a class="dropdown-item" href="#">Move to trash</a></li>
                           </ul>
                         </div>
                       </td>
@@ -247,15 +259,27 @@
 
                     <tr>
                       <td>
-                        <img class="img-fluid me-2" src="assets/images/coupon_1.png" alt=""> FREE50LP
+                        <div class="img_desc_perpuple">
+                          <div class="check_left_cat">
+                            <input class="form-check-input check_list check_list_1 me-2" type="checkbox" value="" id="">
+                          </div>
+                          <div class="bg_purple bg_purple_2">
+                            <div class="img_bg">  
+                              <img class="img-fluid me-2" src="assets/images/cart-shopping.png" alt=""> 
+                            </div>
+                            <div class="coupon_text ms-1">
+                              FREE50LP
+                            </div>
+                          </div>
+                        </div>
                       </td>
                       <td>฿ 50 </td>
                       <td>Today</td>
-                      <td class="user"> <span class="bg_orange"> 0/∞ </span> </td>
+                      <td class="user"> <span class="bg_orange"> 5/40 </span> </td>
                       <td> 
                         <div class="dropdown custom_dropdown width_100 bg_orange list_status no_border_borrom on_hover_status">
                           <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Published
+                            Unpublished
                           </a>
                         
                           <ul class="dropdown-menu">
@@ -272,7 +296,7 @@
                           <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Edit</a></li>
                             <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                            <li><a class="dropdown-item" href="#">Move to trash</a></li>
                           </ul>
                         </div>
                       </td>
@@ -280,7 +304,19 @@
 
                     <tr>
                       <td>
-                        <img class="img-fluid me-2" src="assets/images/coupon_1.png" alt=""> FREE50LP
+                        <div class="img_desc_perpuple">
+                          <div class="check_left_cat">
+                            <input class="form-check-input check_list check_list_1 me-2" type="checkbox" value="" id="">
+                          </div>
+                          <div class="bg_purple bg_purple_2">
+                            <div class="img_bg">  
+                              <img class="img-fluid me-2" src="assets/images/cart-shopping.png" alt=""> 
+                            </div>
+                            <div class="coupon_text ms-1">
+                              FREE50LP
+                            </div>
+                          </div>
+                        </div>
                       </td>
                       <td>฿ 50 </td>
                       <td>Today</td>
@@ -293,7 +329,7 @@
                         
                           <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Published</a></li>
-                            <li><a class="dropdown-item" href="#">Move to Draft</a></li>
+                            <li><a class="dropdown-item" href="#">Unpublished</a></li>
                           </ul>
                         </div>
                       </td>
@@ -305,7 +341,7 @@
                           <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Edit</a></li>
                             <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                            <li><a class="dropdown-item" href="#">Move to trash</a></li>
                           </ul>
                         </div>
                       </td>
@@ -313,20 +349,32 @@
 
                     <tr>
                       <td>
-                        <img class="img-fluid me-2" src="assets/images/coupon_1.png" alt=""> FREE50LP
+                        <div class="img_desc_perpuple">
+                          <div class="check_left_cat">
+                            <input class="form-check-input check_list check_list_1 me-2" type="checkbox" value="" id="">
+                          </div>
+                          <div class="bg_purple bg_purple_2">
+                            <div class="img_bg">  
+                              <img class="img-fluid me-2" src="assets/images/cart-shopping.png" alt=""> 
+                            </div>
+                            <div class="coupon_text ms-1">
+                              FREE50LP
+                            </div>
+                          </div>
+                        </div>
                       </td>
                       <td>฿ 50 </td>
                       <td>Today</td>
-                      <td class="user"> <span class="bg_orange"> 0/∞ </span> </td>
+                      <td class="user"> <span class="bg_orange"> 5/40 </span> </td>
                       <td> 
                         <div class="dropdown custom_dropdown width_100 bg_orange list_status no_border_borrom on_hover_status">
                           <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Published
+                            Unpublished
                           </a>
                         
                           <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Published</a></li>
-                            <li><a class="dropdown-item" href="#">Move to Draft</a></li>
+                            <li><a class="dropdown-item" href="#">Unpublished</a></li>
                           </ul>
                         </div>
                       </td>
@@ -338,7 +386,7 @@
                           <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Edit</a></li>
                             <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                            <li><a class="dropdown-item" href="#">Move to trash</a></li>
                           </ul>
                         </div>
                       </td>
@@ -346,7 +394,19 @@
 
                     <tr>
                       <td>
-                        <img class="img-fluid me-2" src="assets/images/coupon_1.png" alt=""> FREE50LP
+                        <div class="img_desc_perpuple">
+                          <div class="check_left_cat">
+                            <input class="form-check-input check_list check_list_1 me-2" type="checkbox" value="" id="">
+                          </div>
+                          <div class="bg_purple bg_purple_2">
+                            <div class="img_bg">  
+                              <img class="img-fluid me-2" src="assets/images/cart-shopping.png" alt=""> 
+                            </div>
+                            <div class="coupon_text ms-1">
+                              FREE50LP
+                            </div>
+                          </div>
+                        </div>
                       </td>
                       <td>฿ 50 </td>
                       <td>Today</td>
@@ -371,7 +431,7 @@
                           <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Edit</a></li>
                             <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                            <li><a class="dropdown-item" href="#">Move to trash</a></li>
                           </ul>
                         </div>
                       </td>
