@@ -357,7 +357,6 @@ label {
 }
 .width_100 .dropdown-menu {
 	min-width: 100px !important;
-	transform: translate(0px, 35px) !important;
 	border-radius: 10px !important;
 }
 .article .width_100 a {
@@ -1032,6 +1031,55 @@ Category page
 	flex-direction: row;
 	align-items: center;
 }
+.post_cout .bg_green {
+	border-radius: 20px;
+	text-align: center;
+	padding: 6px 12px;
+	width: fit-content;
+	border-radius: 20px;
+	display: block;
+}
+.post_cout > div {
+	font-family: "SF Pro Text Bold";
+	font-weight: 500;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 16px;
+	color: #344357;
+}
+.cate_page_tree_head .row div {
+	font-family: "SF Pro Text Bold";
+	color: #526484;
+	padding: 12px;
+}
+.pages_list_outer .width_80 {
+	margin-right: 17px;
+}
+.pages_list_outer .row {
+	padding: 12px 0px;
+}
+.pages_list_outer_child .div.border {
+	padding-left: 50px !important;
+}
+.pages_list_outer_has_child .div.border {
+	padding-left: 50px !important;
+}
+.cate_page_tree_head {
+	border-bottom: 1px solid #dcdfe9;
+}
+.pages_list_outer .last_div {
+	width: 8%;
+}
+.pages_list_outer .col-lg-9 {
+	width: 80%;
+}
+.pages_list_outer .col-lg-10 {
+	width: 77%;
+}
+.pages_list_outer .width_130 {
+	width: 7%;
+}
+
 
 /***********
 Coupo page
@@ -1062,32 +1110,51 @@ Coupo page
 .coupon_order tr:last-child {
 	border-bottom: transparent;
 }
-.img_desc_perpuple {
+.img_desc_coupon_icon {
 	display: flex;
 	align-items: center;
 }
-.bg_purple .img_bg {
+.coupon_icon_img .img_bg {
 	background: #B0C1FF;
 	padding: 6px;
 	border-radius: 50%;
 	width: 26px;
 	height: 26px;
 }
-.bg_purple_2 {
+.bg_purple .img_bg {
+	background: #B0C1FF;
+}
+.coupon_icon_img {
 	display: flex;
 	align-items: center;
-}
-.bg_purple_2 {
 	border-radius: 31px;
 	padding: 1px 6px 1px 4px;
 }
 .bg_purple:hover {
 	background: #B0C1FF;
 }
-.img_desc_perpuple .form-check-input {
+.img_desc_coupon_icon .form-check-input {
 	margin-top: 0px;
 }
-
+.coupon_order thead .code_th {
+	padding-left: 79px !important;
+}
+.delete_modal .bg-transparent:hover {
+	background-color: #1874fe !important;
+	color: #fff !important;
+}
+.bg_purple_light .img_bg{
+	background: #C9B0FF;
+}
+.bg_purple_light:hover{
+	background: #C9B0FF;
+}
+.bg_purple_dark .img_bg{
+	background: #7D8CFF;
+}
+.bg_purple_dark:hover{
+	background: #7D8CFF;
+}
 /***********
 Pages Catgories 
 *************/
@@ -1122,7 +1189,18 @@ Pages Catgories
 .list_view .table_order .collapse_area td {
 	padding: 10px 20px;
 }
-
+.open_left {
+	display: flex;
+}
+.pages_list_main .width_75 .accordion-button.plus_center {
+	background-image: none !important;
+	background-color: transparent;
+	border: 0px !important;
+	box-shadow: none !important;
+}
+.pages_list_main .width_75 {
+	width: 4%;
+}
 
 
 

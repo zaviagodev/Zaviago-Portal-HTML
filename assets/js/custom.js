@@ -102,4 +102,15 @@ jQuery(document).ready(function($){
 
   });
   
+
+  jQuery(document).ready(function($){
+    jQuery(".check").on('click',function(e){
+      // console.log('clicked');
+      $("#panel1Content").collapse('show');
+    });
+    
+    jQuery(".doCheck").on('click',function(e){
+      $("#panel1Content").collapse('hide');
+    });
+  });
   
