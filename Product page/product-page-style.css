@@ -158,6 +158,18 @@ input:checked + .slider:before {
     transform:translateY(-8%);
 }
 
+.btn-group {
+    transform:translateY(8%);
+}
+
+.btn-group>.btn-group:not(:first-child), .btn-group>:not(.btn-check:first-child)+.btn{
+    margin-left:0;
+}
+
+.btn-selected,.btn-selected:hover,.btn-selected:active,.btn-selected:focus {
+    border:1px solid #1874FE !important;
+}
+
 .img-of-variant {
     width:120px;
 }
