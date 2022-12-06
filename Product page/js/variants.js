@@ -3,7 +3,7 @@ let subvariantBtn = document.getElementById("add-subvariant");
 let subvariantInput = document.getElementById("input-subvariant");
 
 subvariantBtn.addEventListener("click", function(){
-    subvariantInput.style.display = "block";
+    subvariantInput.style.display = "flex";
 })
 
 subvariantInput.addEventListener("blur", function(){
