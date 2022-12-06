@@ -15,6 +15,7 @@ subvariantInput.addEventListener("blur", function(){
 var optionValuesVariant = document.getElementsByClassName("option-values");
 var numOfOptionValues = document.getElementById("option-values-num");
 
+// The number of values is shown at the bottom right of the option value input
 function countNumOfValues(){
     numOfOptionValues.innerText = optionValuesVariant.length;
 }
@@ -61,6 +62,8 @@ function createValue(e){
 
 window.onload = function(){countNumOfValues()};
 optionValueBtn.addEventListener("click", createValue)
+
+// You can try adding option values (before Add-Subvariant button)
 
 document.getElementById("option-value").addEventListener("keypress", function(e){
     if (e.key === "Enter"){
