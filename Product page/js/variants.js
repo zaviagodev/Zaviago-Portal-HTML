@@ -15,7 +15,6 @@ subvariantInput.addEventListener("blur", function(){
 var optionValuesVariant = document.getElementsByClassName("option-values");
 var numOfOptionValues = document.getElementById("option-values-num");
 
-// The number of values is shown at the bottom right of the option value input
 function countNumOfValues(){
     numOfOptionValues.innerText = optionValuesVariant.length;
 }
@@ -27,6 +26,17 @@ function createValue(e){
     if (optionValue === "" || optionValuesVariant.length >= 20){
         e.preventDefault();
     } else {
+        /* else statement creates HTML tag like this when entering or click "Add" button:
+
+        <span class="option-values alert alert-dismissible py-1 rounded-pill">
+            <span class="badge rounded-pill p-0 general">
+                <span class="circle d-inline-block"></span> 
+            </span>
+            <span id="value"></span>
+            <button type="button" class="btn-close btn-close-sm py-2" data-bs-dismiss="alert" onclick="countNumOfValues()"></button>
+        </span>
+
+        */
         const variants = document.createElement("span");
         const createdValue = document.createElement("span");
         const variantValue = document.createTextNode(" " + optionValue);
@@ -62,8 +72,6 @@ function createValue(e){
 
 window.onload = function(){countNumOfValues()};
 optionValueBtn.addEventListener("click", createValue)
-
-// You can try adding option values (before Add-Subvariant button)
 
 document.getElementById("option-value").addEventListener("keypress", function(e){
     if (e.key === "Enter"){
