@@ -43,7 +43,9 @@
             </div>
         </div>
         <div class="container">
-            <form action="index.php" method="POST">
+
+            <!-- When clicking "Publish" button, it works similarly as submit, which is to post and redirect to the link from "action" attribute. -->
+            <form action="#" method="POST">
                 <div class="row mt-3 clearfix">
                     <div class="col ps-3">
                         <div class="float-start" id="product-head">
@@ -75,6 +77,11 @@
                         <h2 class="mb-2">Product Images</h2>
                         <div style="font-family:Sukhumvit Set;">สามารถเลือกอัปโหลดรูปสินค้าหลายภาพได้ภายในครั้งเดียว และสามารถเลื่อนตำแหน่งรูปภาพได้ โดยรูปที่คุณกำหนดให้เป็นรูปที่ 1 จะเป็นรูปหน้าปกของสินค้าของคุณ โดยสามารถลงรูปสินค้าสูงสุดได้ถึง 8 รูป โดยภาพต้องมีขนาด ระหว่าง 330x330 ถึง 5000x5000 px. ขนาดไฟล์ไม่เกิน 3 MB และห้ามใช้รูปลามกอนาจารโดยเด็ดขาด</div>
                         <div class="d-inline-flex mt-3 gap-3 w-100">
+
+                            <!-- When clicking "Add images" or "Add video", I want the blocks to be upload buttons 
+                            
+                            Perhaps using <input type="file"> can be similarly the best solution, but it will show only a button and "No file chosen" text
+                            -->
                             <div class="w-50 bg-add-image border_radi_10 text-center" role="button" id="add-image">
                                 <span class="d-inline-block">Add images</span>
                             </div>
@@ -90,7 +97,7 @@
                         <div style="font-family:Sukhumvit Set;">Sync your product to other marketplaces.</div>
                         <div class="row mt-3" id="shopee">
                             <div class="col-sm-3">
-                                <label class="switch">
+                                <label class="switch" for="toggle-shopee">
                                     <input type="checkbox" id="toggle-shopee">
                                     <span class="slider round"></span>
                                 </label>
@@ -102,8 +109,8 @@
                         </div>
                         <div class="row mt-3" id="lazada">
                             <div class="col-sm-3">
-                                <label class="switch">
-                                    <input type="checkbox" id="toggle-shopee">
+                                <label class="switch" for="toggle-lazada">
+                                    <input type="checkbox" id="toggle-lazada">
                                     <span class="slider round"></span>
                                 </label>
                             </div>
@@ -114,8 +121,8 @@
                         </div>
                         <div class="row mt-3" id="line-my-shop">
                             <div class="col-sm-3">
-                                <label class="switch">
-                                    <input type="checkbox" id="toggle-shopee">
+                                <label class="switch" for="toggle-line">
+                                    <input type="checkbox" id="toggle-line">
                                     <span class="slider round"></span>
                                 </label>
                             </div>
@@ -126,8 +133,8 @@
                         </div>
                         <div class="row mt-3" id="tiktok-shop">
                             <div class="col-sm-3">
-                                <label class="switch">
-                                    <input type="checkbox" id="toggle-shopee">
+                                <label class="switch" for="toggle-tiktok">
+                                    <input type="checkbox" id="toggle-tiktok">
                                     <span class="slider round"></span>
                                 </label>
                             </div>
@@ -187,6 +194,8 @@
                                 </span>
                             </div>
                             <div class="col mt-2">
+
+                                <!-- Not sure how to style the text on textarea, however, I have already created id attributes of each font-style button -->
                                 <div class="font-styles table-no-border-bottom border p-3">
                                     <i class="fa-solid fa-bold" id="bold"></i>
                                     <i class="fa-solid fa-italic" id="italic"></i>
@@ -201,7 +210,7 @@
                                     <i class="fa-solid fa-face-smile" id="emoji"></i>
                                     <i class="fa-solid fa-ellipsis" id="more"></i>
                                 </div>
-                                <textarea class="form-control" style="border-radius:0 0 10px 10px;height:400px" id="textarea-field"></textarea>
+                                <textarea class="form-control" id="textarea-field"></textarea>
                             </div>
                             <div class="clearfix"></div>
     
@@ -216,7 +225,7 @@
                                         <div class="modal-dialog modal-dialog-centered">
                                           <div class="modal-content">
                                       
-                                            <!-- Modal Header -->
+                                            <!-- Modal header has searchbar -->
                                             <div class="modal-header d-block w-100 p-4">
                                                 <div class="clearfix">
                                                     <h2 class="modal-title float-start">Select Category</h2>
@@ -232,7 +241,7 @@
                                                 </div>
                                             </div>
                                       
-                                            <!-- Modal body -->
+                                            <!-- Modal body contains two sides, categories and subcategories -->
                                             <div class="row modal-body p-0 ps-3 pe-3">
                                                 <div class="col-sm-6 py-3 ps-3">
                                                     <button class="btn dropdown-toggle right w-100 text-secondary no-border-btn text-start">Women's Fashion</button>
@@ -262,6 +271,7 @@
                                             <!-- Modal footer -->
                                             <div class="modal-footer p-4">
                                                 <div class="text-start">
+                                                    <!-- This one should display to the left -->
                                                     <div id="category-selected">Women's Fashion </div>
                                                 </div>
                                                 <div class="float-end">
@@ -389,11 +399,11 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <button type="button" class="btn text-primary font-weight-bold no-border-btn" id="add-subvariant">
                                     <i class="fa-solid fa-plus"></i>
                                     Add Sub-variant
                                 </button>
-    
                                 
                                 <hr>
     
