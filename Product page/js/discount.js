@@ -1,7 +1,11 @@
 let discountPricing = document.getElementById("discount");
 let salePricePricing = document.getElementById("sale-price");
 let instantDiscountCheckbox = document.getElementById("toggle-instant-discount");
+
 let disabledBaht = document.getElementsByClassName("currency");
+
+// "disabled-baht" class creates the gray background of the currency on the left side of inputs
+// When discount section is enabled, "disabled-baht" class will change to white background
 
 function enableDiscount(){
     discountPricing.removeAttribute("disabled","");
