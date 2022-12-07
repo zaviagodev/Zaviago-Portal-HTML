@@ -498,11 +498,11 @@ Advance setting modal
 .list_status {
 	margin: 0px;
 	border-radius: 20px !important;
-	padding: 0px 30px 0px 12px !important;
+	padding: 0px !important;
 	width: max-content;
 }
 .list_status .btn.dropdown-toggle {
-	padding: 3px 0px;
+	padding: 3px 30px 3px 12px !important;
 }
 #datepicker i {
 	color: #526484;
@@ -1220,10 +1220,11 @@ Pages Catgories
 .has_sub_child .col-lg-10 {
 	width: 74%;
 }
-.has_child .row .left_child_line::after {
+.has_child .row .left_child_line::after,
+.has_sub_child .row .left_child_line::after {
 	content: "";
 	height: 64px;
-	border: 1px solid #dcdfe9;
+	border: 1px solid #eceef3;
 	position: absolute;
 	right: 20px;
 	top: -12px;
@@ -1232,8 +1233,48 @@ Pages Catgories
 	position: relative;
 	height: 40px;
 }
-.has_child .row:last-child .left_child_line::after {
+.has_child .row:last-child .left_child_line::after, 
+.has_sub_child .row:last-child .left_child_line::after  {
+	background-image: url('assets/images/left_down_arrow.png');
+	width: 20px;
+	height: 30px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: block;
+	border: 0px;
+	right: 2px;
+	top: -14px;
+}
+.has_child .row .left_child_line::before, 
+.has_sub_child .row .left_child_line::before {
+	content: "";
+	right: 0px;
+	width: 20px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	background-color: #eceef3;
+	height: 1px;
+}
+.has_child .row:last-child .left_child_line::before, 
+.has_sub_child .row:last-child .left_child_line::before {
 	display: none;
+}
+.list_tree_btn{
+	display: none;
+}
+.list_tree_btn .btn.btn-sm {
+	width: 104px;
+	height: 36px;
+	border: 1px solid #1874FE;
+	border-radius: 4px;
+	margin-right: 8px;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+	color: #526484;
+	font-family: "SF Pro Text Medium";
 }
 .invite_teammates {
 	background: linear-gradient(91.8deg, #5200FF 1.95%, #A02A99 20.02%, #D64752 67.43%, #FF5D1D 102.79%);

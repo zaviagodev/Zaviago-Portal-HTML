@@ -34,7 +34,7 @@
           <div class="left_product_deatils_box_1 border border_style_1 border_radi_10 bg-white p-4">
             <div class="row mb-3 post_filer align-items-center">
               <div class="col-sm-12 col-lg-4">
-                <div class="filter_left align-items-center">
+                <div class="filter_left hide_now align-items-center">
                   <div class="dropdown with_123 custom_dropdown no_border_borrom">
                     <a class="btn dropdown-toggle border" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Bulk Action
@@ -56,17 +56,21 @@
                     </label>
                   </div>
                 </div>
+                <div class="list_tree_btn">
+                  <input type="button" class="doCheck btn btn-sm" value = "Collapse All"/>
+                  <input type="button" class="check btn btn-sm" value="Expand All"/>
+                </div>
               </div>
               <div class="col-sm-12 col-lg-8">
                 <div class="filter_right">
                   <ul class="nav nav-tabs tabs_mian" id="myTab">
                     <li class="nav-item">
-                        <a href="#list_view" class="nav-link active" data-bs-toggle="tab">
+                        <a href="#list_view" class="nav-link grid_tree active" data-bs-toggle="tab">
                           <i class="fa-solid fa-list"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#grid_view" class="nav-link" data-bs-toggle="tab">
+                        <a href="#grid_view" class="nav-link list_tree_icon" data-bs-toggle="tab">
                           <i class="fa-solid fa-list"></i>
                         </a>
                     </li>
@@ -403,7 +407,7 @@
 
                     <div id="flush-collapseTwo" class="accordion-collapse collapse has_child" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                       <div class="row align-items-center">
-                        <div class="col-lg-1 width_75 width_130">
+                        <div class="col-lg-1 width_75 width_130 left_child_line">
                           <button class="accordion-button plus_center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="true" aria-controls="flush-collapseThree">
                             <i class="fa-solid fa-chevron-right"></i>
                           </button>
@@ -434,7 +438,7 @@
 
                     <div id="flush-collapseThree" class="accordion-collapse collapse has_sub_child" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                       <div class="row align-items-center">
-                        <div class="col-lg-1 width_75 width_130">
+                        <div class="col-lg-1 width_75 width_130 left_child_line">
                         </div>
                         <div class="col-lg-10">
                           <div class="collapas_img">

@@ -105,12 +105,27 @@ jQuery(document).ready(function($){
 
   jQuery(document).ready(function($){
     jQuery(".check").on('click',function(e){
-      // console.log('clicked');
-      $("#panel1Content").collapse('show');
+        $("#flush-collapseThree").collapse('show');
+      $("#flush-collapseOne").collapse('show');
+      $("#flush-collapseTwo").collapse('show');
     });
     
     jQuery(".doCheck").on('click',function(e){
-      $("#panel1Content").collapse('hide');
+      $("#flush-collapseOne").collapse('hide');
+      $("#flush-collapseTwo").collapse('hide');
+      $("#flush-collapseThree").collapse('hide');
     });
+
+    jQuery(".list_tree_icon").click(function(e){
+        $(".list_tree_btn").show();
+        $(".hide_now").hide();
+    });
+    jQuery(".grid_tree").click(function(e){
+        $(".list_tree_btn").hide();
+        $(".hide_now").show();
+    });
+    
+
   });
+  
   
