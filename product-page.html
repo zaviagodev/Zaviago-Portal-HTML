@@ -488,7 +488,18 @@
 
                                             countNumOfValues();
                                         }
+                                        document.getElementById("option-value").value = "";
                                     }
+
+                                    // Remove the last value when pressing backspace
+                                    document.getElementById("option-value").addEventListener("keydown", function(e){
+                                        let optionValue = document.getElementById("option-value").value;
+                                        let addedOption = document.getElementById("added-option");
+                                        if (e.key == "Backspace" && optionValue === ""){
+                                            addedOption.removeChild(optionValuesVariant[optionValuesVariant.length - 1]);
+                                            countNumOfValues()
+                                        }
+                                    })
 
                                     window.onload = function(){countNumOfValues()};
                                     optionValueBtn.addEventListener("click", createValue)
