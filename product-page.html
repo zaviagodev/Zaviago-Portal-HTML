@@ -760,7 +760,7 @@
                                 </div>
                                 <div class="input-group">
                                     <div class="input-group-text no-bg general-text">฿</div>
-                                    <input type="text" id="full-price" class="form-control no-border-left">
+                                    <input type="text" id="full-price" class="form-control no-border-left" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                                 </div>
                             </div>
         
@@ -772,7 +772,7 @@
                                 </div>
                                 <div class="input-group">
                                     <div class="input-group-text no-bg general-text">฿</div>
-                                    <input type="text" id="cost" class="form-control no-border-left">
+                                    <input type="text" id="cost" class="form-control no-border-left" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                                 </div>
                             </div>
                         </div>
@@ -797,7 +797,7 @@
                             </div>
                             <div class="input-group">
                                 <div class="input-group-text no-bg currency disabled-baht general-text">฿</div>
-                                <input type="text" id="discount" class="form-control no-border-left" disabled>
+                                <input type="text" id="discount" class="form-control no-border-left" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" disabled>
                             </div>
                         </div>
     
@@ -809,7 +809,7 @@
                             </div>
                             <div class="input-group">
                                 <div class="input-group-text no-bg currency disabled-baht general-text">฿</div>
-                                <input type="text" id="sale-price" class="form-control no-border-left" disabled>
+                                <input type="text" id="sale-price" class="form-control no-border-left" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" disabled>
                             </div>
                         </div>
     
