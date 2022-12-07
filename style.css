@@ -1072,6 +1072,10 @@ input:checked + .slider:before {
     border-right:none;
 }
 
+#added-option {
+    flex-wrap:wrap;
+}
+
 #categories-search{
     border-right:none;
 }
