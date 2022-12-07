@@ -51,7 +51,7 @@
                             <h2 class="heading_h2"><span id="product-name-header">Add product </span>
                                 <span class="badge rounded-pill" style="color:inherit;background-color:#D9D9D9;">
                                     <span class="circle d-inline-block">&nbsp;</span> 
-                                    <span id="cate">Add new</span>
+                                    <span class="d-inline-block" id="cate">Add new</span>
                                 </span>
                             </h2>
                         </div>
@@ -168,8 +168,8 @@
     
                             saveDraft.addEventListener("click", function(event){
                                 let productNameHeader = document.getElementById("product-name-header");
-                                let productNameInput = document.getElementById("product-name").value;
-    
+                                var productNameInput = document.getElementById("product-name").value;
+
                                 event.preventDefault();
                                 if (productNameInput === ""){
                                     productNameHeader.innerHTML = "Add product";
@@ -178,10 +178,14 @@
                                 }
                             });
 
+
+
                             cancelAdd.addEventListener("click", function(event){
                                 event.preventDefault();
                                 location.reload();
                             })
+
+
                         </script>
                         <div class="row mt-4">
                             <div class="col-sm-6 text-start">
@@ -212,8 +216,8 @@
                                     <i class="fa-solid fa-image" id="image"></i>
                                     <i class="fa-solid fa-face-smile" id="emoji"></i>
                                     <i class="fa-solid fa-ellipsis" id="more"></i>
-                                </div> 
-                                -->
+                                </div>  -->
+                               
                                 <textarea class="form-control" id="textarea-field"></textarea>
                             </div>
                             <div class="clearfix"></div>
@@ -339,8 +343,8 @@
                             <div class="col-sm-4">
                                 <h4 class="mb-2 heading_h4">Show in product page as:</h4>
                                 <div class="btn-group w-100">
-                                    <button type="button" class="btn btn-outline-light bg-white text-dark border bg_grey btn-selected"><i class="fa-solid fa-list"></i> List</button>
-                                    <button type="button" class="btn btn-outline-light bg-white text-dark border bg_grey"><i class="fa-solid fa-palette"></i> Color</button>
+                                    <button type="button" class="btn btn-outline-light bg-white text-dark border bg_grey btn-selected general-text"><i class="fa-solid fa-list"></i> List</button>
+                                    <button type="button" class="btn btn-outline-light bg-white text-dark border bg_grey btn-selected general-text"><i class="fa-solid fa-palette"></i> Color</button>
                                 </div>
                             </div>
                             <div class="mt-4">
@@ -436,10 +440,8 @@
                                         numOfOptionValues.innerText = optionValuesVariant.length;
                                     }
 
-
                                     function createValue(e){
-                                        let optionValue = document.getElementById("option-value").value;
-
+                                        var optionValue = document.getElementById("option-value").value;
                                         if (optionValue === "" || optionValuesVariant.length >= 20){
                                             e.preventDefault();
                                         } else {
@@ -483,6 +485,7 @@
                                             variants.appendChild(closeBtn);
 
                                             document.getElementById("added-option").appendChild(variants);
+
                                             countNumOfValues();
                                         }
                                     }
@@ -536,14 +539,14 @@
                                     <div class="row col float-start">
                                         <div class="col input-group">
                                             <div class="input-group-text no-bg general-text">฿</div>
-                                            <input type="text" class="form-control no-border-left" id="full-price-variant" name="full-price">
+                                            <input type="text" class="form-control no-border-left" id="full-price-variant" name="full-price" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                                         </div>
                                         <div class="col input-group">
                                             <div class="input-group-text no-bg general-text">฿</div>
-                                            <input type="text" class="form-control no-border-left" id="cost-variant" name="cost">
+                                            <input type="text" class="form-control no-border-left" id="cost-variant" name="cost" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                                         </div>
                                         <div class="col">
-                                            <input type="text" class="form-control" id="in-stock-variant" name="in-stock">
+                                            <input type="text" class="form-control" id="in-stock-variant" name="in-stock" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                                         </div>
                                     </div>
                                     <div class="col float-end pr-0 text-end">
@@ -578,17 +581,17 @@
                                                     <td>
                                                         <div class="input-group w-75">
                                                             <div class="input-group-text no-bg general-text">฿</div>
-                                                            <input type="text" class="form-control no-border-left full-price-table" name="full-price">
+                                                            <input type="text" class="form-control no-border-left full-price-table" name="full-price" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="input-group w-75">
                                                             <div class="input-group-text no-bg general-text">฿</div>
-                                                            <input type="text" class="form-control no-border-left cost-table" name="cost">
+                                                            <input type="text" class="form-control no-border-left cost-table" name="cost" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <input type="text" class="form-control w-75 in-stock-table" name="in-stock">
+                                                        <input type="text" class="form-control w-75 in-stock-table" name="in-stock" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                                                     </td>
                                                 </tr>
                                                 <tr class="each-stock">
@@ -602,17 +605,17 @@
                                                     <td>
                                                         <div class="input-group w-75">
                                                             <div class="input-group-text no-bg general-text">฿</div>
-                                                            <input type="text" class="form-control no-border-left full-price-table" name="full-price">
+                                                            <input type="text" class="form-control no-border-left full-price-table" name="full-price" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="input-group w-75">
                                                             <div class="input-group-text no-bg general-text">฿</div>
-                                                            <input type="text" class="form-control no-border-left cost-table" name="cost">
+                                                            <input type="text" class="form-control no-border-left cost-table" name="cost" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <input type="text" class="form-control w-75 in-stock-table" name="in-stock">
+                                                        <input type="text" class="form-control w-75 in-stock-table" name="in-stock" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                                                     </td>
                                                 </tr>
                                                 <tr class="each-stock">
@@ -626,17 +629,17 @@
                                                     <td>
                                                         <div class="input-group w-75">
                                                             <div class="input-group-text no-bg general-text">฿</div>
-                                                            <input type="text" class="form-control no-border-left full-price-table" name="full-price">
+                                                            <input type="text" class="form-control no-border-left full-price-table" name="full-price" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="input-group w-75">
                                                             <div class="input-group-text no-bg general-text">฿</div>
-                                                            <input type="text" class="form-control no-border-left cost-table" name="cost">
+                                                            <input type="text" class="form-control no-border-left cost-table" name="cost" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <input type="text" class="form-control w-75 in-stock-table" name="in-stock">
+                                                        <input type="text" class="form-control w-75 in-stock-table" name="in-stock" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -692,6 +695,10 @@
                                                 for (let i = 0; i < instockTable.length; i++){
                                                     instockTable[i].value = instockInput.value;
                                                 }
+
+                                                fullPriceInput.value = "";
+                                                costInput.value = "";
+                                                instockInput.value = "";
                                             }
                                         </script>
                                     </div>
@@ -712,10 +719,8 @@
                                 <div class="float-start">
                                     <h4 class="mb-2 heading_h4">In stock<span class="text-danger">*</span></h4>
                                 </div>
-                                <div class="float-end">
-                                    <p style="color:inherit" title="Header" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Content">
-                                        <i class="fa-solid fa-circle-question"></i>
-                                    </p>
+                                <div class="float-end" style="color:inherit" title="Header" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Content">
+                                    <i class="fa-solid fa-circle-question"></i>
                                 </div>
                                 <input type="text" class="form-control" id="stock" placeholder="Please add your stock">
                             </div>
@@ -725,10 +730,8 @@
                                 <div class="float-start">
                                     <h4 class="mb-2 heading_h4">Warehouse<span class="text-danger">*</span></h4>
                                 </div>
-                                <div class="float-end">
-                                    <p style="color:inherit" title="Header" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Content">
-                                        <i class="fa-solid fa-circle-question"></i>
-                                    </p>
+                                <div class="float-end" style="color:inherit" title="Header" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Content">
+                                    <i class="fa-solid fa-circle-question"></i>
                                 </div>
                                 <input type="text" class="form-control" id="warehouse" placeholder="Please add your Warehouse">
                             </div>
