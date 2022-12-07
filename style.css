@@ -871,7 +871,7 @@ Product Page
 	transform:translateY(3px);
 }
 
-.general-text,#value,#cate,input{
+.general-text,#value,#cate,input,#textarea-field{
 	font-size:12px !important;
 }
 
