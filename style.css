@@ -875,6 +875,10 @@ Product Page
 	font-size:12px !important;
 }
 
+#cate{
+	transform:translateY(-2px);
+}
+
 /* Checkbox */
 .switch {
     position: relative;
