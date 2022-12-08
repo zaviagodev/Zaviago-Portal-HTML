@@ -20,10 +20,12 @@
           <div class="side_bar">
             <!-------sidebar -------->
             <div class="d-flex flex-column flex-shrink-0 bg-white sidebar_icon">
-              <a href="/" class="d-block p-3 text-center" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
-                <img src="assets/images/dashboard-logo.png" class="img-fluid rounded-top" alt="">
-              </a>
-              <ul class="nav nav-pills nav-flush flex-column text-center">
+              <ul class="nav nav-pills nav-flush flex-column text-center sidebar_icon_ul">
+                <li class="active">
+                  <a href="#" class="nav-link py-3">
+                    <img src="assets/images/dashboard-logo.png" class="img-fluid rounded-top" alt="">
+                  </a>
+                </li>
                 <li>
                   <a href="#" class="nav-link py-3">
                   <img src="assets/images/dash_side_icon_1.png" class="img-fluid rounded-top" alt="">
@@ -116,12 +118,16 @@
                       Upgrade</a>
                   </button>
                 </div>
-                <div class="dropdown with_123 custom_dropdown no_border_borrom">
-                  <select readonly="" class="select dropdown-toggle border actiondropdown" name="woocommerce_currency_pos">
-                    <option value="">Clintons</option>
-                    <option value="">Published</option>
-                    <option value="">Move to Draft</option>
-                  </select>
+                <div class="dropdown custom_dropdown dashboard_custom_dropdown">
+                  <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Clintons<br>
+                    <span>1 member</span>
+                  </a>
+                
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Clintons 1</a></li>
+                    <li><a class="dropdown-item" href="#">Clintons 2</a></li>
+                  </ul>
                 </div>
                 <button type="button" class="invite_teammates">
                    <a href="">
@@ -146,12 +152,15 @@
                      view website.
                     </a>
                   </button>
-                  <div class="dropdown with_123 custom_dropdown no_border_borrom">
-                    <select readonly="" class="select dropdown-toggle border actiondropdown" name="woocommerce_currency_pos">
-                      <option value="">help</option>
-                      <option value="">help 1</option>
-                      <option value="">help 2</option>
-                    </select>
+                  <div class="dropdown custom_dropdown help_custom_dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      help
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">help 1</a></li>
+                      <li><a class="dropdown-item" href="#">help 2</a></li>
+                    </ul>
                   </div>
                 </div>
                 <div class="navbar_right">

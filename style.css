@@ -1412,8 +1412,82 @@ DashBoard
 }
 .between_menu {
 	width: 39px;
-	margin: 15px auto;
+	margin: 32px auto 0;
 	border: 1px solid rgba(149, 149, 149, 0.24) !important;
+}
+.dashboard_custom_dropdown {
+	width: 176px;
+}
+.dashboard_custom_dropdown .dropdown-toggle {
+	background: #FFFFFF;
+	border: 1px solid #E2E2E5;
+	border-radius: 10px 10px 0px 0px;
+	color: #314444 !important;
+	font-size: 18px !important;
+	padding: 9px 10px !important;
+	line-height: 18px;
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+}
+.dashboard_custom_dropdown .dropdown-toggle span {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 20px;
+	letter-spacing: -0.04em;
+	color: #7A7A7A;
+}
+.dashboard_custom_dropdown .btn.dropdown-toggle::after {
+	right: 14px;
+	background-image: url('assets/images/clinton.png');
+	top: 28%;
+}
+.dashboard_custom_dropdown .btn.dropdown-toggle.show::after {
+	top: 29%;
+	right: 18px;
+}
+.sidebar_icon ul li a {
+	border-radius: 50% !important;
+	width: 39px;
+	height: 39px;
+	padding: 0px !important;
+	margin: 0px auto;
+	margin-top: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sidebar_icon ul li a:hover {
+	background-color: #F5F5F5 !important;
+}
+.help_custom_dropdown a {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 13px !important;
+	line-height: 20px;
+	color: #314444 !important;
+	font-family: 'Poppins', sans-serif;
+}
+.help_custom_dropdown {
+	width: 78px;
+}
+.help_custom_dropdown .dropdown-menu {
+	min-width: 100%;
+}
+.help_custom_dropdown .btn.dropdown-toggle::after {
+	right: 14px;
+	background-image: url('assets/images/help.png');
+	top: 42%;
+}
+.help_custom_dropdown .btn.dropdown-toggle.show::after {
+	top: 40%;
+	right: 18px;
+	margin: 0px;
+}
+.sidebar_icon_ul li:first-child a {
+	margin-top: 10px;
+}
+.sidebar_icon_ul li.active a {
+	background-color: #F5F5F5 !important;
 }
 
 @media only screen and (max-width: 1200px)  {
