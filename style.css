@@ -1489,6 +1489,23 @@ DashBoard
 .sidebar_icon_ul li.active a {
 	background-color: #F5F5F5 !important;
 }
+.filter_right_icon i {
+	color: #8094AE !important;
+}
+.filter_right_icon i:hover {
+	color: #A8B6C7 !important;
+}
+.filter_right_icon .active i {
+	color: #1874FE !important;
+}
+.filter_right_icon #searchForm {
+	top: -7px;
+}
+.dash_sub_menu ul li.active a {
+	color: #5200FF;
+}
+
+
 
 @media only screen and (max-width: 1200px)  {
 	.table_img{
