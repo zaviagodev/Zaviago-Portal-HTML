@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body class="body_mian general-text">
+    <body class="body_mian general-text" id="product-page">
         <!-- search bar -->
         <div class="input-group input_group cust_search mb-3">
             <div class="input-group">
@@ -192,7 +192,8 @@
                                 <h4 class="heading_h4">Description</h4>
                             </div>
                             <div class="col-sm-6 text-end" id="names-on-description">
-                                <span class="badge text-dark general-text" id="name-des" style="background-color:#FED3D1">
+                                <!-- This badge is for the admins who are modifying, but will be used in the future, so I hide it -->
+                                <span class="badge text-dark general-text" id="name-des" style="background-color:#FED3D1;display:none">
                                     Thita
                                 </span>
                             </div>
