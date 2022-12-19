@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Order Details</title>
+  </head>
+  <body class="body_mian">
+
+    <section class="product_deatils_mian"> 
+      <div class="container">
+        <div class="row pt-4 pb-0 align-items-center">
+          <div class="col-sm-12 col-lg-12">
+            <div class="">
+              <h2 class="heading_h2 mb-2">Orders</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-lg-9">
+            <div class="btn-group white_group_btn bg_blue_btn" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-secondary active">All (5)</button>
+              <button type="button" class="btn btn-secondary">Trash (3)</button>
+              <button type="button" class="btn btn-secondary">Pending payment (2) </button>
+              <button type="button" class="btn btn-secondary">Processing (1)</button>
+              <button type="button" class="btn btn-secondary">Onhold  (2)</button>
+              <button type="button" class="btn btn-secondary">Cancelled (1)</button>
+              <button type="button" class="btn btn-secondary">Refunded (3)</button>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-3">
+            <div class="text-end">
+              <button type="button" class="btn global_Btn header_btn rounded-1 text-white">
+                <span class="me-2"><i class="fa-solid fa-plus"></i></span> Add order
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row mt-4">
+          <div class="col-sm-12 col-lg-12 left_product_deatils"> 
+              <div class="left_product_deatils_box_1 border p-4 rounded-1 bg-white">
+                <div class="row mb-3 post_filer align-items-center">
+                  <div class="col-sm-12 col-lg-4">
+                    <div class="filter_left align-items-center">
+                      <div class="dropdown with_123 custom_dropdown no_border_borrom">
+                        <a class="btn dropdown-toggle border" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Bulk Action
+                        </a>
+                      
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                          <li><a class="dropdown-item" href="#">Published</a></li>
+                          <li><a class="dropdown-item" href="#">Move to Draft</a></li>
+                        </ul>
+                      </div>
+
+                      <button type="button" class="btn btn-secondary global_Btn border bg-transparent"> 
+                        <a class="text_global_1 link" href="">Apply</a> 
+                      </button>
+                      
+                      <div class="dropdown with_123 custom_dropdown no_border_borrom">
+                        <a class="btn dropdown-toggle border" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          All dates
+                        </a>
+                      
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">All dates</a></li>
+                          <li><a class="dropdown-item" href="#">October 2022</a></li>
+                          <li><a class="dropdown-item" href="#">September 2022</a></li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-8">
+                    <div class="filter_right order_listing">
+                      
+                      <!----Search Bar----->
+    
+                      <div id="searchForm" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#searchForm" >
+                        <button id="searchForm_btn" class="accordion-button searchForm_btn_2 hide_icon bg-transparent p-0 search_back " type="button" data-bs-toggle="collapse" data-bs-target="#searchForm" aria-expanded="false" aria-controls="searchForm">
+                          <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <div class="input-group input_group cust_search">
+                          <input type="search" class="form-control border-0 bg-light" placeholder="search by patient nameor id">
+                          <span class="input-group-text bg-white"><i class="fa-solid fa-search"></i></span>
+                        </div>
+                      </div>
+    
+                      <button id="" class="accordion-button collapsed p-0 hide_icon advance_search advance_search_icon" type="button" data-bs-toggle="collapse" data-bs-target="#searchForm" aria-expanded="false" aria-controls="searchForm">
+                        <i class="fa-solid fa-search"></i>
+                      </button>
+    
+                      <!----Advance Setting----->
+                      <button type="button" class="btn btn-lg btn-primary bg-transparent p-0 advance_search me-4 ms-4" data-bs-toggle="modal" data-bs-target="#advance_search">
+                        <i class="fa-solid fa-bars"></i>
+                     </button>
+    
+                      <!----Setting----->
+                      <div class="dropdown custom_dropdown width_80 hide_icon setting_icon_1">
+                        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-gear"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Show</a></li>
+                          <li><a class="dropdown-item" href="#">5</a></li>
+                          <li><a class="dropdown-item" href="#">10</a></li>
+                          <li><a class="dropdown-item" href="#">15</a></li>
+                          <li><a class="dropdown-item" href="#">20</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="table-responsive border rounded-2 table_order table_order_list"> 
+                  <table class="table mb-0">
+                      <thead>
+                        <tr>
+                          <th class="text-center">
+                            <input class="form-check-input" type="checkbox" value="" id="คุณต้องการใบกำกับภาษีหรือไม่ ?">
+                          </th>
+                          <th>Order</th>
+                          <th>Date</th>
+                          <th>Status</th>
+                          <th>Total</th>
+                          <th>Chanal Order Number</th>
+                          <th>Slip</th>
+                          <th></th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <td class="text-center">
+                              <input class="form-check-input" type="checkbox" value="" id="คุณต้องการใบกำกับภาษีหรือไม่ ?">
+                            </td>
+                            <td> 
+                              <img src="assets/images/image_1.png" alt=""> #43  Zoe tamato x5
+                            </td>
+                            <td>20 mins ago</td>
+                            <td class="status"> <span class="orange">On hold</span> </td>
+                            <td>฿250.00</td>
+                            <td> <img class="me-1" src="assets/images/shopee.png" alt=""> 23413535YTYVWW</td>
+                            <td class="bold"> 
+                              <button type="button" class="btn btn-lg btn-primary view_slip_btn" data-bs-toggle="modal" data-bs-target="#view_slip">view slip</button>
+                            </td>
+                            <td class="bold text-center">
+                              <button class="accordion-button collapsed plus_center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                            </td>
+                            <td class="bold text-center">
+                              <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover mb-0">
+                                <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <i class="fa-solid fa-ellipsis"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                                  <li><a class="dropdown-item" href="#">Duplicate</a></li>
+                                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                        </tr>
+                        <tr id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <td class="text-center">
+                          </td>
+                          <td colspan="8">
+                              <div class="img_detail"><img src="assets/images/image_1.png" alt=""> #43  Zoe tamato x5</div>
+                              <div class="img_detail"><img src="assets/images/image_1.png" alt=""> #43  Zoe tamato x5</div>
+                              <div class="img_detail"><img src="assets/images/image_1.png" alt=""> #43  Zoe tamato x5</div>
+                              <div class="img_detail"><img src="assets/images/image_1.png" alt=""> #43  Zoe tamato x5</div>
+                              <div class="img_detail"><img src="assets/images/image_1.png" alt=""> #43  Zoe tamato x5</div>
+                              <div class="img_detail"><img src="assets/images/image_1.png" alt=""> #43  Zoe tamato x5</div>
+                          </td>
+                        </tr>
+                         
+                        <tr>
+                          <td class="text-center">
+                            <input class="form-check-input" type="checkbox" value="" id="คุณต้องการใบกำกับภาษีหรือไม่ ?">
+                          </td>
+                          <td> <img src="assets/images/image_1.png" alt=""> #43  Zoe tamato x5</td>
+                          <td>20 mins ago</td>
+                          <td class="status"> <span class="pink_light">Error</span> </td>
+                          <td>฿250.00</td>
+                          <td> <img class="me-1" src="assets/images/shopee.png" alt=""> 23413535YTYVWW</td>
+                          <td class="bold"> 
+                            <button type="button" class="btn btn-lg btn-primary view_slip_btn" data-bs-toggle="modal" data-bs-target="#view_slip">view slip</button>
+                          </td>
+                          <td class="bold text-center"><i class="fa-solid fa-plus"></i></td>
+                          <td class="bold text-center">
+                            <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover mb-0">
+                              <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis"></i>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Duplicate</a></li>
+                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="text-center">
+                            <input class="form-check-input" type="checkbox" value="" id="คุณต้องการใบกำกับภาษีหรือไม่ ?">
+                          </td>
+                          <td> <img src="assets/images/image_1.png" alt=""> #43  Zoe tamato x5</td>
+                          <td>20 mins ago</td>
+                          <td class="status"> <span class="blue_light"> Success </span> </td>
+                          <td>฿250.00</td>
+                          <td> <img class="me-1" src="assets/images/shopee.png" alt=""> 23413535YTYVWW</td>
+                          <td class="bold"> <u>view slip</u> </td>
+                          <td class="bold text-center"><i class="fa-solid fa-plus"></i></td>
+                          <td class="bold text-center">
+                            <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover mb-0">
+                              <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis"></i>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Duplicate</a></li>
+                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="text-center">
+                            <input class="form-check-input" type="checkbox" value="" id="คุณต้องการใบกำกับภาษีหรือไม่ ?">
+                          </td>
+                          <td> <img src="assets/images/image_1.png" alt=""> #43  Zoe tamato x5</td>
+                          <td>20 mins ago</td>
+                          <td class="status"> <span class="blue_light">On hold</span> </td>
+                          <td>฿250.00</td>
+                          <td> <img class="me-1" src="assets/images/shopee.png" alt=""> 23413535YTYVWW</td>
+                          <td class="bold"> <u>view slip</u> </td>
+                          <td class="bold text-center"><i class="fa-solid fa-plus"></i></td>
+                          <td class="bold text-center">
+                            <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover mb-0">
+                              <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis"></i>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Duplicate</a></li>
+                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="text-center">
+                            <input class="form-check-input" type="checkbox" value="" id="คุณต้องการใบกำกับภาษีหรือไม่ ?">
+                          </td>
+                          <td> <img src="assets/images/image_1.png" alt=""> #43  Zoe tamato x5</td>
+                          <td>20 mins ago</td>
+                          <td class="status"> <span class="blue_light">On hold</span> </td>
+                          <td>฿250.00</td>
+                          <td> <img class="me-1" src="assets/images/shopee.png" alt=""> 23413535YTYVWW</td>
+                          <td class="bold"> <u>view slip</u> </td>
+                          <td class="bold text-center"><i class="fa-solid fa-plus"></i></td>
+                          <td class="bold text-center">
+                            <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover mb-0">
+                              <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis"></i>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Duplicate</a></li>
+                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                  </table>
+              </div> 
+
+              <div class="row mt-4">
+                <div class="col-sm-12 col-lg-6">
+                  <div class="">
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-ellipsis"></i></a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                  <div class="global_drop global_drop_2 number_drop">
+                    Page
+                    <div class="dropdown bottom_number custom_dropdown no_border_borrom ms-2 me-2">
+                      <a class="btn dropdown-toggle border" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        1
+                      </a>
+                      
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                        <li><a class="dropdown-item" href="#">4</a></li>
+                      </ul>
+                    </div>
+                    Of 102
+                  </div>
+                </div>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+
+        
+    </section>
+
+
+  <!-- Modal HTML -->
+  <div id="view_slip" class="modal view_slip_modal fade" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"> <img src="assets/images/xmark-white.png" alt=""> </button>
+             <img class="img-fluid" src="assets/images/view_slip.png" alt="">
+          </div>
+      </div>
+  </div>
+
+ <!-- Modal HTML -->
+ <div id="advance_search" class="modal fade advance_search" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header p-4">
+          <h3 class="modal-title heading_h3">Advance Search</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"> 
+            <img src="assets/images/xmark.png" alt=""> 
+          </button>
+      </div>
+
+      <div class="modal-body p-4 pt-0 pb-5">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6">
+            <label for="date" class="col-sm-12 col-form-label">Order Status :</label>
+            <div class="dropdown custom_dropdown no_border_borrom left_align">
+              <a class="btn dropdown-toggle border" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                All Status
+              </a>
+            
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Pending payment</a></li>
+                <li><a class="dropdown-item" href="#">Processing</a></li>
+                <li><a class="dropdown-item" href="#">Payment Confirmed</a></li>
+                <li><a class="dropdown-item" href="#">Shipping</a></li>
+                <li><a class="dropdown-item" href="#">Ready To Ship</a></li>
+                <li><a class="dropdown-item" href="#">On hold</a></li>
+                <li><a class="dropdown-item" href="#">Completed</a></li>
+                <li><a class="dropdown-item" href="#">Cancelled</a></li>
+                <li><a class="dropdown-item" href="#">Refunded</a></li>
+                <li><a class="dropdown-item" href="#">Failed</a></li>
+                <li><a class="dropdown-item" href="#">Draft</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-6">
+            <label for="date" class="col-sm-12 col-form-label">Shipper :</label>
+            <div class="dropdown custom_dropdown no_border_borrom left_align">
+              <a class="btn dropdown-toggle border" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                All Shipper
+              </a>
+            
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Thailand Post</a></li>
+                <li><a class="dropdown-item" href="#">Kerry Express TH</a></li>
+                <li><a class="dropdown-item" href="#">J&T TH</a></li>
+                <li><a class="dropdown-item" href="#">Flash Express</a></li>
+                <li><a class="dropdown-item" href="#">BEST Express</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-sm-12 col-lg-6 date_piker">
+            <label for="date" class="col-sm-12 col-form-label">Date</label>
+            <div class="input-group date" id="datepicker">
+              <span class="input-group-append">
+                <span class="input-group-text bg-light d-block bg-transparent">
+                  <i class="fa fa-calendar"></i>
+                </span>
+              </span>
+              <input type="text" class="form-control border-start-0" placeholder="Date" id="date"/>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-6">
+            <label for="date" class="col-sm-12 col-form-label">Sale :</label>
+            <div class="dropdown custom_dropdown no_border_borrom left_align">
+              <a class="btn dropdown-toggle border" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                All Sale
+              </a>
+            
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Admin test 1</a></li>
+                <li><a class="dropdown-item" href="#">Admin test 2</a></li>
+                <li><a class="dropdown-item" href="#">Admin test 3</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-sm-12 col-lg-6">
+            <label for="date" class="col-sm-12 col-form-label">Channel :</label>
+            <div class="dropdown custom_dropdown no_border_borrom left_align">
+              <a class="btn dropdown-toggle border" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                All Status
+              </a>
+            
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Website</a></li>
+                <li><a class="dropdown-item" href="#">Shopee</a></li>
+                <li><a class="dropdown-item" href="#">Lazada</a></li>
+                <li><a class="dropdown-item" href="#">Other</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-6">
+            <label for="date" class="col-sm-12 col-form-label">Payment :</label>
+            <div class="dropdown custom_dropdown no_border_borrom left_align">
+              <a class="btn dropdown-toggle border" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                All Payment type
+              </a>
+            
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">ชำระเงินปลายทาง</a></li>
+                <li><a class="dropdown-item" href="#">Pay with Credit Card</a></li>
+                <li><a class="dropdown-item" href="#">Pay with QR Code</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-primary global_Btn m-0 me-2"> <span class="me-2"><i class="fa-solid fa-search"></i></span> Search</button>
+          <button type="button" class="btn btn-secondary global_Btn border m-0 bg-transparent text_global_1 ms-1 text_global_1_hover" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://kit.fontawesome.com/71c49ef016.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    
+  </body>
+</html>

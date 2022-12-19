@@ -100,6 +100,13 @@ jQuery(document).ready(function($){
         }
     });
 
+    jQuery('.show_btn_top').change(function(){
+        if($(this).is(":checked")) {
+            $('.show_when_check').addClass('Show_oncheck');
+        } else {
+            $('.show_when_check').removeClass('Show_oncheck');
+        }
+    });
   });
   
 
