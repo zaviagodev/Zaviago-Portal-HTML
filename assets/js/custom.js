@@ -107,6 +107,14 @@ jQuery(document).ready(function($){
             $('.show_when_check').removeClass('Show_oncheck');
         }
     });
+
+    jQuery('.bg_check').change(function(){
+        if($(this).is(":checked")) {
+            $('.check_img_des').addClass('change_bg');
+        } else {
+            $('.check_img_des').removeClass('change_bg');
+        }
+    });
   });
   
 
