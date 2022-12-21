@@ -9,23 +9,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    <title>Pages</title>
+    <title>Pages.</title>
   </head>
-  <body class="body_mian">
+  <body class="body_mian product_page">
 
     <div class="container">  
       <div class="row pt-4 pb-0 align-items-center">
         <div class="col-sm-12 col-lg-9">
           <div class="">
-            <h2 class="heading_h2 m-0">Pages</h2>
-            
+            <h2 class="heading_h2 m-0 mb-2 title_with_prod_count">Pages. <span class="prod_count font_12 text_purple">240</span> </h2>
+            <p class="pera font_14">Keep track of vendor and their security ratings.</p>
           </div>
         </div>
         <div class="col-sm-12 col-lg-3">
-          <div class="text-end">
+          <div class="text-end position_reltive">
             <button type="button" class="btn global_Btn header_btn rounded-1 text-white">
               <span class="me-2"><i class="fa-solid fa-plus"></i></span> Create New
             </button>
+
+            <div class="show_when_check">
+              <div class="Select_item_count"> <p class="pera">3 Selected</p> </div>
+              <button type="button" class="btn global_Btn header_btn rounded-1 text-white">
+                Discard
+              </button>
+              
+              <button type="button" class="btn global_Btn red_glob_btn rounded-1 text-white" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">
+                <span class="me-2"><i class="fa-duotone fa-trash-xmark"></i></span> Delete
+              </button>
+            </div>
+
           </div>
         </div>
       </div>
@@ -38,11 +50,11 @@
                 <h4 class="heading_h4">All pages</h4>
               </div>
             </div>
-            <div class="row mt-3 mb-3">
-              <div class="col-lg-6">
-                <h1 class="heading_h1">5</h1>
+            <div class="row mt-3 mb-3 align-items-center">
+              <div class="col-lg-8">
+                <h1 class="heading_h1 Space_Grotesk">9</h1>
               </div>
-              <div class="col-lg-6 text-end">
+              <div class="col-lg-4 text-end">
                 <span class="color_all bg_blue"></span> 
               </div>
             </div>
@@ -63,11 +75,11 @@
                 <h4 class="heading_h4">Published</h4>
               </div>
             </div>
-            <div class="row mt-3 mb-3">
-              <div class="col-lg-6">
-                <h1 class="heading_h1">3</h1>
+            <div class="row mt-3 mb-3 align-items-center">
+              <div class="col-lg-8">
+                <h1 class="heading_h1 Space_Grotesk">6</h1>
               </div>
-              <div class="col-lg-6 text-end">
+              <div class="col-lg-4 text-end">
                 <span class="color_all bg_green"></span> 
               </div>
             </div>
@@ -85,14 +97,14 @@
           <div class="box_filter border_radi_10 border bg-white bg_grey p_12">
             <div class="row">
               <div class="col-lg-12">
-                <h4 class="heading_h4">Draft</h4>
+                <h4 class="heading_h4">Unpublished</h4>
               </div>
             </div>
-            <div class="row mt-3 mb-3">
-              <div class="col-lg-6">
-                <h1 class="heading_h1">2</h1>
+            <div class="row mt-3 mb-3 align-items-center">
+              <div class="col-lg-8">
+                <h1 class="heading_h1 Space_Grotesk">3</h1>
               </div>
-              <div class="col-lg-6 text-end">
+              <div class="col-lg-4 text-end">
                 <span class="color_all bg_orange"></span> 
               </div>
             </div>
@@ -110,1025 +122,344 @@
           <div class="box_filter border_radi_10 border bg-white bg_grey p_12">
             <div class="row">
               <div class="col-lg-12">
-                <h4 class="heading_h4">Trash</h4>
+                <h4 class="heading_h4">Hidden</h4>
               </div>
             </div>
-            <div class="row mt-3 mb-3">
-              <div class="col-lg-6">
-                <h1 class="heading_h1">1</h1>
+            <div class="row mt-3 mb-3 align-items-center">
+              <div class="col-lg-8">
+                <h1 class="heading_h1 Space_Grotesk">3</h1>
               </div>
-              <div class="col-lg-6 text-end">
-                <span class="color_all bg_pink"></span> 
+              <div class="col-lg-4 text-end">
+                <span class="color_all bg_dark_pink"></span> 
               </div>
             </div>
             <div class="row">
               <div class="col-lg-12">
                 <p class="pera"> 
                   <span class="last_modify_text"> Last modify</span> 
-                  <span class="last_modify_text last_modify text_pink">Yesterday</span></p>
+                  <span class="last_modify_text last_modify text_dark_pink">Yesterday</span></p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="row mt-3">
-        <div class="col-lg-12">
-          <div class="left_product_deatils_box_1 border border_style_1 border_radi_10 bg-white p-4">
-            <div class="row mb-3 post_filer align-items-center">
-              <div class="col-sm-12 col-lg-4">
-                <div class="filter_left align-items-center">
-                  <div class="dropdown with_123 custom_dropdown no_border_borrom">
-                    <a class="btn dropdown-toggle border" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Bulk Action
-                    </a>
-                  
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                      <li><a class="dropdown-item" href="#">Published</a></li>
-                      <li><a class="dropdown-item" href="#">Unpublished</a></li>
-                    </ul>
-                  </div>
-                  <button type="button" class="btn btn-secondary Apply_btn_00 global_Btn border bg-transparent"> 
-                    <a class="text_global_1 Apply_btn_00 link" href="#">Apply</a> 
-                  </button>
-                  <div class="form-check m-0">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label text_global_1" for="flexCheckChecked">
-                      Select all
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-lg-8">
-                <div class="filter_right">
-                  <ul class="nav nav-tabs tabs_mian" id="myTab">
-                    <li class="nav-item">
-                        <a href="#list_view" class="nav-link " data-bs-toggle="tab">
-                          <i class="fa-solid fa-list"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#grid_view" class="nav-link active" data-bs-toggle="tab">
-                          <i class="fa-solid fa-table-cells-large"></i>
-                        </a>
-                    </li>
-                  </ul>
-                  <!----Search Bar----->
-
-                  <div id="searchForm" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#searchForm" >
-                    <button id="searchForm_btn" class="accordion-button searchForm_btn_2 hide_icon bg-transparent p-0 search_back " type="button" data-bs-toggle="collapse" data-bs-target="#searchForm" aria-expanded="false" aria-controls="searchForm">
-                      <i class="fa-solid fa-arrow-left"></i>
-                    </button>
-                    <div class="input-group input_group cust_search">
-                      <input type="search" class="form-control border-0 bg-light" placeholder="search by patient nameor id">
-                      <span class="input-group-text bg-white"><i class="fa-solid fa-search"></i></span>
-                    </div>
-                  </div>
-
-                  <button id="" class="accordion-button collapsed p-0 hide_icon advance_search advance_search_icon me-4" type="button" data-bs-toggle="collapse" data-bs-target="#searchForm" aria-expanded="false" aria-controls="searchForm">
-                    <i class="fa-solid fa-search"></i>
-                  </button>
-
-                  <!----Setting----->
-                  <div class="dropdown custom_dropdown width_80 hide_icon setting_icon_1">
-                    <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="fa-solid fa-gear"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Show</a></li>
-                      <li><a class="dropdown-item" href="#">5</a></li>
-                      <li><a class="dropdown-item" href="#">10</a></li>
-                      <li><a class="dropdown-item" href="#">15</a></li>
-                      <li><a class="dropdown-item" href="#">20</a></li>
-                    </ul>
-                  </div>
-                </div>
+      <div class="filter_area_product bg_light_gray mb-4 mt-4">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-lg-4">
+            <div class="filter_left align-items-center">
+              <div class="form-check m-0">
+                <input class="form-check-input show_btn_top" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label black_dark" for="flexCheckChecked">
+                  Displaying <b>20</b> of <b>50</b> items
+                </label>
               </div>
             </div>
-
-            <div class="tab-content">
-              <div class="grid_view tab-pane fade show active" id="grid_view">
-
-                <div class="row">
-
-                  <div class="col-lg-4 col-sm-12">
-                    <div class="border_radi_10 border bg-white p_12 article article_1">
-                      <div class="row card_front">
-                        <div class="col-lg-8">
-                          <h3 class="mb-1 heading_h3">Homepage</h3>
-                          <p class="date pt-2 pb-3 pera">Dec22, 2022</p>
-                          <p class="mt-3 pera"> 
-                            <span class="last_modify_text text_green"> Last modify</span> 
-                            <span class="last_modify_text text_green">Yesterday</span>
-                          </p>
-                        </div>
-
-                        <div class="col-lg-4 text-center">
-    
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-    
-                          <div class="dropdown custom_dropdown width_100 bg_green no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Published
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Unpublished</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-    
-                      <div class="row border_radi_10 card_back">
-                        <div class="col-lg-8">
-                          <h3 class="mb-1 heading_h3">
-                            <div class="form-check m-0">
-                              <input class="form-check-input border_blue_1" type="checkbox" value="" id="atical_Checked">
-                            </div>
-                            Homepage
-                          </h3>
-                          <p class="date pt-2 pb-3 pera">Dec22, 2022</p>
-                          <p class="mt-3 pera"> 
-                            <span class="last_modify_text text_green"> Last modify</span> 
-                            <span class="last_modify_text text_green">Yesterday</span>
-                          </p>
-                        </div>
-                        <div class="col-lg-4 text-center">
-    
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-    
-                          <div class="dropdown custom_dropdown width_100 bg_green no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Published
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Unpublished</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  
-                  <div class="col-lg-4 col-sm-12">
-                    <div class="border_radi_10 border bg-white p_12 article article_2">
-                      <div class="row card_front">
-                        <div class="col-lg-8">
-                          <h3 class="mb-1 heading_h3">Homepage</h3>
-                          <p class="date pt-2 pb-3 pera">Dec22, 2022</p>
-                          <p class="mt-3 pera"> 
-                            <span class="last_modify_text text_orange"> Last modify</span> 
-                            <span class="last_modify_text text_orange">Yesterday</span>
-                          </p>
-                        </div>
-
-                        <div class="col-lg-4 text-center">
-    
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-    
-                          <div class="dropdown custom_dropdown width_100 bg_orange no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Unpublished
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Unpublished</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-    
-                      <div class="row border_radi_10 card_back">
-                        <div class="col-lg-8">
-                          <h3 class="mb-1 heading_h3">
-                            <div class="form-check m-0">
-                              <input class="form-check-input border_blue_2" type="checkbox" value="" id="atical_Checked">
-                            </div>
-                            Homepage
-                          </h3>
-                          <p class="date pt-2 pb-3 pera">Dec22, 2022</p>
-                          <p class="mt-3 pera"> 
-                            <span class="last_modify_text text_orange"> Last modify</span> 
-                            <span class="last_modify_text text_orange">Yesterday</span>
-                          </p>
-                        </div>
-                        <div class="col-lg-4 text-center">
-    
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-    
-                          <div class="dropdown custom_dropdown width_100 bg_orange no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Unpublished
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Unpublished</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  
-                  <div class="col-lg-4 col-sm-12">
-                    <div class="border_radi_10 border bg-white p_12 article article_3">
-                      <div class="row card_front">
-                        <div class="col-lg-8">
-                          <h3 class="mb-1 heading_h3">Homepage</h3>
-                          <p class="date pt-2 pb-3 pera">Dec22, 2022</p>
-                          <p class="mt-3 pera"> 
-                            <span class="last_modify_text text_pink"> Last modify</span> 
-                            <span class="last_modify_text text_pink">Yesterday</span>
-                          </p>
-                        </div>
-
-                        <div class="col-lg-4 text-center">
-    
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-    
-                          <div class="dropdown custom_dropdown width_100 bg_pink no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Trash
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Restore</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-    
-                      <div class="row border_radi_10 card_back">
-                        <div class="col-lg-8">
-                          <h3 class="mb-1 heading_h3">
-                            <div class="form-check m-0">
-                              <input class="form-check-input border_blue_3" type="checkbox" value="" id="atical_Checked">
-                            </div>
-                            Homepage
-                          </h3>
-                          <p class="date pt-2 pb-3 pera">Dec22, 2022</p>
-                          <p class="mt-3 pera"> 
-                            <span class="last_modify_text text_pink"> Last modify</span> 
-                            <span class="last_modify_text text_pink">Yesterday</span>
-                          </p>
-                        </div>
-                        <div class="col-lg-4 text-center">
-    
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-    
-                          <div class="dropdown custom_dropdown width_100 bg_pink no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Trash
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Restore</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="row row mt-3 mb-3">
-
-                  <div class="col-lg-4 col-sm-12">
-                    <div class="border_radi_10 border bg-white p_12 article article_4">
-                      <div class="row card_front">
-                        <div class="col-lg-8">
-                          <h3 class="mb-1 heading_h3">Homepage</h3>
-                          <p class="date pt-2 pb-3 pera">Dec22, 2022</p>
-                          <p class="mt-3 pera"> 
-                            <span class="last_modify_text text_green"> Last modify</span> 
-                            <span class="last_modify_text text_green">Yesterday</span>
-                          </p>
-                        </div>
-
-                        <div class="col-lg-4 text-center">
-    
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-    
-                          <div class="dropdown custom_dropdown width_100 bg_green no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Published
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Unpublished</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-    
-                      <div class="row border_radi_10 card_back">
-                        <div class="col-lg-8">
-                          <h3 class="mb-1 heading_h3">
-                            <div class="form-check m-0">
-                              <input class="form-check-input border_blue_4" type="checkbox" value="" id="atical_Checked">
-                            </div>
-                            Homepage
-                          </h3>
-                          <p class="date pt-2 pb-3 pera">Dec22, 2022</p>
-                          <p class="mt-3 pera"> 
-                            <span class="last_modify_text text_green"> Last modify</span> 
-                            <span class="last_modify_text text_green">Yesterday</span>
-                          </p>
-                        </div>
-                        <div class="col-lg-4 text-center">
-    
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-    
-                          <div class="dropdown custom_dropdown width_100 bg_green no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Published
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Unpublished</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  
-                  <div class="col-lg-4 col-sm-12">
-                    <div class="border_radi_10 border bg-white p_12 article article_5">
-                      <div class="row card_front">
-                        <div class="col-lg-8">
-                          <h3 class="mb-1 heading_h3">Homepage</h3>
-                          <p class="date pt-2 pb-3 pera">Dec22, 2022</p>
-                          <p class="mt-3 pera"> 
-                            <span class="last_modify_text text_green"> Last modify</span> 
-                            <span class="last_modify_text text_green">Yesterday</span>
-                          </p>
-                        </div>
-
-                        <div class="col-lg-4 text-center">
-    
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-    
-                          <div class="dropdown custom_dropdown width_100 bg_green no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Published
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Unpublished</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-    
-                      <div class="row border_radi_10 card_back">
-                        <div class="col-lg-8">
-                          <h3 class="mb-1 heading_h3">
-                            <div class="form-check m-0">
-                              <input class="form-check-input border_blue_5" type="checkbox" value="" id="atical_Checked">
-                            </div>
-                            Homepage
-                          </h3>
-                          <p class="date pt-2 pb-3 pera">Dec22, 2022</p>
-                          <p class="mt-3 pera"> 
-                            <span class="last_modify_text text_green"> Last modify</span> 
-                            <span class="last_modify_text text_green">Yesterday</span>
-                          </p>
-                        </div>
-                        <div class="col-lg-4 text-center">
-    
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-    
-                          <div class="dropdown custom_dropdown width_100 bg_green no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Published
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Unpublished</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  
-                  <div class="col-lg-4 col-sm-12">
-                    <div class="border_radi_10 border bg-white p_12 article article_6">
-                      <div class="row card_front">
-                        <div class="col-lg-8">
-                          <h3 class="mb-1 heading_h3">Homepage</h3>
-                          <p class="date pt-2 pb-3 pera">Dec22, 2022</p>
-                          <p class="mt-3 pera"> 
-                            <span class="last_modify_text text_green"> Last modify</span> 
-                            <span class="last_modify_text text_green">Yesterday</span>
-                          </p>
-                        </div>
-
-                        <div class="col-lg-4 text-center">
-    
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-    
-                          <div class="dropdown custom_dropdown width_100 bg_green no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Published
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Unpublished</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-    
-                      <div class="row border_radi_10 card_back">
-                        <div class="col-lg-8">
-                          <h3 class="mb-1 heading_h3">
-                            <div class="form-check m-0">
-                              <input class="form-check-input border_blue_6" type="checkbox" value="" id="atical_Checked">
-                            </div>
-                            Homepage
-                          </h3>
-                          <p class="date pt-2 pb-3 pera">Dec22, 2022</p>
-                          <p class="mt-3 pera"> 
-                            <span class="last_modify_text text_green"> Last modify</span> 
-                            <span class="last_modify_text text_green">Yesterday</span>
-                          </p>
-                        </div>
-                        <div class="col-lg-4 text-center">
-    
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-    
-                          <div class="dropdown custom_dropdown width_100 bg_green no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Published
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Unpublished</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="row">
-
-                  <div class="col-lg-4 col-sm-12">
-                    <div class="border_radi_10 border bg-white p_12 article article_7">
-                      <div class="row card_front">
-                        <div class="col-lg-8">
-                          <h3 class="mb-1 heading_h3">Homepage</h3>
-                          <p class="date pt-2 pb-3 pera">Dec22, 2022</p>
-                          <p class="mt-3 pera"> 
-                            <span class="last_modify_text text_green"> Last modify</span> 
-                            <span class="last_modify_text text_green">Yesterday</span>
-                          </p>
-                        </div>
-
-                        <div class="col-lg-4 text-center">
-    
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-    
-                          <div class="dropdown custom_dropdown width_100 bg_green no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Published
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Unpublished</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-    
-                      <div class="row border_radi_10 card_back">
-                        <div class="col-lg-8">
-                          <h3 class="mb-1 heading_h3">
-                            <div class="form-check m-0">
-                              <input class="form-check-input border_blue_7" type="checkbox" value="" id="atical_Checked">
-                            </div>
-                            Homepage
-                          </h3>
-                          <p class="date pt-2 pb-3 pera">Dec22, 2022</p>
-                          <p class="mt-3 pera"> 
-                            <span class="last_modify_text text_green"> Last modify</span> 
-                            <span class="last_modify_text text_green">Yesterday</span>
-                          </p>
-                        </div>
-                        <div class="col-lg-4 text-center">
-    
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-    
-                          <div class="dropdown custom_dropdown width_100 bg_green no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Published
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Unpublished</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  
-                  <div class="col-lg-4 col-sm-12">
-                    <div class="border_radi_10 border bg-white p_12 article article_8">
-                      <div class="row card_front">
-                        <div class="col-lg-8">
-                          <h3 class="mb-1 heading_h3">Homepage</h3>
-                          <p class="date pt-2 pb-3 pera">Dec22, 2022</p>
-                          <p class="mt-3 pera"> 
-                            <span class="last_modify_text text_green"> Last modify</span> 
-                            <span class="last_modify_text text_green">Yesterday</span>
-                          </p>
-                        </div>
-
-                        <div class="col-lg-4 text-center">
-    
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-    
-                          <div class="dropdown custom_dropdown width_100 bg_green no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Published
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Unpublished</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-    
-                      <div class="row border_radi_10 card_back">
-                        <div class="col-lg-8">
-                          <h3 class="mb-1 heading_h3">
-                            <div class="form-check m-0">
-                              <input class="form-check-input border_blue_8" type="checkbox" value="" id="atical_Checked">
-                            </div>
-                            Homepage
-                          </h3>
-                          <p class="date pt-2 pb-3 pera">Dec22, 2022</p>
-                          <p class="mt-3 pera"> 
-                            <span class="last_modify_text text_green"> Last modify</span> 
-                            <span class="last_modify_text text_green">Yesterday</span>
-                          </p>
-                        </div>
-                        <div class="col-lg-4 text-center">
-    
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-    
-                          <div class="dropdown custom_dropdown width_100 bg_green no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Published
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Unpublished</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  
-                  <div class="col-lg-4 col-sm-12">
-                    <div class="border_radi_10 border bg-white p_12 article article_9">
-                      <div class="row card_front">
-                        <div class="col-lg-8">
-                          <h3 class="mb-1 heading_h3">Homepage</h3>
-                          <p class="date pt-2 pb-3 pera">Dec22, 2022</p>
-                          <p class="mt-3 pera"> 
-                            <span class="last_modify_text text_green"> Last modify</span> 
-                            <span class="last_modify_text text_green">Yesterday</span>
-                          </p>
-                        </div>
-
-                        <div class="col-lg-4 text-center">
-    
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-    
-                          <div class="dropdown custom_dropdown width_100 bg_green no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Published
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Unpublished</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-    
-                      <div class="row border_radi_10 card_back">
-                        <div class="col-lg-8">
-                          <h3 class="mb-1 heading_h3">
-                            <div class="form-check m-0">
-                              <input class="form-check-input border_blue_9" type="checkbox" value="" id="atical_Checked">
-                            </div>
-                            Homepage
-                          </h3>
-                          <p class="date pt-2 pb-3 pera">Dec22, 2022</p>
-                          <p class="mt-3 pera"> 
-                            <span class="last_modify_text text_green"> Last modify</span> 
-                            <span class="last_modify_text text_green">Yesterday</span>
-                          </p>
-                        </div>
-                        <div class="col-lg-4 text-center">
-    
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-    
-                          <div class="dropdown custom_dropdown width_100 bg_green no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Published
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Unpublished</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div class="list_view list_view_pages tab-pane fade " id="list_view">
-                <div class="table-responsive border_style_1 rounded-2 table_order align-items-center"> 
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th class="text-center"> </th>
-                        <th class="ps-1">Title</th>
-                        <th>Status</th>
-                        <th></th>
-                      </tr>
-                    </thead>
-
-                    <tbody>
-
-                      <tr class="listview_tr_1">
-                        <td width="60px" class="pe-0">
-                          <input class="form-check-input check_list check_list_1 me-2" type="checkbox" value="" id="">
-                        </td>
-                        <td class="ps-1" width="70%">Homepage</td>
-                        <td> 
-                          <div class="dropdown custom_dropdown width_100 bg_green list_status no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Published
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Unpublished</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                        <td class="bold text-center">
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover mb-0">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr class="listview_tr_2">
-                        <td width="60px" class="pe-0">
-                          <input class="form-check-input check_list check_list_2 me-2" type="checkbox" value="" id="">
-                        </td>
-                        <td class="ps-1" width="70%">Homepage</td>
-                        <td> 
-                          <div class="dropdown custom_dropdown width_100 bg_green list_status no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Published
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Unpublished</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                        <td class="bold text-center">
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover mb-0">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr class="listview_tr_3">
-                        <td width="60px" class="pe-0">
-                          <input class="form-check-input check_list check_list_3 me-2" type="checkbox" value="" id="">
-                        </td>
-                        <td class="ps-1" width="70%">Homepage</td>
-                        <td> 
-                          <div class="dropdown custom_dropdown width_100 bg_orange list_status no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Draft
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Unpublished</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                        <td class="bold text-center">
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover mb-0">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr class="listview_tr_4">
-                        <td width="60px" class="pe-0">
-                          <input class="form-check-input check_list check_list_4 me-2" type="checkbox" value="" id="">
-                        </td>
-                        <td class="ps-1" width="70%">Homepage</td>
-                        <td> 
-                          <div class="dropdown custom_dropdown width_100 bg_pink list_status no_border_borrom on_hover_status">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Trash
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Published</a></li>
-                              <li><a class="dropdown-item" href="#">Trash</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                        <td class="bold text-center">
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover mb-0">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-
-            <div class="row mt-4">
-              <div class="col-sm-12 col-lg-6">
-                <div class="">
-                  <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                      <li class="page-item"><a class="page-link" href="#">Prev</a></li>
-                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-ellipsis"></i></a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">4</a></li>
-                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-              <div class="col-sm-12 col-lg-6">
-                <div class="global_drop global_drop_2 number_drop">
-                  Page
-                  <div class="dropdown bottom_number custom_dropdown no_border_borrom ms-2 me-2">
-                    <a class="btn dropdown-toggle border" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      1
+          </div>
+          <div class="col-sm-12 col-lg-8">
+            <div class="filter_right filter_right_product">
+              <ul class="nav nav-tabs tabs_mian" id="myTab">
+                <li class="nav-item">
+                    <a href="#list_view" class="nav-link " data-bs-toggle="tab">
+                      <i class="fa-duotone fa-list-timeline"></i>
                     </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#grid_view" class="nav-link active" data-bs-toggle="tab">
+                      <i class="fa-duotone fa-objects-column"></i>
+                    </a>
+                </li>
+              </ul>
+              <!----Search Bar----->
+
+              <div id="searchForm" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#searchForm" >
+                <button id="searchForm_btn" class="accordion-button searchForm_btn_2 hide_icon bg-transparent p-0 search_back " type="button" data-bs-toggle="collapse" data-bs-target="#searchForm" aria-expanded="false" aria-controls="searchForm">
+                  <i class="fa-duotone fa-arrow-left-long"></i>
+                </button>
+                <div class="input-group input_group cust_search">
+                  <input type="search" class="form-control border-0 bg-light" placeholder="search by patient nameor id">
+                  <span class="input-group-text bg-white">
+                    <i class="fa-duotone fa-magnifying-glass"></i>
+                  </span>
+                </div>
+              </div>
+
+              <button id="" class="accordion-button collapsed p-0 hide_icon advance_search advance_search_icon" type="button" data-bs-toggle="collapse" data-bs-target="#searchForm" aria-expanded="false" aria-controls="searchForm">
+                <i class="fa-duotone fa-magnifying-glass"></i>
+                
+              </button>
+
+              <!----Advance Setting----->
+              <button type="button" class="btn btn-lg btn-primary bg-transparent p-0 advance_search ms-4" data-bs-toggle="modal" data-bs-target="#advance_search">
+                <i class="fa-duotone fa-filter-list"></i>
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content product_layout">
+        <div class="grid_view pages_grid_main tab-pane fade show active" id="grid_view">
+          <div class="row">
+            <div class="col-lg-4 col-sm-12 mb-3">
+              <div class="border_radi_10 border bg-white p_12 article article_1">
+                <div class="row card_front">
+                  <div class="col-lg-8">
+                    <h3 class="heading_h3 title_with_desc">
+                      <div class="form-check m-0">
+                        <input class="form-check-input border_blue_1" type="checkbox" value="" id="atical_Checked">
+                      </div>
+                      <title>Name</title>
+                    </h3>
+                    <p class="mt-3 mb-3 pera black_dark">Create:Dec22, 2022</p>
+                    <p class="pera modify_bottom"> 
+                      <span class="last_modify_text"> Last modify</span> 
+                      <span class="last_modify_text last_modify text_green">2 Day ago</span>
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center feauter_img">
+                    <div class="dropdown product_stauts product_stauts_ellipsis">
+                      <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">View</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="dropdown product_stauts product_stauts_fixed">
+                      <a class="btn dropdown-toggle text_green publish_bg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-circle"></i> Published
+                      </a>
                     
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">2</a></li>
-                      <li><a class="dropdown-item" href="#">3</a></li>
-                      <li><a class="dropdown-item" href="#">4</a></li>
-                    </ul>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Published</a></li>
+                        <li><a class="dropdown-item" href="#">Unpublished</a></li>
+                      </ul>
+                    </div>
                   </div>
-                  Of 102
                 </div>
               </div>
             </div>
 
+            <div class="col-lg-4 col-sm-12 mb-3">
+              <div class="border_radi_10 border bg-white p_12 article article_1">
+                <div class="row card_front">
+                  <div class="col-lg-8">
+                    <h3 class="heading_h3 title_with_desc">
+                      <div class="form-check m-0">
+                        <input class="form-check-input border_blue_1" type="checkbox" value="" id="atical_Checked">
+                      </div>
+                      <title>Name</title>
+                    </h3>
+                    <p class="mt-3 mb-3 pera black_dark">Create:Dec22, 2022</p>
+                    <p class="pera modify_bottom"> 
+                      <span class="last_modify_text"> Last modify</span> 
+                      <span class="last_modify_text last_modify text_orange">2 Day ago</span>
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center feauter_img">
+                    <div class="dropdown product_stauts product_stauts_ellipsis">
+                      <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">View</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="dropdown product_stauts product_stauts_fixed">
+                      <a class="btn dropdown-toggle unpublish_btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-circle"></i> Unpublished
+                      </a>
+                    
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Published</a></li>
+                        <li><a class="dropdown-item" href="#">Unpublished</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 mb-3">
+              <div class="border_radi_10 border bg-white p_12 article article_1">
+                <div class="row card_front">
+                  <div class="col-lg-8">
+                    <h3 class="heading_h3 title_with_desc">
+                      <div class="form-check m-0">
+                        <input class="form-check-input border_blue_1" type="checkbox" value="" id="atical_Checked">
+                      </div>
+                      <title>Name</title>
+                    </h3>
+                    <p class="mt-3 mb-3 pera black_dark">Create:Dec22, 2022</p>
+                    <p class="pera modify_bottom"> 
+                      <span class="last_modify_text"> Last modify</span> 
+                      <span class="last_modify_text last_modify text_orange">2 Day ago</span>
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center feauter_img">
+                    <div class="dropdown product_stauts product_stauts_ellipsis">
+                      <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Restore</a></li>
+                        <li><a class="dropdown-item" href="#">Delete Permanently</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="dropdown product_stauts product_stauts_fixed">
+                      <a class="btn dropdown-toggle trash_btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-circle"></i> Trash
+                      </a>
+                    
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Restore</a></li>
+                        <li><a class="dropdown-item" href="#">Delete Permanently</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="list_view tab-pane fade " id="list_view">
+          <div class="product_list pages_list">
+            <ul class="product_list_ul">
+              <li class="check_img_des">
+                <div class="list_inner">
+                  <div class="left_side">
+                    <div class="check_box">
+                      <input class="form-check-input bg_check" type="checkbox" value="" id="">
+                    </div>
+                    <div class="feartured_img">
+                      <img class="img-fluid ms-1 table_img" src="assets/images/headphone.png" alt=""> 
+                    </div>
+                    <div class="details">
+                      <p class="pera">Sony WH-1000XM5 
+                      </p> 
+                    </div>
+                  </div>
+  
+                  <div class="right_side">
+                    <div class="modify_people_outer column"> 
+                      <div class="people_icon">
+                        <img src="assets/images/active_user_1.png" alt="">
+                        <img src="assets/images/active_user_2.png" alt="">
+                        <img src="assets/images/active_user_3.png" alt="">
+                        <img src="assets/images/active_user_4.png" alt="">
+                      </div>
+                      <div class="modify_people text_green">
+                        <i class="fa-solid fa-circle"></i> 4 Peoples modify
+                      </div>
+                    </div>
+                    <div class="dropdown product_stauts column">
+                      <a class="btn dropdown-toggle text_green publish_bg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-circle"></i> Published
+                      </a>
+  
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Published</a></li>
+                        <li><a class="dropdown-item" href="#">Unpublished</a></li>
+                      </ul>
+                    </div>
+  
+  
+                    <div class="dropdown product_stauts product_stauts_ellipsis column">
+                      <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">View</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li> 
+
+              <li class="check_img_des">
+                <div class="list_inner">
+                  <div class="left_side">
+                    <div class="check_box">
+                      <input class="form-check-input bg_check" type="checkbox" value="" id="">
+                    </div>
+                    <div class="feartured_img">
+                      <img class="img-fluid ms-1 table_img" src="assets/images/headphone.png" alt=""> 
+                    </div>
+                    <div class="details">
+                      <p class="pera">Sony WH-1000XM5 
+                      </p> 
+                    </div>
+                  </div>
+  
+                  <div class="right_side">
+                    <div class="modify_people_outer column"> 
+                      <p class="pera Poppins modify_people "> 
+                        <span class="last_modify_text"> Last modify</span> 
+                        <span class="last_modify_text last_modify text_green">2 Day ago</span>
+                      </p>
+                    </div>
+                    <div class="dropdown product_stauts column">
+                      <a class="btn dropdown-toggle text_green publish_bg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-circle"></i> Published
+                      </a>
+  
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Published</a></li>
+                        <li><a class="dropdown-item" href="#">Unpublished</a></li>
+                      </ul>
+                    </div>
+  
+  
+                    <div class="dropdown product_stauts product_stauts_ellipsis column">
+                      <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">View</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li> 
+            
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-sm-12 col-lg-12">
+          <div class="global_drop global_drop_2 number_drop">
+            <div class="left_pagi pagi_arrow disable"><i class="fa-duotone fa-circle-chevron-left"></i></div>
+            Page
+            <div class="dropdown pagination_dropdown">
+              <a class="btn dropdown-toggle border" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                1
+              </a>
+              
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">2</a></li>
+                <li><a class="dropdown-item" href="#">3</a></li>
+                <li><a class="dropdown-item" href="#">4</a></li>
+              </ul>
+            </div>
+            Of 102
+            <div class="right_pagin pagi_arrow"> <i class="fa-duotone fa-circle-chevron-right"></i> </div>
           </div>
         </div>
       </div>
@@ -1140,7 +471,7 @@
       <div class="delete-modal modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header pb-3">
-            <h3 class="subheadig_attributr">Are you sure</h3>
+            <h3 class="subheadig_attributr heading_h3">Are you sure</h3>
             <button type="button" class="btn-close new-btn-close" data-bs-dismiss="modal">              
               <img src="assets/images/xmark.png" alt=""> 
             </button>
@@ -1150,30 +481,55 @@
             <div class="row">
               <div class="col-sm-12 col-lg-8 mt-1">
                 <div class="label_outer m-0">
-                  <p>Are you sure you want to delete them?</p>
+                  <p class="pera">Are you sure you want to delete them?</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="modal-footer p-4">
-            <button type="button" class="btn btn-primary global_Btn m-0 me-2"> Delete</button>
-            <button type="button" class="btn btn-secondary global_Btn border m-0 bg-transparent text_global_1 ms-1 text_global_1_hover" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary global_Btn red_glob_btn m-0 me-2"> Delete</button>
+            <button type="button" class="btn btn-secondary global_Btn cancel_btn m-0 bg-transparent text_global_1 ms-1 text_global_1_hover" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>
       </div>
     </div>
 
-    
+
+
+
+    <div id="set_regular_price" class="modal delete_modal set_regular_price fade show" tabindex="-1">
+      <div class="delete-modal modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header pb-3">
+            <h3 class="subheadig_attributr heading_h3">Set the Regular price value</h3>
+            <button type="button" class="btn-close new-btn-close" data-bs-dismiss="modal">              
+              <img src="assets/images/xmark.png" alt=""> 
+            </button>
+          </div>
+
+          <div class="modal-body p-4 pb-5 pt-4">
+            <div class="row">
+              <div class="col-sm-12 col-lg-12">
+                <div class="label_outer m-0">
+                  <input type="text" class="form-control" placeholder="฿0">
+                  <button type="button" class="btn btn-primary global_Btn m-0 me-2"> Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   
 
 
 
     <!-- Modal HTML -->
     <div id="advance_search" class="modal fade advance_search" tabindex="-1">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header p-4">
-              <h3 class="modal-title">Filter</h3>
+              <h3 class="modal-title heading_h3">Filter</h3>
               <button type="button" class="btn-close" data-bs-dismiss="modal"> 
                 <img src="assets/images/xmark.png" alt=""> 
               </button>
@@ -1206,7 +562,7 @@
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Published</a></li>
                     <li><a class="dropdown-item" href="#">Draft</a></li>
-                    <li><a class="dropdown-item" href="#">Trash</a></li>
+                    <li><a class="dropdown-item" href="#">Hidden</a></li>
                   </ul>
                 </div>
               </div>
@@ -1230,15 +586,15 @@
           </div>
 
           <div class="modal-footer p-4">
-            <button type="button" class="btn btn-primary global_Btn m-0 me-2"> <span class="me-2"><i class="fa-solid fa-search"></i></span> Search</button>
-              <button type="button" class="btn btn-secondary global_Btn border m-0 bg-transparent text_global_1 ms-1 text_global_1_hover" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary global_Btn m-0 me-2"> <span class="me-2"><i class="fa-duotone fa-magnifying-glass"></i></span> Search</button>
+              <button type="button" class="btn btn-secondary cancel_btn" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://kit.fontawesome.com/71c49ef016.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2bc614ddce.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="assets/js/custom.js"></script>
