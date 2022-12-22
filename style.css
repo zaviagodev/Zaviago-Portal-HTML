@@ -35,13 +35,17 @@
 .Space_Grotesk{
 	font-family: 'Space Grotesk', sans-serif !important;
 }
+.inter{
+	font-family: 'Inter', sans-serif !important;
+}
 .global_Btn {
 	padding: 10px 25px;
 	background: #000000;
 	border: 1px solid #000000;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-size: 12px;
 	line-height: 14px;
+	font-weight: 600;
 }
 .global_Btn:hover {
 	background-color: #404040;;
@@ -210,6 +214,7 @@
 	font-size: 12px;
 	line-height: 16px;
 	color: #060606;
+	font-family: 'Poppins', sans-serif;
 }
 .last_modify{
 	font-size: 12px;
@@ -1651,7 +1656,7 @@ Product Page
 	width: 100%;
 	display: flex;
 	align-items: center;
-	padding: 12px;
+	padding: 26px 12px;
 	position: relative;
 }
 .product_list_ul .check_img_des .list_inner {
@@ -1824,8 +1829,9 @@ display: none;
 
 
 /******* Product pag status dropdown ********/
-.publish_bg{
+.publish_bg {
 	background: #ECFDF3;
+	width: 97px !important;
 }
 .dropdown.product_stauts .btn.dropdown-toggle::after{
 	display: none;
@@ -1949,6 +1955,9 @@ Category Pages listed
 Pages Table
 **************************/
 
+.font_600{
+	font-weight: 600 !important;
+}
 .title_with_desc {
 	display: flex;
 	align-items: center;
@@ -1986,7 +1995,13 @@ Pages Table
 	background-color: #FFF5E2;
 	color: #FFB32E;
 }
-.trash_btn{
+.trash_btn {
+	background-color: #FDECEC;
+	color: #D64752;
+	min-width: 73px !important;
+	height: 27px !important;
+}
+.trash_btn:hover {
 	background-color: #FDECEC;
 	color: #D64752;
 }
@@ -2032,9 +2047,23 @@ Pages Table
 	overflow: unset;
 	display: block;
 }
-
-
-
+.pages_grid_main .add_blue_border.article .form-check {
+	width: 27px;
+	overflow: unset;
+	padding-left: 27px !important;
+}
+.filter_area_product .form-check-label {
+	font-weight: 400;
+	font-size: 12px !important;
+}
+.Select_item_count .pera {
+	color: #667085;
+	font-size: 14px;
+}
+.red_glob_btn:focus {
+	background-color: #FF3030;
+	border-color: #FF3030;
+}
 
 
 
