@@ -47,10 +47,20 @@
 	line-height: 14px;
 	font-weight: 600;
 }
+.global_Btn:focus {
+	color: #fff;
+	background-color: #000000;
+	border-color: #000000;
+	box-shadow: 0 0 0 .25rem rgba(0, 0, 0, 0.5);
+}
 .global_Btn:hover {
 	background-color: #404040;;
 	border-color: #404040;
 	color: #fff;
+}
+.dropdown-item:focus {
+	color: #1e2125;
+	background-color: #ffffff;
 }
 .product_layout .row .add_blue_border {
 	border-color: #7F56D9 !important;
@@ -74,6 +84,9 @@
 .article .last_modify_text {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
+}
+.advance_search .no_border_borrom .dropdown-menu li a {
+	color: #060606;
 }
 .text_global_1{
 	color: #526484 !important;
