@@ -81,12 +81,16 @@
 	padding: 0 !important;
 	width: max-content !important;
 }
+body.body_mian .border {
+	border:1px solid #DCDFE9 !important;
+}
 .article .last_modify_text {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
 }
 .advance_search .no_border_borrom .dropdown-menu li a {
 	color: #060606;
+	font-family: 'Inter', sans-serif;
 }
 .text_global_1{
 	color: #526484 !important;
@@ -2077,7 +2081,13 @@ Pages Table
 	background-color: #FF3030;
 	border-color: #FF3030;
 }
-
+.no_border_borrom .dropdown-menu {
+	margin-top: -2px !important;
+}
+.no_border_borrom .btn.dropdown-toggle.border.show {
+	border-bottom: 0px !important;
+	border-radius: 4px 4px 0px 0px;
+}
 
 
 
