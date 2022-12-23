@@ -2088,6 +2088,9 @@ Pages Table
 	border-bottom: 0px !important;
 	border-radius: 4px 4px 0px 0px;
 }
+.advance_search .dropdown-menu.show {
+	border-color: #DCDFE9;
+}
 
 
 
