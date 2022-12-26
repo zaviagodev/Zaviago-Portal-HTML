@@ -1946,7 +1946,7 @@ Category Pages listed
 	width: 42px;
 }
 .Category_listed .cate_data_icon {
-	width: 35px;
+	width: 40px;
 	align-items: center;
 	display: flex;
 }
@@ -1965,7 +1965,26 @@ Category Pages listed
 	width: 100%;
 	align-items: center;
 }
-
+.Category_listed .cate_data_icon .accordion-button {
+	background-color: transparent;
+	padding: 0px 16px;
+	width: 40px;
+}
+.Category_listed .cate_data_icon .accordion-button i {
+	font-size: 14px;
+	color: #999999;
+}
+.balck_other_cate {
+	width: 26px;
+	height: 26px;
+	display: inline-block;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	border-radius: 50%;
+	padding: 4px 4px 4px 3px;
+	font-size: 10px;
+}
 
 
 /************************* 
