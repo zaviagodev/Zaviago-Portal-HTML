@@ -74,6 +74,9 @@
 .border_radi_10{
 	border-radius: 10px !important;
 }
+.border_radi_16{
+	border-radius: 10px !important;
+}
 .grid_view .on_hover_status {
 	position: absolute;
 	bottom: 12px;
@@ -1179,9 +1182,6 @@ Category page
 .pages_list_outer .col-lg-10 {
 	width: 77%;
 }
-.has_child .width_130 {
-	width: 7% !important;
-}
 .cate_page_tree_head .col-lg-9 {
 	width: 80%;
 }
@@ -1190,6 +1190,15 @@ Category page
 }
 .pages_list_main .width_75 .accordion-button.plus_center i {
 	color: #8094AE;
+}
+.pages_list_outer .col-lg-1, .pages_list_outer .col-lg-9, .pages_list_outer .col-lg-10 {
+	padding: 0px !important;
+}
+.pages_list_outer .has_child {
+	padding-left: 38px;
+}
+.pages_list_main .has_sub_child {
+	padding-left: 28px;
 }
 
 
@@ -1301,7 +1310,8 @@ Pages Catgories
 .open_left {
 	display: flex;
 }
-.pages_list_main .width_75 .accordion-button.plus_center {
+.pages_list_main .accordion-button {
+	padding: 0px !important;
 	background-image: none !important;
 	background-color: transparent;
 	border: 0px !important;
@@ -1310,10 +1320,10 @@ Pages Catgories
 	justify-content: center;
 }
 .pages_list_main .width_75 {
-	width: 4%;
-}
-.has_sub_child .width_130 {
-	width: 10%;
+	width: 40px;
+	padding: 0px;
+	display: flex;
+	align-items: center;
 }
 .has_sub_child .col-lg-10 {
 	width: 74%;
@@ -1324,7 +1334,7 @@ Pages Catgories
 	height: 64px;
 	border: 1px solid #eceef3;
 	position: absolute;
-	right: 20px;
+	right: 40px;
 	top: -12px;
 }
 .left_child_line {
@@ -1938,7 +1948,6 @@ Category Pages listed
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	background-color: red;
 	padding: 16px 0px;
 }
 .Category_listed .check_left {
@@ -2110,6 +2119,94 @@ Pages Table
 .advance_search .dropdown-menu.show {
 	border-color: #DCDFE9;
 }
+
+
+
+
+/************************* 
+Ecommerce setting.
+**************************/
+.card_area {
+	padding: 45px;
+	border-radius: 16px;
+	margin-bottom: 18px;
+}
+.card_area:hover {
+	background-color: #F9F5FF;
+}
+.card_area .card_icon i {
+	font-size: 40px;
+	color: #000000;
+}
+.card_area .card_title .heading_h3 {
+	color: #3A4961;
+	margin: 14px 0px 12px;
+}
+.card_drescription p {
+	color: #526484;
+	font-weight: 400;
+}
+
+
+/************************* 
+business Info.
+**************************/
+.business_info .heading_h3 {
+	font-size: 20px;
+}
+.business_info_heading .exclamation {
+	font-size: 12px;
+	position: relative;
+	vertical-align: super;
+	margin-left: -3px;
+}
+.business_info_heading .exclamation {
+	font-size: 12px;
+	position: relative;
+	vertical-align: super;
+}
+.business_info p {
+	max-width: 390px;
+	font-size: 14px;
+	line-height: 20px;
+}
+.business_info_form .form-label {
+	font-weight: 600;
+	color: #424242;
+	font-size: 14px !important;
+	line-height: 21px !important;
+	margin-bottom: 4px !important;
+}
+.business_info_form .form-label i{
+	font-size: 12px !important;
+}
+.business_info_form .form-control {
+	border: 1px solid #DCDFE9;
+	padding: 9px 12px;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+	color: #060606;
+}
+.business_info_form .form-control::placeholder {
+	color: #B1B1B1;
+}
+.business_info_line {
+	background-color: #DCDFE9;
+	margin: 50px 0px 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
