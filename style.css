@@ -222,6 +222,15 @@ body.body_mian .border {
 .Poppins{
 	font-family: 'Poppins', sans-serif !important;
 }
+.grey_btn {
+	background-color: #B1B1B1;
+	border-color: #B1B1B1;
+}
+.grey_btn:hover {
+	background-color: #000000;
+	border-color: #000000;
+	opacity: 1;
+}
 .link{
 	font-family: 'Poppins', sans-serif;
 	font-size: 13px;
@@ -1783,7 +1792,7 @@ display: none;
 	background-image: url('assets/images/minace.png') !important;
 	background-size: auto !important;
 }
-.form-check-input:checked[type="checkbox"] {
+.grid_view .form-check .form-check-input:checked[type="checkbox"] {
 	background-image: url("assets/images/check_mark.png") !important;
 	background-color: #FFF;
 	border-color: #7F56D9;
@@ -2151,6 +2160,9 @@ Ecommerce setting.
 /************************* 
 business Info.
 **************************/
+.business_info_main .container {
+	max-width: 1064px !important;
+}
 .business_info .heading_h3 {
 	font-size: 20px;
 }
@@ -2195,9 +2207,29 @@ business Info.
 	background-color: #DCDFE9;
 	margin: 50px 0px 60px;
 }
-
-
-
+.on_off_btn .form-check-label {
+	font-size: 14px !important;
+}
+.on_off_btn p {
+	max-width: 490px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #667085;
+}
+.white_btn .form-check-input {
+	background-color: #EAECF0;
+	border-color: #EAECF0;
+}
+.on_off_btn {
+	margin-bottom: 32px;
+}
+.on_off_btn .form-check-label {
+	font-size: 14px !important;
+	color: #344054;
+	font-weight: 500;
+	line-height: 20px !important;
+}
 
 
 
