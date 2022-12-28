@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    <title>Pages Category</title>
+    <title>Category.</title>
   </head>
   <body class="body_mian">
 
@@ -21,493 +21,255 @@
           </div>
         </div>
         <div class="col-sm-12 col-lg-3">
-          <div class="text-end">
+          <div class="text-end position_reltive">
             <button type="button" class="btn global_Btn header_btn rounded-1 text-white">
               <span class="me-2"><i class="fa-solid fa-plus"></i></span> Create New
             </button>
+
+            <div class="show_when_check">
+              <div class="Select_item_count"> <p class="pera">3 Selected</p> </div>
+              <button type="button" class="btn global_Btn header_btn rounded-1 text-white inter font_600">
+                Discard
+              </button>
+              
+              <button type="button" class="btn global_Btn red_glob_btn rounded-1 text-white" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">
+                <span class="me-2"><i class="fa-duotone fa-trash-xmark"></i></span> Delete
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="filter_area_product bg_light_gray mb-4 mt-4">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-lg-4">
+            <div class="filter_left align-items-center">
+              <div class="form-check m-0">
+                <input class="form-check-input show_btn_top" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label black_dark inter" for="flexCheckChecked">
+                  Displaying <b>20</b> of <b>50</b> items
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-8">
+            <div class="filter_right filter_right_product">
+              
+              <div class="down_up_icon me-4">
+                <i class="fa-duotone fa-angles-right"></i>
+              </div>
+              <!----Search Bar----->
+
+              <div id="searchForm" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#searchForm" >
+                <button id="searchForm_btn" class="accordion-button searchForm_btn_2 hide_icon bg-transparent p-0 search_back " type="button" data-bs-toggle="collapse" data-bs-target="#searchForm" aria-expanded="false" aria-controls="searchForm">
+                  <i class="fa-duotone fa-arrow-left-long"></i>
+                </button>
+                <div class="input-group input_group cust_search">
+                  <input type="search" class="form-control border-0 bg-light" placeholder="search by patient nameor id">
+                  <span class="input-group-text bg-white">
+                    <i class="fa-duotone fa-magnifying-glass"></i>
+                  </span>
+                </div>
+              </div>
+
+              <button id="" class="accordion-button collapsed p-0 hide_icon advance_search advance_search_icon" type="button" data-bs-toggle="collapse" data-bs-target="#searchForm" aria-expanded="false" aria-controls="searchForm">
+                <i class="fa-duotone fa-magnifying-glass"></i>
+                
+              </button>
+
+              <!----Advance Setting----->
+              <button type="button" class="btn btn-lg btn-primary bg-transparent p-0 advance_search ms-4" data-bs-toggle="modal" data-bs-target="#advance_search">
+                <i class="fa-duotone fa-filter-list"></i>
+            </button>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="row mt-3">
         <div class="col-lg-12">
-          <div class="left_product_deatils_box_1 border border_style_1 border_radi_10 bg-white p-4">
-            <div class="row mb-3 post_filer align-items-center">
-              <div class="col-sm-12 col-lg-4">
-                <div class="filter_left hide_now align-items-center">
-                  <div class="dropdown with_123 custom_dropdown no_border_borrom">
-                    <a class="btn dropdown-toggle border" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Bulk Action
-                    </a>
-                  
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                      <li><a class="dropdown-item" href="#">Published</a></li>
-                      <li><a class="dropdown-item" href="#">Unpublished</a></li>
-                    </ul>
-                  </div>
-                  <button type="button" class="btn btn-secondary Apply_btn_00 global_Btn border bg-transparent"> 
-                    <a class="text_global_1 Apply_btn_00 link" href="#">Apply</a> 
-                  </button>
-                  <div class="form-check m-0">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label text_global_1" for="flexCheckChecked">
-                      Select all
-                    </label>
-                  </div>
-                </div>
-                <div class="list_tree_btn">
-                  <input type="button" class="doCheck btn btn-sm" value = "Collapse All"/>
-                  <input type="button" class="check btn btn-sm" value="Expand All"/>
-                </div>
-              </div>
-              <div class="col-sm-12 col-lg-8">
-                <div class="filter_right filter_right_icon">
-                  <ul class="nav nav-tabs tabs_mian" id="myTab">
-                    <li class="nav-item">
-                        <a href="#list_view" class="nav-link grid_tree active" data-bs-toggle="tab">
-                          <i class="fa-solid fa-list"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#grid_view" class="nav-link list_tree_icon" data-bs-toggle="tab">
-                          <i class="fa-solid fa-list-tree"></i>
-                        </a>
-                    </li>
-                  </ul>
-                  <!----Search Bar----->
-
-                  <div id="searchForm" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#searchForm" >
-                    <button id="searchForm_btn" class="accordion-button searchForm_btn_2 hide_icon bg-transparent p-0 search_back " type="button" data-bs-toggle="collapse" data-bs-target="#searchForm" aria-expanded="false" aria-controls="searchForm">
-                      <i class="fa-solid fa-arrow-left"></i>
-                    </button>
-                    <div class="input-group input_group cust_search">
-                      <input type="search" class="form-control border-0 bg-light" placeholder="search by patient nameor id">
-                      <span class="input-group-text bg-white"><i class="fa-solid fa-search"></i></span>
-                    </div>
-                  </div>
-
-                  <button id="" class="accordion-button collapsed p-0 hide_icon advance_search advance_search_icon me-4" type="button" data-bs-toggle="collapse" data-bs-target="#searchForm" aria-expanded="false" aria-controls="searchForm">
-                    <i class="fa-solid fa-search"></i>
-                  </button>
-
-                  <!----Setting----->
-                  <div class="dropdown custom_dropdown width_80 hide_icon setting_icon_1">
-                    <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="fa-solid fa-gear"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Show</a></li>
-                      <li><a class="dropdown-item" href="#">5</a></li>
-                      <li><a class="dropdown-item" href="#">10</a></li>
-                      <li><a class="dropdown-item" href="#">15</a></li>
-                      <li><a class="dropdown-item" href="#">20</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="tab-content">
-              <div class="list_view list_view_pages tab-pane fade show active" id="list_view">
-                <div class="table-responsive border_style_1 rounded-2 table_order align-items-center"> 
-                  <table class="table pages_cat_table">
-                    <thead>
-                      <tr>
-                        <th class="text-center"> </th>
-                        <th class="ps-1" width="20%"> Name </th>
-                        <th width="30%">Parent Category</th>
-                        <th width="20%">Count</th>
-                        <th></th>
-                      </tr>
-                    </thead>
-
-                    <tbody>
-                      <tr class="listview_tr_1">
-                        <td width="60px" class="">
-                          <div class="check_left_cat">
-                            <input class="form-check-input check_list check_list_1 me-2" type="checkbox" value="" id="">
-                          </div>
-                          <img class="" src="assets/images/cate_page_1.png" alt="">
-                        </td>
-                        <td class="ps-1">News</td>
-                        <td>News, Daily News</td>
-                        <td class="user"> <span class="bg_green"> 0 post </span> </td>
-                        <td class="bold text-center">
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover mb-0">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr class="listview_tr_1">
-                        <td width="60px" class="">
-                          <div class="check_left_cat">
-                            <input class="form-check-input check_list check_list_1 me-2" type="checkbox" value="" id="">
-                          </div>
-                          <img class="" src="assets/images/cate_page_1.png" alt="">
-                        </td>
-                        <td class="ps-1">News</td>
-                        <td>News, Daily News</td>
-                        <td class="user"> <span class="bg_green"> 0 post </span> </td>
-                        <td class="bold text-center">
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover mb-0">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr class="listview_tr_1">
-                        <td width="60px" class="">
-                          <div class="check_left_cat">
-                            <input class="form-check-input check_list check_list_1 me-2" type="checkbox" value="" id="">
-                          </div>
-                          <img class="" src="assets/images/cate_page_1.png" alt="">
-                        </td>
-                        <td class="ps-1">News</td>
-                        <td>News, Daily News</td>
-                        <td class="user"> <span class="bg_green"> 0 post </span> </td>
-                        <td class="bold text-center">
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover mb-0">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr class="listview_tr_1">
-                        <td width="60px" class="">
-                          <div class="check_left_cat">
-                            <input class="form-check-input check_list check_list_1 me-2" type="checkbox" value="" id="">
-                          </div>
-                          <img class="" src="assets/images/cate_page_1.png" alt="">
-                        </td>
-                        <td class="ps-1">News</td>
-                        <td>News, Daily News</td>
-                        <td class="user"> <span class="bg_green"> 0 post </span> </td>
-                        <td class="bold text-center">
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover mb-0">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-
-                    </tbody>
-                  </table>
-                </div>
-
-              </div>
-
-              <div class="list_view tab-pane fade post_cout pages_list_main border border_radi_10" id="grid_view">
-
-                <div class="row">
-                  <div class="col-lg-12 ">
-                    <div class="cate_page_tree_head">
-                      <div class="row">
-                        <div class="col-lg-1 width_75"></div>
-                        <div class="col-lg-9">Name</div>
-                        <div class="col-lg-1 last_div">Count</div>
-                        <div class="col-lg-1 last_div"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="row">
-                  <div class="col-lg-12 pages_list_outer">
-                    <div class="row align-items-center">
-                      <div class="col-lg-1 width_75">
-                      </div>
-                      <div class="col-lg-9">
-                        <div class="collapas_img">
-                          <img class="" src="assets/images/cate_page_1_collasps.png" alt="">
-                          <span class="page_name ms-4">Events</span>
-                        </div>
-                      </div>
-                      <div class="col-lg-1 last_div">
-                        <span class="bg_green"> 0 post </span>
-                      </div>
-                      <div class="col-lg-1 last_div">
-                        <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover mb-0">
-                          <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-ellipsis"></i>
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Edit</a></li>
-                            <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row align-items-center">
-                      <div class="col-lg-1 width_75">
-                        <button class="accordion-button plus_center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+          <div class="list_view post_cout pages_list_main" id="">                
+            <div class="row">
+              <ul class="col-lg-12 pages_list_outer">
+                <li class="row align-items-center">
+                  <div class="list_inner">
+                    <div class="col-lg-9">
+                      <div class="icon_with_title">
+                        <div class="form-check m-0 checkbox_cat_pages">
+                          <input class="form-check-input border_blue_1" type="checkbox" value="" id="pagatical_Checked">
+                        </div> 
+                        <button class="accordion-button plus_center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                           <i class="fa-solid fa-chevron-right"></i>
                         </button>
-                      </div>
-                      <div class="col-lg-9">
-                        <div class="collapas_img">
-                          <img class="" src="assets/images/cate_page_1_collasps.png" alt="">
-                          <span class="page_name ms-4">Events 2</span>
-                        </div>
-                      </div>
-                      <div class="col-lg-1 last_div">
-                        <span class="bg_green"> 0 post </span>
-                      </div>
-                      <div class="col-lg-1 last_div">
-                        <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover mb-0">
-                          <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-ellipsis"></i>
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Edit</a></li>
-                            <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                          </ul>
-                        </div>
+                        <h4 class="page_name">Category name 1 <span class="cat_conter">+4</span> </h4>
                       </div>
                     </div>
-
-                    <div id="flush-collapseOne" class="accordion-collapse collapse has_child" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="col-lg-3 last_div">
                       
-                      <div class="row align-items-center">
-                        <div class="col-lg-1 left_child_line width_130"></div>
-                        <div class="col-lg-10">
-                          <div class="collapas_img">
-                            <img class="" src="assets/images/cate_page_1_collasps.png" alt="">
-                            <span class="page_name ms-4">Events 2_1</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-1 last_div">
-                          <span class="bg_green"> 0 post </span>
-                        </div>
-                        <div class="col-lg-1 last_div">
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover mb-0">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-                        </div>
+                      <div class="post_cout">
+                        <span class="bg_green publish_bg text_green"><i class="fa-solid fa-circle"></i> 0 post </span>
                       </div>
-
-                      <div class="row align-items-center">
-                        <div class="col-lg-1 left_child_line width_130"></div>
-                        <div class="col-lg-10">
-                          <div class="collapas_img">
-                            <img class="" src="assets/images/cate_page_1_collasps.png" alt="">
-                            <span class="page_name ms-4">Events 2_2</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-1 last_div">
-                          <span class="bg_green"> 0 post </span>
-                        </div>
-                        <div class="col-lg-1 last_div">
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover mb-0">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-                        </div>
+  
+                      <div class="dropdown product_stauts product_stauts_ellipsis cat_ellipsis">
+                        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                          <li><a class="dropdown-item" href="#">View</a></li>
+                          <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                        </ul>
                       </div>
-
-                      <div class="row align-items-center">
-                        <div class="col-lg-1 left_child_line width_130"></div>
-                        <div class="col-lg-10">
-                          <div class="collapas_img">
-                            <img class="" src="assets/images/cate_page_1_collasps.png" alt="">
-                            <span class="page_name ms-4">Events 2_3</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-1 last_div">
-                          <span class="bg_green"> 0 post </span>
-                        </div>
-                        <div class="col-lg-1 last_div">
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover mb-0">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
                     </div>
+                  </div>
 
-                    <div class="row align-items-center">
-                        <div class="col-lg-1 width_75">
-                          <button class="accordion-button plus_center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseTwo">
-                            <i class="fa-solid fa-chevron-right"></i>
-                          </button>
-                        </div>
+                  <ul id="collapseOne" class="accordion-collapse collapse has_child" aria-labelledby="collapseOne" data-bs-parent="#accordionFlushExample">
+                  
+                    <li class="row align-items-center">
+                      <div class="list_inner">
                         <div class="col-lg-9">
-                          <div class="collapas_img">
-                            <img class="" src="assets/images/cate_page_1_collasps.png" alt="">
-                            <span class="page_name ms-4">Events 3</span>
+                          <div class="icon_with_title">
+                            <div class="form-check m-0 checkbox_cat_pages">
+                              <input class="form-check-input border_blue_1" type="checkbox" value="" id="pagatical_Checked">
+                            </div>  
+                            <button class="accordion-button plus_center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="flush-collapseOne">
+                              <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                            <h4 class="page_name">Category name 1_1</h4>
                           </div>
                         </div>
-                        <div class="col-lg-1 last_div">
-                          <span class="bg_green"> 0 post </span>
-                        </div>
-                        <div class="col-lg-1 last_div">
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover mb-0">
+                        <div class="col-lg-3 last_div">
+                          
+                          <div class="post_cout">
+                            <span class="bg_green publish_bg text_green"><i class="fa-solid fa-circle"></i> 0 post </span>
+                          </div>
+      
+                          <div class="dropdown product_stauts product_stauts_ellipsis cat_ellipsis">
                             <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               <i class="fa-solid fa-ellipsis"></i>
                             </a>
                             <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">Duplicate</a></li>
-                              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse has_child" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                      <div class="row align-items-center">
-                        <div class="col-lg-1 width_75 width_130 left_child_line">
-                          <button class="accordion-button plus_center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="true" aria-controls="flush-collapseThree">
-                            <i class="fa-solid fa-chevron-right"></i>
-                          </button>
-                        </div>
-                        <div class="col-lg-10">
-                          <div class="collapas_img">
-                            <img class="" src="assets/images/cate_page_1_collasps.png" alt="">
-                            <span class="page_name ms-4">Events 3_1</span>
-                          </div>
-                        </div>
-                        <div class="col-lg-1 last_div">
-                          <span class="bg_green"> 0 post </span>
-                        </div>
-                        <div class="col-lg-1 last_div">
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover mb-0">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">Duplicate</a></li>
+                              <li><a class="dropdown-item" href="#">View</a></li>
                               <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
                             </ul>
                           </div>
                         </div>
                       </div>
-                    </div>
+                      
+                      <ul id="collapseTwo" class="accordion-collapse collapse has_sub_child" aria-labelledby="collapseTwo" data-bs-parent="#accordionFlushExample">
+                        <li class="row align-items-center">
+                          <div class="list_inner">
+                            <div class="col-lg-9">
+                              <div class="icon_with_title"> 
+                                <div class="form-check m-0 checkbox_cat_pages">
+                                <input class="form-check-input border_blue_1" type="checkbox" value="" id="pagatical_Checked">
+                              </div>
+                                <h4 class="page_name">Category name 1_1_1</h4>
+                              </div>
+                            </div>
+                            <div class="col-lg-3 last_div">
+                              
+                              <div class="post_cout">
+                                <span class="bg_green publish_bg text_green"><i class="fa-solid fa-circle"></i> 0 post </span>
+                              </div>
+          
+                              <div class="dropdown product_stauts product_stauts_ellipsis cat_ellipsis">
+                                <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <i class="fa-solid fa-ellipsis"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                                  <li><a class="dropdown-item" href="#">View</a></li>
+                                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
 
-                    <div id="flush-collapseThree" class="accordion-collapse collapse has_sub_child" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                      <div class="row align-items-center">
-                        <div class="col-lg-1 width_75 width_130 left_child_line">
-                        </div>
-                        <div class="col-lg-10">
-                          <div class="collapas_img">
-                            <img class="" src="assets/images/cate_page_1_collasps.png" alt="">
-                            <span class="page_name ms-4">Events 3_2</span>
+                    <li class="row align-items-center">
+                      <div class="list_inner">
+                        <div class="col-lg-9">
+                          <div class="icon_with_title"> 
+                            <div class="form-check m-0 checkbox_cat_pages">
+                            <input class="form-check-input border_blue_1" type="checkbox" value="" id="pagatical_Checked">
+                          </div>
+                            <button class="accordion-button plus_center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="flush-collapseOne">
+                              <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                            <h4 class="page_name">Category name 1_2</h4>
                           </div>
                         </div>
-                        <div class="col-lg-1 last_div">
-                          <span class="bg_green"> 0 post </span>
-                        </div>
-                        <div class="col-lg-1 last_div">
-                          <div class="dropdown custom_dropdown width_80 hide_icon ellipsis_on_hover mb-0">
+                        <div class="col-lg-3 last_div">
+                          
+                          <div class="post_cout">
+                            <span class="bg_green publish_bg text_green"><i class="fa-solid fa-circle"></i> 0 post </span>
+                          </div>
+      
+                          <div class="dropdown product_stauts product_stauts_ellipsis cat_ellipsis">
                             <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               <i class="fa-solid fa-ellipsis"></i>
                             </a>
                             <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">Duplicate</a></li>
+                              <li><a class="dropdown-item" href="#">View</a></li>
                               <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
                             </ul>
                           </div>
                         </div>
                       </div>
-                    </div>
+                      
+                      <ul id="collapseFour" class="accordion-collapse collapse has_sub_child" aria-labelledby="collapseFour" data-bs-parent="#accordionFlushExample">
+                        <li class="row align-items-center">
+                          <div class="list_inner">
+                            <div class="col-lg-9">
+                              <div class="icon_with_title">
+                                <div class="form-check m-0 checkbox_cat_pages">
+                                  <input class="form-check-input border_blue_1" type="checkbox" value="" id="pagatical_Checked">
+                                </div> 
+                                <h4 class="page_name">Category name 1_2_1</h4>
+                              </div>
+                            </div>
+                            <div class="col-lg-3 last_div">
+                              
+                              <div class="post_cout">
+                                <span class="bg_green publish_bg text_green"><i class="fa-solid fa-circle"></i> 0 post </span>
+                              </div>
+          
+                              <div class="dropdown product_stauts product_stauts_ellipsis cat_ellipsis">
+                                <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <i class="fa-solid fa-ellipsis"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                                  <li><a class="dropdown-item" href="#">View</a></li>
+                                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
 
-                  </div>
-                </div>
-              </div>
+                  </ul>
+
+                </li>
+
+              
+
+                
+
+                
+              </ul>
             </div>
-
-            <div class="row mt-4">
-              <div class="col-sm-12 col-lg-6">
-                <div class="">
-                  <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                      <li class="page-item"><a class="page-link" href="#">Prev</a></li>
-                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-ellipsis"></i></a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">4</a></li>
-                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-              <div class="col-sm-12 col-lg-6">
-                <div class="global_drop global_drop_2 number_drop">
-                  Page
-                  <div class="dropdown bottom_number custom_dropdown no_border_borrom ms-2 me-2">
-                    <a class="btn dropdown-toggle border" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      1
-                    </a>
-                    
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">2</a></li>
-                      <li><a class="dropdown-item" href="#">3</a></li>
-                      <li><a class="dropdown-item" href="#">4</a></li>
-                    </ul>
-                  </div>
-                  Of 102
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
-
     </div>
 
     
@@ -515,7 +277,7 @@
       <div class="delete-modal modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header pb-3">
-            <h3 class="heading_h3 subheadig_attributr">Are you sure</h3>
+            <h3 class="subheadig_attributr heading_h3">Are you sure</h3>
             <button type="button" class="btn-close new-btn-close" data-bs-dismiss="modal">              
               <img src="assets/images/xmark.png" alt=""> 
             </button>
@@ -531,24 +293,20 @@
             </div>
           </div>
           <div class="modal-footer p-4">
-            <button type="button" class="btn btn-primary global_Btn m-0 me-2"> Delete</button>
-            <button type="button" class="btn btn-secondary global_Btn border m-0 bg-transparent text_global_1 ms-1 text_global_1_hover" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary global_Btn red_glob_btn m-0 me-2"> Delete</button>
+            <button type="button" class="btn btn-secondary global_Btn cancel_btn m-0 bg-transparent text_global_1 ms-1 text_global_1_hover" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>
       </div>
     </div>
 
-    
-  
-
-
 
     <!-- Modal HTML -->
     <div id="advance_search" class="modal fade advance_search" tabindex="-1">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header p-4">
-              <h3 class="modal-title">Filter</h3>
+              <h3 class="modal-title heading_h3">Filter</h3>
               <button type="button" class="btn-close" data-bs-dismiss="modal"> 
                 <img src="assets/images/xmark.png" alt=""> 
               </button>
@@ -566,7 +324,7 @@
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">News</a></li>
                     <li><a class="dropdown-item" href="#">Blogs</a></li>
-                    <li><a class="dropdown-item" href="#">Events</a></li>
+                    <li><a class="dropdown-item" href="#">Category name</a></li>
                   </ul>
                 </div>
               </div>
@@ -581,7 +339,7 @@
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Published</a></li>
                     <li><a class="dropdown-item" href="#">Draft</a></li>
-                    <li><a class="dropdown-item" href="#">Trash</a></li>
+                    <li><a class="dropdown-item" href="#">Hidden</a></li>
                   </ul>
                 </div>
               </div>
@@ -605,8 +363,8 @@
           </div>
 
           <div class="modal-footer p-4">
-            <button type="button" class="btn btn-primary global_Btn m-0 me-2"> <span class="me-2"><i class="fa-solid fa-search"></i></span> Search</button>
-              <button type="button" class="btn btn-secondary global_Btn border m-0 bg-transparent text_global_1 ms-1 text_global_1_hover" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary global_Btn m-0 me-2"> <span class="me-2"><i class="fa-duotone fa-magnifying-glass"></i></span> Search</button>
+              <button type="button" class="btn btn-secondary cancel_btn" data-bs-dismiss="modal">Cancel</button>
           </div>
         </div>
       </div>

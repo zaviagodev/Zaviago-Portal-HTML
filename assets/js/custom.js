@@ -115,6 +115,8 @@ jQuery(document).ready(function($){
             $('.check_img_des').removeClass('change_bg');
         }
     });
+
+
   });
   
 

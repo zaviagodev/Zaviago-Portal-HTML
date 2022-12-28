@@ -1170,8 +1170,8 @@ Category page
 .pages_list_outer .width_80 {
 	margin-right: 17px;
 }
-.pages_list_outer .row {
-	padding: 12px 0px;
+.pages_list_outer .row .list_inner{
+	padding: 26px 0px;
 }
 .pages_list_outer_child .div.border {
 	padding-left: 50px !important;
@@ -1204,13 +1204,110 @@ Category page
 	padding: 0px !important;
 }
 .pages_list_outer .has_child {
-	padding-left: 38px;
+	padding-left: 24px;
+	padding-right: 0px;
 }
 .pages_list_main .has_sub_child {
-	padding-left: 28px;
+	padding-left: 40px;
+	padding-right: 0px;
 }
-
-
+.pages_list_main .accordion-button i {
+	font-size: 11px;
+	color: #999999;
+}
+.cat_conter {
+	background-color: black;
+	border-radius: 50%;
+	padding: 5px 8px 5px 5px;
+	color: #fff;
+	font-size: 11px;
+	display: flex;
+	height: 26px;
+	width: 26px;
+	align-content: center;
+	justify-content: center;
+	margin-left: 12px;
+}
+.checkbox_cat_pages .form-check-input {
+	height: 16px;
+	width: 16px;
+	margin-top: 6px;
+	border-color: #DCDFE9;
+}
+.checkbox_cat_pages .form-check-input:checked[type="checkbox"] {
+	background-image: url("assets/images/check_mark.png") !important;
+	background-color: #FFF;
+	border-color: #7F56D9;
+	background-size: auto;
+}
+.pages_list_outer {
+	position: relative;
+}
+.pages_list_outer .last_div .bg_green {
+	min-width: 77px;
+	width: auto !important;
+	font-size: 12px;
+	font-family: 'Inter', sans-serif;
+	display: flex;
+	align-items: center;
+}
+.pages_list_outer .last_div .bg_green i {
+	font-size: 8px;
+	margin-right: 8px;
+}
+.pages_list_outer .last_div {
+	width: 200px;
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+}
+.pages_list_main .accordion-button {
+	padding: 0px !important;
+	background-image: none !important;
+	background-color: transparent;
+	border: 0px !important;
+	box-shadow: none !important;
+	display: flex;
+	justify-content: center;
+	width: 40px;
+}
+.pages_list_main .page_name {
+	font-size: 13px;
+	margin: 0px;
+	line-height: 15px !important;
+	display: flex;
+	align-items: center;
+	font-family: 'Inter', sans-serif;
+}
+.icon_with_title {
+	display: flex;
+}
+.list_inner {
+	display: flex;
+	align-items: center;
+}
+.pages_list_main .row {
+	margin: 0px !important;
+}
+.cat_ellipsis {
+	margin-left: auto;
+}
+.cat_ellipsis i {
+	color: #526484;
+}
+.list_inner.change_bg::before {
+	content: "";
+	position: absolute;
+	width: 98%;
+	background-color: red;
+	height: 100%;
+	z-index: -1;
+	right: 0px;
+}
+.has_child .checkbox_cat_pages .form-check-input {
+	position: absolute;
+	left: 30px;
+}
 
 /***********
 Coupo page
@@ -1319,15 +1416,6 @@ Pages Catgories
 .open_left {
 	display: flex;
 }
-.pages_list_main .accordion-button {
-	padding: 0px !important;
-	background-image: none !important;
-	background-color: transparent;
-	border: 0px !important;
-	box-shadow: none !important;
-	display: flex;
-	justify-content: center;
-}
 .pages_list_main .width_75 {
 	width: 40px;
 	padding: 0px;
@@ -1349,33 +1437,6 @@ Pages Catgories
 .left_child_line {
 	position: relative;
 	height: 40px;
-}
-.has_child .row:last-child .left_child_line::after, 
-.has_sub_child .row:last-child .left_child_line::after  {
-	background-image: url('assets/images/left_down_arrow.png');
-	width: 20px;
-	height: 30px;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	display: block;
-	border: 0px;
-	right: 2px;
-	top: -14px;
-}
-.has_child .row .left_child_line::before, 
-.has_sub_child .row .left_child_line::before {
-	content: "";
-	right: 0px;
-	width: 20px;
-	display: block;
-	position: absolute;
-	top: 50%;
-	background-color: #eceef3;
-	height: 1px;
-}
-.has_child .row:last-child .left_child_line::before, 
-.has_sub_child .row:last-child .left_child_line::before {
-	display: none;
 }
 .list_tree_btn{
 	display: none;
@@ -1469,6 +1530,12 @@ Pages Catgories
 .navbar_right .active_user img {
 	margin-left: -10px;
 }
+
+
+
+
+
+
 
 
 /*****************
@@ -2154,6 +2221,15 @@ Ecommerce setting.
 .card_drescription p {
 	color: #526484;
 	font-weight: 400;
+}
+.filter_left .form-check-input {
+	background-image: url('assets/images/minace.png') !important;
+}
+.form-check .form-check-input.show_btn_top:checked[type="checkbox"] {
+	background-image: url("assets/images/check_mark.png") !important;
+	background-color: #FFF;
+	border-color: #7F56D9;
+	background-size: auto;
 }
 
 
