@@ -227,9 +227,8 @@ body.body_mian .border {
 	border-color: #B1B1B1;
 }
 .grey_btn:hover {
-	background-color: #000000;
-	border-color: #000000;
-	opacity: 1;
+	background-color: #B1B1B1;
+	border-color: #B1B1B1;
 }
 .link{
 	font-family: 'Poppins', sans-serif;
@@ -2306,7 +2305,10 @@ business Info.
 	font-weight: 500;
 	line-height: 20px !important;
 }
-
+.perple_check .form-check-input:checked {
+	background-color: #5200FF;
+	border-color: #5200FF;
+}
 
 
 
