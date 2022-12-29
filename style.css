@@ -2305,12 +2305,26 @@ business Info.
 	font-weight: 500;
 	line-height: 20px !important;
 }
+.perple_check .form-check-input:focus {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+	border-color: #eaecf0;
+	background-color: #eaecf0;
+}
 .perple_check .form-check-input:checked {
 	background-color: #5200FF;
 	border-color: #5200FF;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e") !important;
 }
-
-
+.grey_btn:focus {
+	background-color: #B1B1B1;
+	border-color: #B1B1B1;
+}
+.white_btn .form-check-input:focus {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+}
+.perple_check .form-check-input:focus{
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+}
 
 
 
