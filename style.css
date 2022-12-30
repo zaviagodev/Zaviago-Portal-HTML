@@ -2332,7 +2332,24 @@ business Info.
 	margin-right: 8px;
 }
 
-
+.payment_grey_btn {
+	background-color: #D0D0D0;
+	width: 120px;
+	border: 1px solid #D0D0D0;
+	border-radius: 4px;
+	padding: 4px 4px;
+}
+.payment_grey_btn a {
+	font-size: 12px;
+	text-decoration: none;
+	font-family: 'Inter', sans-serif;
+	color: #fff;
+	font-weight: 700;
+}
+.payment_btn_purple {
+	background-color: #5200FF;
+	border-color: #5200FF;
+}
 
 
 
