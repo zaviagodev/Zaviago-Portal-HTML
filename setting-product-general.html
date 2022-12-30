@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    <title>Setting General</title>
+    <title>Setting Product General</title>
   </head>
   <body class="body_mian ">
 
@@ -19,7 +19,7 @@
         <div class="row pt-4 pb-0 align-items-center">
           <div class="col-sm-12 col-lg-9">
             <div class="business_info_heading">
-              <h2 class="heading_h2 m-0 mb-2">business Info 
+              <h2 class="heading_h2 m-0 mb-2">product 
                 <span class="exclamation">
                   <i class="fa-duotone fa-circle-exclamation"></i>
                 </span> 
@@ -38,7 +38,7 @@
         <div class="row mt-4">
           <div class="col-sm-12 col-lg-6">
             <div class="business_info">
-                <h3 class="heading_h3"> <span><i class="fa-duotone fa-location-dot"></i></span> address.</h3>
+                <h3 class="heading_h3"> <span><i class="fa-duotone fa-location-dot"></i></span> inventory</h3>
               <div class="card_drescription">
                 <p class="pera mt-3">
                   The address and information of your store that will show 
@@ -50,35 +50,29 @@
 
           <div class="col-sm-12 col-lg-6">
             <div class="business_info_form">
+
+              <div class="mb-4 pt-3">
+                <label for="" class="form-label pb-2">Manage stock </label>
+                <div class="form-check form-switch on_off_btn">
+                  <input class="form-check-input" type="checkbox" id="" name="darkmode" value="yes" checked>
+                  <label class="form-check-label" for="">Enable stock management</label>
+                  <p class="pera">Rates will be configurable and taxes will be calculated during checkout.</p>
+                </div> 
+              </div>
+
               <div class="mb-4">
-                <label for="" class="form-label">Store Address line 1 
+                <label for="" class="form-label">Hold stock (minutes) 
                   <span class="exclamation">
                     <i class="fa-duotone fa-circle-exclamation"></i>
                   </span> 
                 </label>
-                <input type="email" class="form-control" id="" placeholder="Add information">
+                <input type="email" class="form-control" id="" placeholder="kg">
               </div>
 
               <div class="mb-4">
-                <label for="" class="form-label">Store Address line 2</label>
-                <input type="email" class="form-control" id="" placeholder="Add information">
+                <label for="" class="form-label">Dimensions unit</label>
+                <input type="email" class="form-control" id="" placeholder="cm">
               </div>
-
-              <div class="mb-4">
-                <label for="" class="form-label">City</label>
-                <input type="email" class="form-control" id="" placeholder="Add information">
-              </div>
-
-              <div class="mb-4">
-                <label for="" class="form-label">Country / State</label>
-                <input type="email" class="form-control" id="" placeholder="Add information">
-              </div>
-
-              <div class="mb-3">
-                <label for="" class="form-label">Postcode</label>
-                <input type="email" class="form-control" id="" placeholder="Add information">
-              </div>
-
             </div>
           </div>
         </div>
@@ -88,7 +82,7 @@
         <div class="row">
           <div class="col-sm-12 col-lg-6">
             <div class="business_info">
-                <h3 class="heading_h3"> <span><i class="fa-duotone fa-gears"></i></span> general options.</h3>
+                <h3 class="heading_h3"> <span><i class="fa-duotone fa-comments"></i></span>reviews</h3>
               <div class="card_drescription">
                 <p class="pera mt-3">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -101,52 +95,50 @@
 
           <div class="col-sm-12 col-lg-6">
             <div class="business_info_form">
-              <div class="mb-4">
-                <label for="" class="form-label">Selling location(s) </label>
-                <input type="email" class="form-control" id="" placeholder="Add information">
-              </div>
 
               <div class="mb-4">
-                <label for="" class="form-label">Shipping locations(s) </label>
-                </label>
-                <input type="email" class="form-control" id="" placeholder="Add information">
-              </div>
-
-              <div class="mb-4">
-                <label for="" class="form-label">Selling location(s) </label>
-                <input type="email" class="form-control" id="" placeholder="Add information">
-              </div>
-
-              <div class="mb-4">
-                <label for="" class="form-label">Default customer location </label>
-                <input type="email" class="form-control" id="" placeholder="Add information">
-              </div>
-
-              <div class="mb-4 pt-3">
-                <label for="" class="form-label pb-2">Default customer location </label>
+                <label for="" class="form-label pb-2">Enable coupons</label>
                 <div class="form-check form-switch on_off_btn">
                   <input class="form-check-input" type="checkbox" id="" name="darkmode" value="yes" checked>
-                  <label class="form-check-label" for="">Enable tax rates and calculations</label>
+                  <label class="form-check-label" for="">Enable product reviews</label>
+                  <p class="pera">Rates will be configurable and taxes will be calculated during checkout.</p>
+                </div> 
+              </div>
+                
+              <div class="mb-4">
+                <div class="form-check form-switch on_off_btn">
+                  <input class="form-check-input" type="checkbox" id="" name="darkmode" value="yes" checked>
+                  <label class="form-check-label" for="">Show “verified owner” label on customer reviews</label>
                   <p class="pera">Rates will be configurable and taxes will be calculated during checkout.</p>
                 </div> 
               </div>
 
               <div class="mb-4">
-                <label for="" class="form-label pb-2">Enable coupons</label>
                 <div class="form-check form-switch on_off_btn">
-                  <input class="form-check-input" type="checkbox" id="" name="darkmode" value="yes">
-                  <label class="form-check-label" for="">Enable the use of coupon codes</label>
-                  <p class="pera">Coupons can be applied from the cart and checkout pages.</p>
-                </div> 
-
-                <div class="form-check form-switch on_off_btn">
-                  <input class="form-check-input" type="checkbox" id="" name="darkmode" value="yes">
-                  <label class="form-check-label" for="">Calculate coupon discounts sequentially</label>
-                  <p class="pera">When applying multiple coupons, apply the first coupon to the full price 
-                    and the second coupon to the discounted price and so on.</p>
+                  <input class="form-check-input" type="checkbox" id="" name="darkmode" value="yes" checked>
+                  <label class="form-check-label" for="">Reviews can only be left by “verified owner“</label>
+                  <p class="pera">Rates will be configurable and taxes will be calculated during checkout.</p>
                 </div> 
               </div>
 
+              <div class="mb-4">
+                <label for="" class="form-label pb-2">Product ratings</label>
+                <div class="form-check form-switch on_off_btn">
+                  <input class="form-check-input" type="checkbox" id="" name="darkmode" value="yes">
+                  <label class="form-check-label" for="">Enable star rating on review</label>
+                  <p class="pera">Rates will be configurable and taxes will be calculated during checkout.</p>
+                </div> 
+              </div>
+
+              <div class="mb-4">
+                <div class="form-check form-switch on_off_btn">
+                  <input class="form-check-input" type="checkbox" id="" name="" value="no">
+                  <label class="form-check-label" for="">Star rating should be required, not optional</label>
+                  <p class="pera">When applying multiple coupons, apply the first coupon to the full 
+                    price and the second coupon to the discounted price and so on.</p>
+                </div> 
+              </div>
+              
             </div>
           </div>
         </div>
@@ -157,7 +149,7 @@
         <div class="row mb-5">
           <div class="col-sm-12 col-lg-6">
             <div class="business_info">
-                <h3 class="heading_h3"> <span> <i class="fa-duotone fa-circle-dollar"></i> </span> currency options.</h3>
+                <h3 class="heading_h3"> <span> <i class="fa-duotone fa-message-lines"></i> </span> buyer reviews.</h3>
               <div class="card_drescription">
                 <p class="pera mt-3">
                   The following options affect how prices are displayed on the frontend.
@@ -170,7 +162,7 @@
             <div class="business_info_form">
               <div class="mb-4">
                 <label for="" class="form-label">Currency </label>
-                <input type="email" class="form-control" id="" placeholder="Add information">
+                <input type="email" class="form-control" id="" placeholder="Thai baht ()">
               </div>
 
               <div class="mb-4">
@@ -181,6 +173,52 @@
 
               <div class="mb-4">
                 <label for="" class="form-label">Default customer location </label>
+                <input type="email" class="form-control" id="" placeholder="Add information">
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+        <hr class="business_info_line">
+
+        <div class="row mb-5">
+          <div class="col-sm-12 col-lg-6">
+            <div class="business_info">
+                <h3 class="heading_h3"> <span> <i class="fa-duotone fa-scale-balanced"></i> </span> measurements</h3>
+              <div class="card_drescription">
+                <p class="pera mt-3">
+                  The address and information of your store that will show on your invoice and other place regarding the store information.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-6">
+            <div class="business_info_form">
+              <div class="mb-4">
+                <label for="" class="form-label">Weight unit </label>
+                <input type="email" class="form-control" id="" placeholder="kg">
+              </div>
+
+              <div class="mb-4">
+                <label for="" class="form-label">Dimensions unit</label>
+                </label>
+                <input type="email" class="form-control" id="" placeholder="cm">
+              </div>
+
+              <div class="mb-4">
+                <label for="" class="form-label">City</label>
+                <input type="email" class="form-control" id="" placeholder="Add information">
+              </div>
+
+              <div class="mb-4">
+                <label for="" class="form-label">Country / State</label>
+                <input type="email" class="form-control" id="" placeholder="Add information">
+              </div>
+
+              <div class="mb-4">
+                <label for="" class="form-label">Postcode</label>
                 <input type="email" class="form-control" id="" placeholder="Add information">
               </div>
 
