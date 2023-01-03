@@ -2353,10 +2353,54 @@ business Info.
 
 
 
-
-
-
-
+/************************* 
+Account Privacy.
+**************************/
+.account_privacy_left .card_drescription p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #667085;
+	max-width: 390px;
+}
+.account_privacy_left .heading_h3 {
+	font-size: 20px;
+	line-height: 30px;
+}
+.account_privacy_right h4 {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.04em;
+	color: #424242;
+}
+.account_privacy_right .form-check .form-check-input:checked[type="checkbox"] {
+	background-image: url("assets/images/check_mark.png") !important;
+	background-color: #FFF;
+	border-color: #7F56D9;
+	background-size: auto;
+}
+.account_privacy_right .form-check-label {
+	color: #526484;
+	font-weight: 400;
+	font-family: 'Inter', sans-serif;
+}
+.account_privacy_right .box_text .pera {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+	color: #526484;
+}
+.account_privacy_right .box_text {
+	padding: 10px 12px;
+	width: 539px;
+	height: 100px;
+	border: 1px solid #DCDFE9;
+	border-radius: 4px;
+}
 
 
 
