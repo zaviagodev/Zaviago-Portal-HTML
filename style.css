@@ -2333,9 +2333,9 @@ business Info.
 }
 
 .payment_grey_btn {
-	background-color: #D0D0D0;
+	background-color: #B1B1B1;
 	width: 120px;
-	border: 1px solid #D0D0D0;
+	border: 1px solid #B1B1B1;
 	border-radius: 4px;
 	padding: 4px 4px;
 }
@@ -2349,6 +2349,10 @@ business Info.
 .payment_btn_purple {
 	background-color: #5200FF;
 	border-color: #5200FF;
+}
+.payment_btn_purple:hover {
+	background-color: #A479FF;
+	border-color: #A479FF;
 }
 
 
@@ -2404,9 +2408,22 @@ Account Privacy.
 
 
 
-
-
-
+.Shipping_setting .check_img_des .left_side {
+	width: 25%;
+}
+.Shipping_setting .check_img_des .right_side {
+	width: 75%;
+}
+.Shipping_setting .on_off_btn {
+	margin-bottom: 0px;
+}
+.Shipping_setting .check_img_des .left_side .check_box {
+	margin-right: 0px;
+}
+.Shipping_setting .balck_other_cate {
+	left: -10px;
+	position: relative;
+}
 
 
 
