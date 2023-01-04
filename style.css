@@ -2381,6 +2381,7 @@ Account Privacy.
 	line-height: 21px;
 	letter-spacing: -0.04em;
 	color: #424242;
+	margin-bottom: 6px;
 }
 .account_privacy_right .form-check .form-check-input:checked[type="checkbox"] {
 	background-image: url("assets/images/check_mark.png") !important;
