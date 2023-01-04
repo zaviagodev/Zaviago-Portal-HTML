@@ -2430,7 +2430,13 @@ Account Privacy.
 	left: -10px;
 	position: relative;
 }
-
+.Shipping_setting .on_off_btn .form-check-input {
+	margin-top: 2px;
+}
+.Shipping_badge{
+	background: #F9F5FF;
+	color: #6941C6;
+}
 
 
 @media only screen and (max-width: 1200px)  {
