@@ -2415,6 +2415,10 @@ Account Privacy.
 
 
 
+/************************* 
+Shipping Setting.
+**************************/
+
 .Shipping_setting .check_img_des .left_side {
 	width: 25%;
 }
@@ -2444,7 +2448,15 @@ Account Privacy.
 	border-color: #7F56D9;
 	background-size: auto;
 }
-
+.Shipping_badge {
+	background: #F9F5FF;
+	color: #6941C6;
+	min-width: 91px !important;
+	width: min-content !important;
+}
+.Shipping_badge:hover {
+	color: #6941C6;
+}
 
 
 
