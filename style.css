@@ -2337,12 +2337,13 @@ business Info.
 	width: 120px;
 	border: 1px solid #B1B1B1;
 	border-radius: 4px;
-	padding: 4px 4px;
+	padding: 5px 8px;
+	height: 36px;
 }
 .payment_grey_btn a {
 	font-size: 12px;
 	text-decoration: none;
-	font-family: 'Inter', sans-serif;
+	font-family: 'SukhumvitSet-Bold';
 	color: #fff;
 	font-weight: 700;
 }
