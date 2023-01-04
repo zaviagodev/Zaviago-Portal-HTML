@@ -2381,7 +2381,7 @@ Account Privacy.
 	line-height: 21px;
 	letter-spacing: -0.04em;
 	color: #424242;
-	margin-bottom: 6px;
+	margin-bottom: 2px;
 }
 .account_privacy_right .form-check .form-check-input:checked[type="checkbox"] {
 	background-image: url("assets/images/check_mark.png") !important;
@@ -2438,6 +2438,15 @@ Account Privacy.
 	background: #F9F5FF;
 	color: #6941C6;
 }
+.Shipping_setting .check_box .form-check-input:checked[type="checkbox"] {
+	background-image: url("assets/images/check_mark.png") !important;
+	background-color: #FFF;
+	border-color: #7F56D9;
+	background-size: auto;
+}
+
+
+
 
 
 @media only screen and (max-width: 1200px)  {
