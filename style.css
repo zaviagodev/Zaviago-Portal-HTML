@@ -2392,6 +2392,7 @@ Account Privacy.
 	font-weight: 400;
 	font-family: 'Inter', sans-serif;
 	font-size: 14px !important;
+	line-height: 20px !important;
 }
 .account_privacy_right .box_text .pera {
 	font-weight: 400;
@@ -2405,6 +2406,9 @@ Account Privacy.
 	height: 100px;
 	border: 1px solid #DCDFE9;
 	border-radius: 4px;
+}
+.text_box_new .form-check-input {
+	margin-top: 4px;
 }
 
 
