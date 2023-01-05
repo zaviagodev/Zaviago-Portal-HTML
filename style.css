@@ -2374,7 +2374,7 @@ Account Privacy.
 	line-height: 30px;
 }
 .account_privacy_right h4 {
-	font-family: 'Poppins';
+	font-family: 'Poppins', sans-serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 14px;
@@ -2459,6 +2459,61 @@ Shipping Setting.
 }
 
 
+/************************* 
+Email Setting.
+**************************/
+.email_Setting {
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+.email_Setting .table thead th {
+	letter-spacing: -0.04em;
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	color: #060606;
+	border: 0px;
+	padding: 13px 8px;
+}
+.email_Setting .table tbody td,
+.email_Setting .table tbody td h3{
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 16px;
+	color: #060606;
+	vertical-align: middle;
+	margin-bottom: 0px;
+}
+.email_Setting .table tbody td span i {
+	font-size: 24px;
+	color: #12B76A;
+}
+.email_Setting .table tbody td span {
+	margin-right: 12px;
+}
+.email_Setting .table tbody td .icon_with_title {
+	align-items: center;
+}
+.email_Setting .table tbody tr td {
+	padding: 25px 8px;
+}
+.email_Setting .table tbody td .icon_with_title .setting_icon {
+	background-color: #999999;
+	width: 24px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+}
+.email_Setting .table tbody td .icon_with_title .setting_icon i {
+	font-size: 12px;
+	color: #000;
+}
 
 
 @media only screen and (max-width: 1200px)  {
