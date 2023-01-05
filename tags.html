@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Tag.</title>
+  </head>
+  <body class="body_mian product_page">
+
+    <div class="container">  
+      <div class="row pt-4 pb-0 align-items-center">
+        <div class="col-sm-12 col-lg-9">
+          <div class="">
+            <h2 class="heading_h2 m-0 mb-2 title_with_prod_count">tag. <span class="prod_count font_12 text_purple inter">240</span> </h2>
+            <p class="pera font_14">Keep track of vendor and their security ratings.</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-3">
+          <div class="text-end position_reltive">
+            <button type="button" class="btn global_Btn header_btn rounded-1 text-white">
+              <span class="me-2"><i class="fa-solid fa-plus"></i></span> Create New
+            </button>
+
+            <div class="show_when_check">
+              <div class="Select_item_count"> <p class="pera">3 Selected</p> </div>
+              <button type="button" class="btn global_Btn header_btn rounded-1 text-white font_600 inter">
+                Discard
+              </button>
+              
+              <button type="button" class="btn global_Btn red_glob_btn rounded-1 text-white" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">
+                <span class="me-2"><i class="fa-duotone fa-trash-xmark"></i></span> Delete
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-lg-3 col-sm-12">
+          <div class="box_filter border_radi_10 border bg-white bg_grey p_12">
+            <div class="row">
+              <div class="col-lg-12">
+                <h4 class="heading_h4">All pages</h4>
+              </div>
+            </div>
+            <div class="row mt-3 mb-3 align-items-center">
+              <div class="col-lg-8">
+                <h1 class="heading_h1 Space_Grotesk">9</h1>
+              </div>
+              <div class="col-lg-4 text-end">
+                <span class="color_all bg_blue"></span> 
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <p class="pera"> 
+                  <span class="last_modify_text"> Last modify</span> 
+                  <span class="last_modify_text last_modify text_blue">Yesterday</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-12">
+          <div class="box_filter border_radi_10 border bg-white bg_grey p_12">
+            <div class="row">
+              <div class="col-lg-12">
+                <h4 class="heading_h4">Published</h4>
+              </div>
+            </div>
+            <div class="row mt-3 mb-3 align-items-center">
+              <div class="col-lg-8">
+                <h1 class="heading_h1 Space_Grotesk">6</h1>
+              </div>
+              <div class="col-lg-4 text-end">
+                <span class="color_all bg_green"></span> 
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <p class="pera"> 
+                  <span class="last_modify_text"> Last modify</span> 
+                  <span class="last_modify_text last_modify text_green">Yesterday</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-12">
+          <div class="box_filter border_radi_10 border bg-white bg_grey p_12">
+            <div class="row">
+              <div class="col-lg-12">
+                <h4 class="heading_h4">Draft</h4>
+              </div>
+            </div>
+            <div class="row mt-3 mb-3 align-items-center">
+              <div class="col-lg-8">
+                <h1 class="heading_h1 Space_Grotesk">3</h1>
+              </div>
+              <div class="col-lg-4 text-end">
+                <span class="color_all bg_orange"></span> 
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <p class="pera"> 
+                  <span class="last_modify_text"> Last modify</span> 
+                  <span class="last_modify_text last_modify text_orange">Yesterday</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-12">
+          <div class="box_filter border_radi_10 border bg-white bg_grey p_12">
+            <div class="row">
+              <div class="col-lg-12">
+                <h4 class="heading_h4">Hidden</h4>
+              </div>
+            </div>
+            <div class="row mt-3 mb-3 align-items-center">
+              <div class="col-lg-8">
+                <h1 class="heading_h1 Space_Grotesk">3</h1>
+              </div>
+              <div class="col-lg-4 text-end">
+                <span class="color_all bg_gray"></span> 
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <p class="pera"> 
+                  <span class="last_modify_text"> Last modify</span> 
+                  <span class="last_modify_text last_modify text_gray">Yesterday</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter_area_product bg_light_gray mb-4 mt-4">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-lg-4">
+            <div class="filter_left align-items-center">
+              <div class="form-check m-0">
+                <input class="form-check-input show_btn_top" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label black_dark inter" for="flexCheckChecked">
+                  Displaying <b>20</b> of <b>50</b> items
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-8">
+            <div class="filter_right filter_right_product">
+              <ul class="nav nav-tabs tabs_mian" id="myTab">
+                <li class="nav-item">
+                    <a href="#list_view" class="nav-link " data-bs-toggle="tab">
+                      <i class="fa-duotone fa-list-timeline"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#grid_view" class="nav-link active" data-bs-toggle="tab">
+                      <i class="fa-duotone fa-objects-column"></i>
+                    </a>
+                </li>
+              </ul>
+              <!----Search Bar----->
+
+              <div id="searchForm" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#searchForm" >
+                <button id="searchForm_btn" class="accordion-button searchForm_btn_2 hide_icon bg-transparent p-0 search_back " type="button" data-bs-toggle="collapse" data-bs-target="#searchForm" aria-expanded="false" aria-controls="searchForm">
+                  <i class="fa-duotone fa-arrow-left-long"></i>
+                </button>
+                <div class="input-group input_group cust_search">
+                  <input type="search" class="form-control border-0 bg-light" placeholder="search by patient nameor id">
+                  <span class="input-group-text bg-white">
+                    <i class="fa-duotone fa-magnifying-glass"></i>
+                  </span>
+                </div>
+              </div>
+
+              <button id="" class="accordion-button collapsed p-0 hide_icon advance_search advance_search_icon" type="button" data-bs-toggle="collapse" data-bs-target="#searchForm" aria-expanded="false" aria-controls="searchForm">
+                <i class="fa-duotone fa-magnifying-glass"></i>
+                
+              </button>
+
+              <!----Advance Setting----->
+              <button type="button" class="btn btn-lg btn-primary bg-transparent p-0 advance_search ms-4" data-bs-toggle="modal" data-bs-target="#advance_search">
+                <i class="fa-duotone fa-filter-list"></i>
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content product_layout">
+        <div class="grid_view Product_img tab-pane fade show active" id="grid_view">
+          <div class="row">
+            <div class="col-lg-4 col-sm-12 mb-3">
+              <div class="border_radi_10 border bg-white p_12 article article_1">
+                <div class="row card_front">
+                  <div class="col-lg-8">
+                    <h3 class="heading_h3">Sony WH-1000XM5</h3>
+                    <p class="mt-3 mb-3 pera black_dark">SONYWH-01</p>
+                    <p class="pera price text_purple Space_Grotesk">฿85</p>
+                    <p class="mt-3 pera product_icon"> 
+                      <img src="assets/images/Marketplace.png" alt="">
+                      <img src="assets/images/shopy.png" alt="">
+                      <img src="assets/images/lcz.png" alt="">
+                      <img src="assets/images/l.png" alt="">
+                      <img src="assets/images/tiktok.png" alt="">
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center feauter_img">
+                    <img class="img-fluid" src="assets/images/Feature_img_1.png" alt="">
+                  </div>
+                </div>
+
+                <div class="row border_radi_10 card_back">
+                  <div class="col-lg-8">
+                    <h3 class="heading_h3">
+                      <div class="form-check m-0">
+                        <input class="form-check-input border_blue_1" type="checkbox" value="" id="atical_Checked">
+                      </div>
+                      Sony WH-1000XM5
+                    </h3>
+                    <p class="mt-3 mb-3 pera black_dark">SONYWH-01</p>
+                    <p class="pera price text_purple Space_Grotesk">฿85</p>
+                    <p class="mt-3 pera "> 
+                      <img src="assets/images/Marketplace.png" alt="">
+                      <img src="assets/images/shopy.png" alt="">
+                      <img src="assets/images/lcz.png" alt="">
+                      <img src="assets/images/l.png" alt="">
+                      <img src="assets/images/tiktok.png" alt="">
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center">
+
+                    <div class="dropdown product_stauts product_stauts_ellipsis">
+                      <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Duplicate</a></li>
+                        <li><a class="dropdown-item" href="#">Make Feature</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="dropdown product_stauts product_stauts_fixed">
+                      <a class="btn dropdown-toggle text_green publish_bg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-circle"></i> Published
+                      </a>
+                    
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Published</a></li>
+                        <li><a class="dropdown-item" href="#">Draft</a></li>
+                        <li><a class="dropdown-item" href="#">Trash</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 mb-3">
+              <div class="border_radi_10 border bg-white p_12 article article_1">
+                <div class="row card_front">
+                  <div class="col-lg-8">
+                    <h3 class="heading_h3">Sony WH-1000XM5</h3>
+                    <p class="mt-3 mb-3 pera black_dark">SONYWH-01</p>
+                    <p class="pera price text_purple Space_Grotesk">฿85</p>
+                    <p class="mt-3 pera product_icon"> 
+                      <img src="assets/images/Marketplace.png" alt="">
+                      <img src="assets/images/shopy.png" alt="">
+                      <img src="assets/images/lcz.png" alt="">
+                      <img src="assets/images/l.png" alt="">
+                      <img src="assets/images/tiktok.png" alt="">
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center feauter_img">
+                    <img class="img-fluid" src="assets/images/Feature_img_1.png" alt="">
+                  </div>
+                </div>
+
+                <div class="row border_radi_10 card_back">
+                  <div class="col-lg-8">
+                    <h3 class="heading_h3">
+                      <div class="form-check m-0">
+                        <input class="form-check-input border_blue_1" type="checkbox" value="" id="atical_Checked">
+                      </div>
+                      Sony WH-1000XM5
+                    </h3>
+                    <p class="mt-3 mb-3 pera black_dark">SONYWH-01</p>
+                    <p class="pera price text_purple Space_Grotesk">฿85</p>
+                    <p class="mt-3 pera "> 
+                      <img src="assets/images/Marketplace.png" alt="">
+                      <img src="assets/images/shopy.png" alt="">
+                      <img src="assets/images/lcz.png" alt="">
+                      <img src="assets/images/l.png" alt="">
+                      <img src="assets/images/tiktok.png" alt="">
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center">
+
+                    <div class="dropdown product_stauts product_stauts_ellipsis">
+                      <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Duplicate</a></li>
+                        <li><a class="dropdown-item" href="#">Make Feature</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="dropdown product_stauts product_stauts_fixed">
+                      <a class="btn dropdown-toggle text_green publish_bg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-circle"></i> Published
+                      </a>
+                    
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Published</a></li>
+                        <li><a class="dropdown-item" href="#">Draft</a></li>
+                        <li><a class="dropdown-item" href="#">Trash</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-sm-12 mb-3">
+              <div class="border_radi_10 border bg-white p_12 article article_1">
+                <div class="row card_front">
+                  <div class="col-lg-8">
+                    <h3 class="heading_h3">Sony WH-1000XM5</h3>
+                    <p class="mt-3 mb-3 pera black_dark">SONYWH-01</p>
+                    <p class="pera price text_purple Space_Grotesk">฿85</p>
+                    <p class="mt-3 pera product_icon"> 
+                      <img src="assets/images/Marketplace.png" alt="">
+                      <img src="assets/images/shopy.png" alt="">
+                      <img src="assets/images/lcz.png" alt="">
+                      <img src="assets/images/l.png" alt="">
+                      <img src="assets/images/tiktok.png" alt="">
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center feauter_img">
+                    <img class="img-fluid" src="assets/images/Feature_img_1.png" alt="">
+                  </div>
+                </div>
+
+                <div class="row border_radi_10 card_back">
+                  <div class="col-lg-8">
+                    <h3 class="heading_h3">
+                      <div class="form-check m-0">
+                        <input class="form-check-input border_blue_1" type="checkbox" value="" id="atical_Checked">
+                      </div>
+                      Sony WH-1000XM5
+                    </h3>
+                    <p class="mt-3 mb-3 pera black_dark">SONYWH-01</p>
+                    <p class="pera price text_purple Space_Grotesk">฿85</p>
+                    <p class="mt-3 pera "> 
+                      <img src="assets/images/Marketplace.png" alt="">
+                      <img src="assets/images/shopy.png" alt="">
+                      <img src="assets/images/lcz.png" alt="">
+                      <img src="assets/images/l.png" alt="">
+                      <img src="assets/images/tiktok.png" alt="">
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center">
+
+                    <div class="dropdown product_stauts product_stauts_ellipsis">
+                      <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Duplicate</a></li>
+                        <li><a class="dropdown-item" href="#">Make Feature</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="dropdown product_stauts product_stauts_fixed">
+                      <a class="btn dropdown-toggle text_green publish_bg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-circle"></i> Published
+                      </a>
+                    
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Published</a></li>
+                        <li><a class="dropdown-item" href="#">Draft</a></li>
+                        <li><a class="dropdown-item" href="#">Trash</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 mb-3">
+              <div class="border_radi_10 border bg-white p_12 article article_1">
+                <div class="row card_front">
+                  <div class="col-lg-8">
+                    <h3 class="heading_h3">Sony WH-1000XM5</h3>
+                    <p class="mt-3 mb-3 pera black_dark">SONYWH-01</p>
+                    <p class="pera price text_purple Space_Grotesk">฿85</p>
+                    <p class="mt-3 pera product_icon"> 
+                      <img src="assets/images/Marketplace.png" alt="">
+                      <img src="assets/images/shopy.png" alt="">
+                      <img src="assets/images/lcz.png" alt="">
+                      <img src="assets/images/l.png" alt="">
+                      <img src="assets/images/tiktok.png" alt="">
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center feauter_img">
+                    <img class="img-fluid" src="assets/images/Feature_img_1.png" alt="">
+                  </div>
+                </div>
+
+                <div class="row border_radi_10 card_back">
+                  <div class="col-lg-8">
+                    <h3 class="heading_h3">
+                      <div class="form-check m-0">
+                        <input class="form-check-input border_blue_1" type="checkbox" value="" id="atical_Checked">
+                      </div>
+                      Sony WH-1000XM5
+                    </h3>
+                    <p class="mt-3 mb-3 pera black_dark">SONYWH-01</p>
+                    <p class="pera price text_purple Space_Grotesk">฿85</p>
+                    <p class="mt-3 pera "> 
+                      <img src="assets/images/Marketplace.png" alt="">
+                      <img src="assets/images/shopy.png" alt="">
+                      <img src="assets/images/lcz.png" alt="">
+                      <img src="assets/images/l.png" alt="">
+                      <img src="assets/images/tiktok.png" alt="">
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center">
+
+                    <div class="dropdown product_stauts product_stauts_ellipsis">
+                      <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Duplicate</a></li>
+                        <li><a class="dropdown-item" href="#">Make Feature</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="dropdown product_stauts product_stauts_fixed">
+                      <a class="btn dropdown-toggle text_green publish_bg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-circle"></i> Published
+                      </a>
+                    
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Published</a></li>
+                        <li><a class="dropdown-item" href="#">Draft</a></li>
+                        <li><a class="dropdown-item" href="#">Trash</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="list_view tab-pane fade " id="list_view">
+          
+          <div class="product_list">
+            <ul class="product_list_ul">
+              <li class="check_img_des">
+                <div class="list_inner">
+                  <div class="left_side">
+                    <div class="check_box">
+                      <input class="form-check-input bg_check" type="checkbox" value="" id="">
+                    </div>
+                    <div class="feartured_img">
+                      <img class="img-fluid ms-1 table_img" src="assets/images/headphone.png" alt=""> 
+                    </div>
+                    <div class="details">
+                      <p class="pera">Sony WH-1000XM5 
+                        <i class="fa-solid fa-chevron-down"></i></p> 
+                    </div>
+                  </div>
+  
+                  <div class="right_side">
+                    <div class="col_1 column"> <p class="pera">SONYWH-01</p> </div>
+                    <div class="col_1 column"> 
+                      <p class="pera price text_purple"> 
+                        <span class="price_click Space_Grotesk" data-bs-toggle="modal" data-bs-target="#set_regular_price">฿85</span> 
+                      </p>
+                    </div>
+                    <div class="col_2 column"> <p class="pera">100</p></div>
+                    <div class="dropdown product_stauts column">
+                      <a class="btn dropdown-toggle text_green publish_bg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-circle"></i> Published
+                      </a>
+  
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Published</a></li>
+                        <li><a class="dropdown-item" href="#">Draft</a></li>
+                        <li><a class="dropdown-item" href="#">Trash</a></li>
+                      </ul>
+                    </div>
+  
+                    <div class="product_icon column"> 
+                      <img src="assets/images/Marketplace.png" alt="">
+                      <img src="assets/images/shopy.png" alt="">
+                      <img src="assets/images/lcz.png" alt="">
+                      <img src="assets/images/l.png" alt="">
+                      <img src="assets/images/tiktok.png" alt="">
+                    </div>
+  
+                    <div class="dropdown product_stauts product_stauts_ellipsis column">
+                      <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Duplicate</a></li>
+                        <li><a class="dropdown-item" href="#">Make Feature</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li> 
+
+              <li class="check_img_des">     
+                <div class="list_inner">
+                  <div class="left_side">
+                    <div class="check_box">
+                      <input class="form-check-input" type="checkbox" value="" id="">
+                    </div>
+                    <div class="feartured_img">
+                      <img class="img-fluid ms-1 table_img" src="assets/images/headphone.png" alt=""> 
+                    </div>
+                    <div class="details">
+                      <p class="pera">Sony WH-1000XM5</p>
+                    </div>
+                  </div>
+  
+                  <div class="right_side">
+                    <div class="col_1 column"> <p class="pera">SONYWH-01</p> </div>
+                    <div class="col_1 column"> <p class="pera price text_purple Space_Grotesk">฿85</p></div>
+                    <div class="col_2 column"> <p class="pera">100</p></div>
+                    <div class="dropdown product_stauts column">
+                      <a class="btn dropdown-toggle text_green publish_bg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-circle"></i> Published
+                      </a>
+  
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Published</a></li>
+                        <li><a class="dropdown-item" href="#">Draft</a></li>
+                        <li><a class="dropdown-item" href="#">Trash</a></li>
+                      </ul>
+                    </div>
+  
+                    <div class="product_icon column"> 
+                      <img src="assets/images/Marketplace.png" alt="">
+                      <img src="assets/images/shopy.png" alt="">
+                      <img src="assets/images/lcz.png" alt="">
+                      <img src="assets/images/l.png" alt="">
+                      <img src="assets/images/tiktok.png" alt="">
+                    </div>
+  
+                    <div class="dropdown product_stauts product_stauts_ellipsis column">
+                      <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Duplicate</a></li>
+                        <li><a class="dropdown-item" href="#">Make Feature</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li> 
+
+              <li class="check_img_des">
+                <div class="list_inner">
+                  <div class="left_side">
+                    <div class="check_box">
+                      <input class="form-check-input" type="checkbox" value="" id="">
+                    </div>
+                    <div class="feartured_img">
+                      <img class="img-fluid ms-1 table_img" src="assets/images/headphone.png" alt=""> 
+                    </div>
+                    <div class="details">
+                      <p class="pera">Sony WH-1000XM5</p>
+                    </div>
+                  </div>
+  
+                  <div class="right_side">
+                    <div class="col_1 column"> <p class="pera">SONYWH-01</p> </div>
+                    <div class="col_1 column"> <p class="pera price text_purple Space_Grotesk">฿85</p></div>
+                    <div class="col_2 column"> <p class="pera">100</p></div>
+                    <div class="dropdown product_stauts column">
+                      <a class="btn dropdown-toggle text_green publish_bg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-circle"></i> Published
+                      </a>
+  
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Published</a></li>
+                        <li><a class="dropdown-item" href="#">Draft</a></li>
+                        <li><a class="dropdown-item" href="#">Trash</a></li>
+                      </ul>
+                    </div>
+  
+                    <div class="product_icon column"> 
+                      <img src="assets/images/Marketplace.png" alt="">
+                      <img src="assets/images/shopy.png" alt="">
+                      <img src="assets/images/lcz.png" alt="">
+                      <img src="assets/images/l.png" alt="">
+                      <img src="assets/images/tiktok.png" alt="">
+                    </div>
+  
+                    <div class="dropdown product_stauts product_stauts_ellipsis column">
+                      <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Duplicate</a></li>
+                        <li><a class="dropdown-item" href="#">Make Feature</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_modal" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li> 
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-sm-12 col-lg-12">
+          <div class="global_drop global_drop_2 number_drop">
+            <div class="left_pagi pagi_arrow disable"><i class="fa-duotone fa-circle-chevron-left"></i></div>
+            Page
+            <div class="dropdown pagination_dropdown">
+              <a class="btn dropdown-toggle border" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                1
+              </a>
+              
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">2</a></li>
+                <li><a class="dropdown-item" href="#">3</a></li>
+                <li><a class="dropdown-item" href="#">4</a></li>
+              </ul>
+            </div>
+            Of 102
+            <div class="right_pagin pagi_arrow"> <i class="fa-duotone fa-circle-chevron-right"></i> </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    
+    <div id="delete_modal" class="modal delete_modal fade show" tabindex="-1">
+      <div class="delete-modal modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header pb-3">
+            <h3 class="subheadig_attributr heading_h3">Are you sure</h3>
+            <button type="button" class="btn-close new-btn-close" data-bs-dismiss="modal">              
+              <img src="assets/images/xmark.png" alt=""> 
+            </button>
+          </div>
+
+          <div class="modal-body p-4 pb-5 pt-4">
+            <div class="row">
+              <div class="col-sm-12 col-lg-8 mt-1">
+                <div class="label_outer m-0">
+                  <p class="pera">Are you sure you want to delete them?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer p-4">
+            <button type="button" class="btn btn-primary global_Btn red_glob_btn m-0 me-2"> Delete</button>
+            <button type="button" class="btn btn-secondary global_Btn cancel_btn m-0 bg-transparent text_global_1 ms-1 text_global_1_hover" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div id="set_regular_price" class="modal delete_modal set_regular_price fade show" tabindex="-1">
+      <div class="delete-modal modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header pb-3">
+            <h3 class="subheadig_attributr heading_h3">Set the Regular price value</h3>
+            <button type="button" class="btn-close new-btn-close" data-bs-dismiss="modal">              
+              <img src="assets/images/xmark.png" alt=""> 
+            </button>
+          </div>
+
+          <div class="modal-body p-4 pb-5 pt-4">
+            <div class="row">
+              <div class="col-sm-12 col-lg-12">
+                <div class="label_outer m-0">
+                  <input type="text" class="form-control" placeholder="฿0">
+                  <button type="button" class="btn btn-primary global_Btn m-0 me-2"> Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+    <!-- Modal HTML -->
+    <div id="advance_search" class="modal fade advance_search" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header p-4">
+              <h3 class="modal-title heading_h3">Filter</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"> 
+                <img src="assets/images/xmark.png" alt=""> 
+              </button>
+          </div>
+
+          <div class="modal-body p-4 pt-0 pb-5">
+            <div class="row">
+              <div class="col-sm-12 col-lg-6">
+                <label for="date" class="col-sm-12 col-form-label">Category</label>
+                <div class="dropdown custom_dropdown no_border_borrom left_align">
+                  <a class="btn dropdown-toggle border" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Select Category
+                  </a>
+                
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">News</a></li>
+                    <li><a class="dropdown-item" href="#">Blogs</a></li>
+                    <li><a class="dropdown-item" href="#">Events</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-lg-6">
+                <label for="date" class="col-sm-12 col-form-label">Status</label>
+                <div class="dropdown custom_dropdown no_border_borrom left_align">
+                  <a class="btn dropdown-toggle border" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Select Status
+                  </a>
+                
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Published</a></li>
+                    <li><a class="dropdown-item" href="#">Draft</a></li>
+                    <li><a class="dropdown-item" href="#">Hidden</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-sm-12 col-lg-6 date_piker">
+                <label for="date" class="col-sm-12 col-form-label">Date</label>
+                <div class="input-group date" id="datepicker">
+                  <span class="input-group-append">
+                    <span class="input-group-text bg-light d-block bg-transparent">
+                      <i class="fa fa-calendar"></i>
+                    </span>
+                  </span>
+                  <input type="text" class="form-control border-start-0" placeholder="Date" id="date"/>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-lg-6"></div>
+            </div>
+          </div>
+
+          <div class="modal-footer p-4">
+              <button type="button" class="btn btn-primary global_Btn m-0 me-2"> <span class="me-2"><i class="fa-duotone fa-magnifying-glass"></i></span> Search</button>
+              <button type="button" class="btn btn-secondary cancel_btn" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://kit.fontawesome.com/2bc614ddce.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    
+  </body>
+</html>
