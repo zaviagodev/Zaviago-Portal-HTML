@@ -1711,7 +1711,7 @@ Product Page
 	height: 42px;
 }
 .filter_right_product #searchForm {
-	top: -9px;
+	top: -12px;
 	width: 50% !important;
 }
 .title_with_prod_count {
@@ -2476,6 +2476,7 @@ Shipping Setting.
 	height: 27px;
 }
 
+
 /************************* 
 Email Setting.
 **************************/
@@ -2531,6 +2532,29 @@ Email Setting.
 	font-size: 12px;
 	color: #000;
 }
+
+
+/************************* 
+Tag Management.
+**************************/
+.margin_auto {
+	margin-left: auto;
+}
+.tags_list .pera {
+	margin-left: 0px;
+}
+.tag_budge {
+	color: #027A48;
+	background: #ECFDF3;
+	min-width: 77px !important;
+}
+.tags_list .check_box .form-check-input:checked[type="checkbox"] {
+	background-image: url("assets/images/check_mark.png") !important;
+	background-color: #FFF;
+	border-color: #7F56D9;
+	background-size: auto;
+}
+
 
 
 @media only screen and (max-width: 1200px)  {
