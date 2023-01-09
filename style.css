@@ -190,7 +190,7 @@ body.body_mian .border {
 	background: #FF9191;
 }
 .gray_text{
-	color: #808080;
+	color: #808080 !important;
 }
 .text_blue{
 	color: #1874FE !important;
@@ -2458,7 +2458,7 @@ Shipping Setting.
 	color: #6941C6;
 }
 .product_stauts_budge i {
-	font-size: 8px;
+	font-size: 8px !important;
 	margin-right: 8px;
 }
 .product_stauts_budge {
@@ -2493,7 +2493,7 @@ Email Setting.
 	line-height: 15px;
 	color: #060606;
 	border: 0px;
-	padding: 13px 8px;
+	padding: 13px 12px;
 }
 .email_Setting .table tbody td,
 .email_Setting .table tbody td h3{
@@ -2517,7 +2517,7 @@ Email Setting.
 	align-items: center;
 }
 .email_Setting .table tbody tr td {
-	padding: 25px 8px;
+	padding: 25px 12px;
 }
 .email_Setting .table tbody td .icon_with_title .setting_icon {
 	background-color: #999999;
@@ -2532,7 +2532,13 @@ Email Setting.
 	font-size: 12px;
 	color: #000;
 }
-
+.email_Setting thead {
+	background: #FCFCFD;
+	border-radius: 7px;
+}
+.email_Setting_budge i {
+	color: #6941C6 !important;
+}
 
 /************************* 
 Tag Management.
@@ -2556,6 +2562,18 @@ Tag Management.
 }
 
 
+/************************* 
+Review Page.
+**************************/
+.hide_eamil .email {
+	display: none;
+}
+.review_list:hover .hide_eamil .email {
+	display: block;
+}
+.review_list .left_side {
+	height: 40px;
+}
 
 @media only screen and (max-width: 1200px)  {
 	.table_img{
