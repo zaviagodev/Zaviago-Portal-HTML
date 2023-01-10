@@ -2570,10 +2570,60 @@ Review Page.
 }
 .review_list:hover .hide_eamil .email {
 	display: block;
+	margin-top: 6px;
 }
 .review_list .left_side {
 	height: 40px;
 }
+.review_list .check_img_des .left_side {
+	width: 25%;
+}
+.review_list .check_img_des .right_side {
+	width: 75%;
+}
+.review_list .check_img_des .right_side .column_4 {
+	width: 10% !important;
+	overflow: unset !important;
+}
+.review_list .check_img_des .right_side .column_1 div {
+	width: 100%;
+}
+.review_list .check_img_des .right_side .column {
+	width: 30%;
+	justify-content: center;
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+}
+.review_list .check_img_des .right_side .column_1 .review_img {
+	width: 125px;
+}
+.review_list .check_img_des .right_side .column_1 .review_text {  
+	width: 200px !important;
+	transition: ease-in 0.5s;
+	right: -1000px;
+	position: relative;
+}
+.review_list:hover .review_text {
+	right: 0 !important;
+}
+.review_list .details p {
+	margin-left: 12px;
+}
+.review_list .check_box .form-check-input:checked[type="checkbox"] {
+	background-image: url("assets/images/check_mark.png") !important;
+	background-color: #FFF;
+	border-color: #7F56D9;
+	background-size: auto;
+}
+.review_list .change_bg .hide_eamil .email {
+	display: block;
+	margin-top: 6px;
+}
+.review_list .change_bg .review_text {
+	right: 0px !important;
+}
+
 
 @media only screen and (max-width: 1200px)  {
 	.table_img{
